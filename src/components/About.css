@@ -1,0 +1,51 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.about__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about__stat-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  border-radius: 16px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  backdrop-filter: blur(8px);
+}
+
+.about__stat-value {
+  font-size: 2.4rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00d4ff, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  min-width: 80px;
+}
+
+.about__stat-label {
+  font-size: 1rem;
+  color: #a0a0b0;
+}
+
+.about__bio p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #c0c0d0;
+}
+
+@media (max-width: 768px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
