@@ -49,6 +49,13 @@ src/
     └── Contact.jsx    # Contact form, social links, and footer
 ```
 
+## Contact Form
+
+The contact form uses [Formspree](https://formspree.io) to deliver messages. To configure it:
+
+1. Create a free Formspree account and form
+2. Replace `YOUR_FORM_ID` in `src/components/Contact.jsx` with your Formspree form ID
+
 ## Customization
 
 All portfolio content is centralized in **`src/data/cv.js`**. Edit this file to update your name, bio, skills, experience, education, projects, and contact info.

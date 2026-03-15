@@ -11,7 +11,7 @@ import Contact from './components/Contact';
 export default function App() {
   return (
     <>
-      <a href="#about" className="skip-link">Skip to content</a>
+      <a href="#main-content" className="skip-link">Skip to content</a>
       <Nav />
       <Hero />
       <main id="main-content">
