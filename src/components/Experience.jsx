@@ -25,7 +25,7 @@ export default function Experience() {
           return (
             <motion.div
               className={`timeline__item ${isLeft ? 'timeline__item--left' : 'timeline__item--right'}`}
-              key={i}
+              key={job.company}
               variants={isLeft ? leftVariants : rightVariants}
               initial="hidden"
               whileInView="visible"

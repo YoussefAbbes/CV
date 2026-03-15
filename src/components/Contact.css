@@ -94,7 +94,7 @@
 
 .contact__footer {
   font-size: 0.8rem;
-  color: #555;
+  color: #999;
   text-align: center;
 }
 
@@ -102,4 +102,23 @@
   .contact__form {
     max-width: 100%;
   }
+}
+
+.contact__feedback {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.contact__feedback--success {
+  color: #34d399;
+}
+
+.contact__feedback--error {
+  color: #f87171;
+}
+
+.contact__submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }

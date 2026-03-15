@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://youssefabbes.github.io/CV/sitemap.xml
