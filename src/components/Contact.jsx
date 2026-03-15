@@ -1,38 +1,10 @@
-import React, { useRef, useMemo, useState } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import React, { lazy, Suspense, useState } from 'react';
 import { motion } from 'framer-motion';
 import cv from '../data/cv';
+import ErrorBoundary from './ErrorBoundary';
 import './Contact.css';
 
-/* Subtle particle background */
-function ContactParticles({ count = 600 }) {
-  const ref = useRef();
-  const positions = useMemo(() => {
-    const arr = new Float32Array(count * 3);
-    for (let i = 0; i < count * 3; i++) {
-      arr[i] = (Math.random() - 0.5) * 16;
-    }
-    return arr;
-  }, [count]);
-
-  useFrame((_, delta) => {
-    ref.current.rotation.y += delta * 0.015;
-  });
-
-  return (
-    <points ref={ref}>
-      <bufferGeometry>
-        <bufferAttribute
-          attach="attributes-position"
-          array={positions}
-          count={count}
-          itemSize={3}
-        />
-      </bufferGeometry>
-      <pointsMaterial size={0.015} color="#7c3aed" sizeAttenuation transparent opacity={0.5} />
-    </points>
-  );
-}
+const ContactScene = lazy(() => import('./ContactScene'));
 
 /* Icons */
 const GithubIcon = () => (
@@ -61,17 +33,40 @@ const sectionVariants = {
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('sending');
+    try {
+      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setStatus('success');
+        setForm({ name: '', email: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
+  };
+
   return (
     <section id="contact" className="contact">
-      <div className="contact__canvas">
-        <Canvas camera={{ position: [0, 0, 6], fov: 50 }}>
-          <ContactParticles />
-        </Canvas>
+      <div className="contact__canvas" aria-hidden="true">
+        <ErrorBoundary fallback="Unable to load 3D scene.">
+          <Suspense fallback={null}>
+            <ContactScene />
+          </Suspense>
+        </ErrorBoundary>
       </div>
 
       <motion.div
@@ -95,34 +90,50 @@ export default function Contact() {
           </a>
         </div>
 
-        <form className="contact__form" onSubmit={(e) => e.preventDefault()}>
+        <form className="contact__form" onSubmit={handleSubmit}>
+          <label htmlFor="contact-name" className="sr-only">Your Name</label>
           <input
+            id="contact-name"
             type="text"
             name="name"
             placeholder="Your Name"
             value={form.name}
             onChange={handleChange}
+            required
             className="contact__input"
           />
+          <label htmlFor="contact-email" className="sr-only">Your Email</label>
           <input
+            id="contact-email"
             type="email"
             name="email"
             placeholder="Your Email"
             value={form.email}
             onChange={handleChange}
+            required
             className="contact__input"
           />
+          <label htmlFor="contact-message" className="sr-only">Your Message</label>
           <textarea
+            id="contact-message"
             name="message"
             placeholder="Your Message"
             rows="5"
             value={form.message}
             onChange={handleChange}
+            required
             className="contact__input contact__textarea"
           />
-          <button type="submit" className="contact__submit">
-            Send Message
+          <button type="submit" className="contact__submit" disabled={status === 'sending'}>
+            {status === 'sending' ? 'Sending…' : 'Send Message'}
           </button>
+
+          {status === 'success' && (
+            <p className="contact__feedback contact__feedback--success">Message sent successfully!</p>
+          )}
+          {status === 'error' && (
+            <p className="contact__feedback contact__feedback--error">Something went wrong. Please try again.</p>
+          )}
         </form>
 
         <p className="contact__footer mono">

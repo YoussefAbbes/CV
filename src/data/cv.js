@@ -67,6 +67,23 @@ const cv = {
     },
   ],
 
+  education: [
+    {
+      degree: 'Master of Computer Science',
+      school: 'University of Tunis El Manar',
+      period: '2017 — 2019',
+      description:
+        'Specialized in software engineering and distributed systems. Graduated with honors and completed a thesis on real-time collaborative web applications.',
+    },
+    {
+      degree: 'Bachelor of Computer Science',
+      school: 'University of Tunis El Manar',
+      period: '2014 — 2017',
+      description:
+        'Studied algorithms, data structures, databases, and web development fundamentals. Participated in competitive programming and open-source projects.',
+    },
+  ],
+
   projects: [
     {
       title: 'NebulaBoard',
