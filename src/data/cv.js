@@ -1,121 +1,124 @@
 const cv = {
   name: 'Youssef Abbes',
-  title: 'Full-Stack Developer & Creative Technologist',
-  email: 'youssef.abbes@example.com',
+  title: '3rd Year Engineering Student — Full-Stack Developer',
+  email: 'youssef.abbes@esprit.tn',
   github: 'https://github.com/YoussefAbbes',
   linkedin: 'https://linkedin.com/in/youssefabbes',
 
-  bio: `I'm a passionate full-stack developer with a knack for building immersive digital experiences. Over the past several years I've shipped production apps spanning real-time dashboards, e-commerce platforms, and AI-powered tools. I thrive at the intersection of design and engineering — crafting interfaces that are both beautiful and blazing fast. When I'm not coding you'll find me contributing to open-source projects or experimenting with creative coding and generative art.`,
+  bio: `I'm a 3rd year engineering student at ESPRIT School of Engineering, passionate about building full-stack applications with modern technologies. I specialize in Java, JavaFX, Flutter, and web development. I won the "Bal de Projet" award for Best Web Project among 2nd year students at ESPRIT — a recognition that fuels my drive to keep pushing boundaries. From AI-powered farm management systems to real-time multiplayer quiz platforms, I love turning complex problems into elegant, user-friendly solutions.`,
 
   stats: [
-    { label: 'Years Experience', value: '5+' },
-    { label: 'Projects Shipped', value: '30+' },
-    { label: 'Happy Clients', value: '20+' },
+    { label: 'Engineering Year', value: '3rd' },
+    { label: 'Projects Built', value: '5+' },
+    { label: 'Award Won', value: '🏆' },
   ],
 
   skills: [
     {
       category: 'Frontend',
       color: '#00d4ff',
-      items: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Three.js', 'Framer Motion'],
+      items: ['React', 'JavaFX', 'HTML/CSS', 'Three.js', 'Framer Motion', 'FXML'],
     },
     {
       category: 'Backend',
       color: '#7c3aed',
-      items: ['Node.js', 'Express', 'Python', 'Django', 'GraphQL', 'REST APIs'],
+      items: ['Java', 'Node.js', 'Python', 'Spring Boot', 'REST APIs', 'MySQL'],
     },
     {
-      category: 'DevOps',
+      category: 'Mobile & Cross-Platform',
       color: '#ff006e',
-      items: ['Docker', 'AWS', 'CI/CD', 'GitHub Actions', 'Terraform', 'Nginx'],
+      items: ['Flutter', 'Dart', 'Firebase', 'Android', 'iOS', 'Responsive Design'],
     },
     {
-      category: 'Tools',
+      category: 'Tools & Technologies',
       color: '#f59e0b',
-      items: ['Git', 'Figma', 'VS Code', 'Postman', 'Jira', 'Linux'],
+      items: ['Git', 'Maven', 'Docker', 'VS Code', 'Figma', 'Linux'],
     },
   ],
 
   experience: [
     {
-      role: 'Senior Frontend Engineer',
-      company: 'TechNova Inc.',
-      period: '2023 — Present',
+      role: 'Full-Stack Developer — PIDEV 3A',
+      company: 'ESPRIT School of Engineering',
+      period: '2025 — 2026',
       description:
-        'Lead the frontend architecture for a SaaS analytics platform serving 50k+ users. Migrated the legacy codebase to React 18 with TypeScript, reducing bundle size by 40% and improving Lighthouse scores to 95+.',
+        'Developed EL-Firma, a comprehensive farm management desktop application with JavaFX. Integrated AI features including facial recognition, voice commands, chatbot assistance, and DNA-based gender prediction. Implemented Stripe payments, interactive maps, and real-time dashboards.',
     },
     {
-      role: 'Full-Stack Developer',
-      company: 'Digital Craft Studio',
-      period: '2021 — 2023',
+      role: 'Mobile Developer — LammaPlay',
+      company: 'Personal Project',
+      period: '2025',
       description:
-        'Built end-to-end web applications for agency clients including e-commerce stores, booking systems, and real-time collaboration tools. Worked with React, Node.js, and PostgreSQL.',
+        'Built a real-time multiplayer quiz game platform using Flutter and Firebase. Implemented live gameplay with session codes, dynamic scoring with streak bonuses, and real-time leaderboards. Deployed on Android, iOS, and Web.',
     },
     {
-      role: 'Frontend Developer',
-      company: 'StartUp Labs',
-      period: '2020 — 2021',
+      role: 'Award-Winning Web Developer — Bal de Projet',
+      company: 'ESPRIT School of Engineering',
+      period: '2024',
       description:
-        'Developed responsive UI components and design systems for early-stage startups. Implemented complex animations and interactive data visualizations using D3.js and Three.js.',
-    },
-    {
-      role: 'Junior Developer',
-      company: 'WebWorks Agency',
-      period: '2019 — 2020',
-      description:
-        'Contributed to client websites and internal tools. Gained foundational skills in HTML, CSS, JavaScript, and modern frameworks while working in an agile team environment.',
+        'Won the "Bal de Projet" award for Best Web Project among all 2nd year engineering students. Demonstrated strong web development skills and creative problem-solving in a competitive university-wide showcase.',
     },
   ],
 
   education: [
     {
-      degree: 'Master of Computer Science',
-      school: 'University of Tunis El Manar',
-      period: '2017 — 2019',
+      degree: 'Engineering Degree in Computer Science (3rd Year)',
+      school: 'ESPRIT School of Engineering — Tunisia',
+      period: '2023 — Present',
       description:
-        'Specialized in software engineering and distributed systems. Graduated with honors and completed a thesis on real-time collaborative web applications.',
+        'Currently in the 3rd year of the engineering program, specializing in software engineering. Studying advanced algorithms, distributed systems, AI/ML, and full-stack development. Won the Bal de Projet award for Best Web Project in 2nd year.',
+    },
+  ],
+
+  achievements: [
+    {
+      title: 'Bal de Projet — Best Web Project',
+      event: 'ESPRIT School of Engineering',
+      year: '2024',
+      description: 'Won first place for Best Web Project among all 2nd year engineering students at ESPRIT university-wide project showcase.',
+      icon: '🏆',
+    },
+  ],
+
+  attestations: [
+    {
+      title: 'ESPRIT Attestation',
+      image: 'https://github.com/user-attachments/assets/5f335bea-3c49-4985-8b52-2b4a8cf6d8ef',
     },
     {
-      degree: 'Bachelor of Computer Science',
-      school: 'University of Tunis El Manar',
-      period: '2014 — 2017',
-      description:
-        'Studied algorithms, data structures, databases, and web development fundamentals. Participated in competitive programming and open-source projects.',
+      title: 'Academic Certificate',
+      image: 'https://github.com/user-attachments/assets/84d5ce6c-726f-4373-8f35-0dcf47164b8a',
+    },
+    {
+      title: 'Achievement Certificate',
+      image: 'https://github.com/user-attachments/assets/b58f0de4-e2fd-46d0-9e97-06ebf0fd57f9',
     },
   ],
 
   projects: [
     {
-      title: 'NebulaBoard',
+      title: 'EL-Firma — Farm Management System',
       description:
-        'A real-time collaborative whiteboard app with AI-powered diagram generation. Features live cursors, sticky notes, and infinite canvas.',
-      tech: ['React', 'WebSocket', 'Canvas API', 'OpenAI'],
-      link: 'https://github.com/YoussefAbbes/nebulaboard',
+        'A comprehensive full-stack desktop application for integrated farm management built as part of PIDEV 3A at ESPRIT. Features AI-powered facial recognition, voice commands, chatbot assistance, DNA-based gender prediction, Stripe payments, interactive maps, real-time dashboards, and multi-factor authentication.',
+      tech: ['Java 21', 'JavaFX', 'MySQL', 'OpenCV', 'Stripe API', 'Maven'],
+      link: 'https://github.com/Ikam2/Esprit-PIDEV-3A3--2026-ELFIRMA',
       color: '#00d4ff',
     },
     {
-      title: 'ShopStream',
+      title: 'LammaPlay — Multiplayer Quiz Platform',
       description:
-        'Modern headless e-commerce storefront with blazing-fast page loads, dynamic filtering, and Stripe integration for payments.',
-      tech: ['Next.js', 'Shopify API', 'Tailwind', 'Stripe'],
-      link: 'https://github.com/YoussefAbbes/shopstream',
+        'A real-time multiplayer quiz game platform supporting live gameplay, custom quiz creation with image support, dynamic scoring with streak bonuses, and live leaderboards. Built with Flutter and Firebase, targeting Android, iOS, and Web.',
+      tech: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'ImgBB API'],
+      link: 'https://github.com/YoussefAbbes/LammaPlay',
       color: '#7c3aed',
     },
     {
-      title: 'DevPulse',
+      title: 'Portfolio Website',
       description:
-        'Developer productivity dashboard that aggregates GitHub stats, CI/CD pipelines, and code review metrics into one beautiful interface.',
-      tech: ['React', 'Node.js', 'GitHub API', 'Chart.js'],
-      link: 'https://github.com/YoussefAbbes/devpulse',
+        'This immersive 3D portfolio website built with React, Three.js, and Framer Motion. Features particle effects, parallax scrolling, glassmorphism design, and smooth scroll-triggered animations.',
+      tech: ['React', 'Three.js', 'Framer Motion', 'Vite', 'CSS'],
+      link: 'https://github.com/YoussefAbbes/CV',
       color: '#ff006e',
-    },
-    {
-      title: 'CloudDeploy CLI',
-      description:
-        'An open-source CLI tool that simplifies deploying apps to AWS, GCP, and Azure with a single configuration file and one command.',
-      tech: ['Node.js', 'AWS SDK', 'Docker', 'Terraform'],
-      link: 'https://github.com/YoussefAbbes/clouddeploy',
-      color: '#f59e0b',
     },
   ],
 };

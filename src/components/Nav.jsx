@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import cv from '../data/cv';
 import './Nav.css';
 
-const links = ['About', 'Skills', 'Experience', 'Projects', 'Contact'];
+const links = ['About', 'Skills', 'Experience', 'Achievements', 'Projects', 'Contact'];
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);

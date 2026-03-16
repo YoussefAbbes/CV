@@ -82,6 +82,17 @@ a {
   font-weight: 700;
   margin-bottom: 60px;
   text-align: center;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, #00d4ff, #7c3aed);
+  margin: 16px auto 0;
+  border-radius: 2px;
 }
 
 /* Scrollbar */

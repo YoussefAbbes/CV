@@ -1,7 +1,7 @@
 .projects__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 28px;
 }
 
 .project-card {
@@ -12,12 +12,29 @@
   padding: 32px;
   position: relative;
   overflow: hidden;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.4s, border-color 0.3s;
   cursor: pointer;
 }
 
 .project-card:hover {
-  box-shadow: 0 8px 40px color-mix(in srgb, var(--accent) 25%, transparent);
+  box-shadow: 0 12px 50px color-mix(in srgb, var(--accent) 25%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+.project-card__glow {
+  position: absolute;
+  top: -40%;
+  right: -40%;
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--accent) 8%, transparent) 0%, transparent 70%);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.project-card:hover .project-card__glow {
+  opacity: 1;
 }
 
 .project-card__top-border {
@@ -26,21 +43,48 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: var(--accent);
+  background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 50%, #7c3aed));
+  transform: scaleX(0.3);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-card__top-border {
+  transform: scaleX(1);
+}
+
+.project-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
 }
 
 .project-card__title {
   font-size: 1.3rem;
   font-weight: 600;
   color: #fff;
-  margin-bottom: 12px;
+}
+
+.project-card__arrow {
+  color: #a0a0b0;
+  opacity: 0;
+  transform: translate(-4px, 4px);
+  transition: opacity 0.3s, transform 0.3s, color 0.3s;
+  flex-shrink: 0;
+}
+
+.project-card:hover .project-card__arrow {
+  opacity: 1;
+  transform: translate(0, 0);
+  color: var(--accent);
 }
 
 .project-card__desc {
   font-size: 0.9rem;
   color: #a0a0b0;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.7;
+  margin-bottom: 24px;
 }
 
 .project-card__tags {
@@ -50,12 +94,17 @@
 }
 
 .project-card__tag {
-  padding: 4px 12px;
-  border-radius: 6px;
+  padding: 5px 14px;
+  border-radius: 8px;
   font-size: 0.75rem;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: #c0c0d0;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.project-card:hover .project-card__tag {
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
 }
 
 @media (max-width: 768px) {
