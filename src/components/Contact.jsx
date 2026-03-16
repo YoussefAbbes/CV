@@ -41,9 +41,14 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const formspreeId = import.meta.env.VITE_FORMSPREE_ID;
+    if (!formspreeId) {
+      setStatus('error');
+      return;
+    }
     setStatus('sending');
     try {
-      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const res = await fetch(`https://formspree.io/f/${formspreeId}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),

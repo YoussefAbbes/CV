@@ -54,7 +54,13 @@ src/
 The contact form uses [Formspree](https://formspree.io) to deliver messages. To configure it:
 
 1. Create a free Formspree account and form
-2. Replace `YOUR_FORM_ID` in `src/components/Contact.jsx` with your Formspree form ID
+2. Copy your Form ID (the part after `/f/` in the endpoint URL)
+3. Create a `.env` file from the provided template and set your ID:
+   ```bash
+   cp .env.example .env
+   # Then edit .env and replace the placeholder value
+   ```
+4. When deploying to Vercel, add `VITE_FORMSPREE_ID` as an environment variable in **Project Settings → Environment Variables** in the Vercel dashboard
 
 ## Customization
 
@@ -62,7 +68,9 @@ All portfolio content is centralized in **`src/data/cv.js`**. Edit this file to 
 
 ## Deployment
 
-This site can be deployed to GitHub Pages, Netlify, Vercel, or any static hosting:
+This site is configured for **Vercel** deployment. A `vercel.json` is included for proper SPA routing. Import the repository in the [Vercel dashboard](https://vercel.com/new) and it will be deployed automatically.
+
+For other static hosts:
 
 ```bash
 npm run build
