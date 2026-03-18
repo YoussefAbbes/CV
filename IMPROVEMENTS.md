@@ -155,6 +155,30 @@ A list of improvements to be implemented on this React + Vite + Three.js portfol
 
 ---
 
+## 8. Additional Recommendations
+
+### 8.1 Add Structured Data
+- Inject JSON-LD `Person` schema in `index.html` (name, role, location, contact links)
+- Helps search engines surface rich results and knowledge panels
+
+### 8.2 Add Privacy-Friendly Analytics
+- Use Plausible or Umami to capture traffic, referrers, and CTA clicks without invasive tracking
+- Track conversions on contact form submits and resume downloads to see what resonates
+
+### 8.3 Print-Friendly Resume View
+- Create a `/resume` route with print-focused CSS to generate a clean PDF from the browser
+- Include a “Print / Save as PDF” button in addition to the downloadable static PDF
+
+### 8.4 Ship as a PWA
+- Add a `manifest.webmanifest` and service worker via Vite’s PWA plugin
+- Enable installability and cache static assets for faster repeat visits and spotty networks
+
+### 8.5 Add CI Quality Gates
+- Set up a GitHub Actions workflow that runs lint, test, and build on each push/PR
+- Blocks regressions and keeps bundle size warnings visible in PR checks
+
+---
+
 ## Summary Table
 
 | # | Task | Priority | Impact |
@@ -187,3 +211,8 @@ A list of improvements to be implemented on this React + Vite + Three.js portfol
 | 7.2 | Education section | Medium | Content completeness |
 | 7.3 | Theme toggle | Low | User preference |
 | 7.4 | i18n | Low | Reach |
+| 8.1 | Add structured data | Medium | SEO visibility |
+| 8.2 | Privacy-friendly analytics | Medium | Insights |
+| 8.3 | Print-friendly resume view | Medium | Recruiter workflow |
+| 8.4 | Ship as PWA | Medium | Performance/UX |
+| 8.5 | CI quality gates | High | Reliability |
