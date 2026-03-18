@@ -4,12 +4,8 @@ import emailjs from '@emailjs/browser';
 import cv from '../data/cv';
 import { useTranslation } from '../i18n';
 import ErrorBoundary from './ErrorBoundary';
+import { emailjsConfig, isEmailjsConfigured } from '../utils/emailjsConfig';
 import './Contact.css';
-
-// EmailJS configuration — replace with your actual IDs from https://emailjs.com
-const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
 
 const ContactScene = lazy(() => import('./ContactScene'));
 
@@ -50,13 +46,18 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!isEmailjsConfigured) {
+      setStatus('error');
+      return;
+    }
+
     setStatus('sending');
     try {
       await emailjs.sendForm(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
         formRef.current,
-        EMAILJS_PUBLIC_KEY,
+        emailjsConfig.publicKey,
       );
       setStatus('success');
       setForm({ name: '', email: '', message: '' });

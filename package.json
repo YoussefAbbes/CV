@@ -1,7 +1,8 @@
 {
-  "name": "cv-portfolio",
+  "name": "youssef-3d-portfolio",
   "private": true,
   "version": "1.0.0",
+  "description": "Interactive multilingual developer portfolio built with React, Three.js, and Framer Motion.",
   "type": "module",
   "scripts": {
     "dev": "vite",

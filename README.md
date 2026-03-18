@@ -1,101 +1,101 @@
-# Youssef Abbes — Portfolio
+# Youssef 3D Portfolio
 
-A modern, animated portfolio website built with **React**, **Three.js**, and **Framer Motion**. Features interactive 3D scenes, smooth scroll animations, and a responsive dark-themed design.
+An interactive, multilingual personal portfolio built with **React**, **Three.js**, and **Framer Motion**.  
+It presents projects, skills, experience, and contact details with animated UI, 3D effects, and responsive design.
+
+## Suggested GitHub Repository Name & Description
+
+- **Suggested repository name:** `youssef-3d-portfolio`
+- **Suggested repository description:**  
+  `Interactive multilingual developer portfolio built with React, Three.js, and Framer Motion.`
+
+> GitHub repository name/description must be changed from **Settings** on GitHub.  
+> This project is already updated internally with matching package metadata (`package.json`).
+
+## Security & Exposure Audit (Public Repo Readiness)
+
+Audit summary performed for this codebase:
+
+- ✅ No committed `.env` files were found.
+- ✅ No private keys, API tokens, or obvious credential patterns were found in source files.
+- ✅ Contact form now reads EmailJS values from environment variables instead of hardcoded constants.
+- ℹ️ Public contact data (email, GitHub, LinkedIn) is intentionally visible in `src/data/cv.js`.
+
+## Secure Contact Form Setup (EmailJS)
+
+1. Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+2. Fill your values in `.env`:
+   ```bash
+   VITE_EMAILJS_SERVICE_ID=your_emailjs_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_emailjs_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_emailjs_public_key
+   ```
+3. Never commit `.env` (already ignored by `.gitignore`).
+
+If EmailJS variables are missing, the form safely returns an error state instead of sending a request.
 
 ## Tech Stack
 
-- **React 18** — UI framework
-- **Vite** — Fast build tool with HMR
-- **Three.js** / **React Three Fiber** / **Drei** — 3D graphics and helpers
-- **Framer Motion** — Animations and transitions
-- **CSS** — Custom styles with glassmorphism and gradients
+- React 18
+- Vite 6
+- Three.js + React Three Fiber + Drei
+- Framer Motion
+- Vitest + Testing Library
+- ESLint + Prettier
 
 ## Getting Started
 
 ```bash
-# Install dependencies
 npm install
-
-# Start the development server
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Open `http://localhost:5173`.
 
-## Build for Production
+## Scripts
 
 ```bash
-npm run build
-npm run preview   # preview the production build
+npm run dev          # start dev server
+npm run build        # production build
+npm run preview      # preview production build
+npm run test         # run tests once
+npm run lint         # run eslint
+npm run format:check # check formatting
 ```
 
 ## Project Structure
 
-```
+```text
 src/
-├── App.jsx            # Root component
-├── main.jsx           # Entry point
-├── index.css          # Global styles
-├── data/
-│   └── cv.js          # All portfolio content (edit this to update your CV)
-└── components/
-    ├── Nav.jsx        # Fixed navigation with mobile hamburger menu
-    ├── Hero.jsx       # Full-screen hero with 3D background
-    ├── About.jsx      # Bio and stats section
-    ├── Skills.jsx     # Skill categories grid
-    ├── Experience.jsx # Work experience timeline
-    ├── Education.jsx  # Education timeline
-    ├── Projects.jsx   # Project showcase cards
-    └── Contact.jsx    # Contact form, social links, and footer
+├── components/      # UI sections and visual components
+├── data/cv.js       # main profile/CV content source
+├── i18n/            # translation dictionaries + provider
+├── utils/           # shared utilities (e.g. EmailJS config)
+└── __tests__/       # unit/component tests
 ```
-
-## Contact Form
-
-The contact form uses [Formspree](https://formspree.io) to deliver messages. To configure it:
-
-1. Create a free Formspree account and form
-2. Replace `YOUR_FORM_ID` in `src/components/Contact.jsx` with your Formspree form ID
 
 ## Customization
 
-All portfolio content is centralized in **`src/data/cv.js`**. Edit this file to update your name, bio, skills, experience, education, projects, and contact info.
+Most portfolio content is centralized in `src/data/cv.js`:
 
-## Deployment
+- identity and bio
+- skills
+- experience
+- education
+- projects
+- social links and contact info
 
-### GitHub Pages (Automated)
+## Deployment (GitHub Pages)
 
-This repository is configured for automated deployment to GitHub Pages using GitHub Actions.
+This repository uses a GitHub Actions workflow to deploy on pushes to `main`.
 
-**Setup Steps:**
+- Current Vite base path: `/CV/` (see `vite.config.js`)
+- Current expected URL format: `https://<username>.github.io/CV/`
 
-1. **Enable GitHub Pages** in your repository:
-   - Go to Settings → Pages
-   - Under "Source", select **GitHub Actions**
-
-2. **Push to main branch**:
-   - The workflow will automatically build and deploy your site
-   - View the deployment progress in the "Actions" tab
-
-3. **Access your site**:
-   - Your site will be available at: `https://youssefabbes.github.io/CV/`
-   - The base path `/CV/` is configured in `vite.config.js`
-
-**Manual Deployment:**
-
-If you prefer manual deployment or want to deploy to other platforms:
-
-```bash
-npm run build
-# Deploy the contents of the `dist/` folder to:
-# - GitHub Pages (commit dist/ to gh-pages branch)
-# - Netlify (drag & drop dist/ folder)
-# - Vercel (connect your repo or upload dist/)
-```
-
-**Alternative Hosting:**
-- **Netlify**: Connect your GitHub repo for automatic deployments
-- **Vercel**: Import your GitHub repo for instant deployments
-- **Custom Server**: Upload the `dist/` folder to any static web server
+If you rename the GitHub repository, update `base` in `vite.config.js` to match the new repository path.
 
 ## License
 
