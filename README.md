@@ -62,12 +62,40 @@ All portfolio content is centralized in **`src/data/cv.js`**. Edit this file to 
 
 ## Deployment
 
-This site can be deployed to GitHub Pages, Netlify, Vercel, or any static hosting:
+### GitHub Pages (Automated)
+
+This repository is configured for automated deployment to GitHub Pages using GitHub Actions.
+
+**Setup Steps:**
+
+1. **Enable GitHub Pages** in your repository:
+   - Go to Settings → Pages
+   - Under "Source", select **GitHub Actions**
+
+2. **Push to main branch**:
+   - The workflow will automatically build and deploy your site
+   - View the deployment progress in the "Actions" tab
+
+3. **Access your site**:
+   - Your site will be available at: `https://youssefabbes.github.io/CV/`
+   - The base path `/CV/` is configured in `vite.config.js`
+
+**Manual Deployment:**
+
+If you prefer manual deployment or want to deploy to other platforms:
 
 ```bash
 npm run build
-# Deploy the contents of the `dist/` folder
+# Deploy the contents of the `dist/` folder to:
+# - GitHub Pages (commit dist/ to gh-pages branch)
+# - Netlify (drag & drop dist/ folder)
+# - Vercel (connect your repo or upload dist/)
 ```
+
+**Alternative Hosting:**
+- **Netlify**: Connect your GitHub repo for automatic deployments
+- **Vercel**: Import your GitHub repo for instant deployments
+- **Custom Server**: Upload the `dist/` folder to any static web server
 
 ## License
 
