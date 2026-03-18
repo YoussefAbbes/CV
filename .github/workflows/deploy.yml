@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - claude/host-react-site-on-github
   workflow_dispatch:
 
 permissions:
