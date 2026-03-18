@@ -1,4 +1,4 @@
-# Youssef 3D Portfolio
+# Youssef Portfolio
 
 An interactive, multilingual personal portfolio built with **React**, **Three.js**, and **Framer Motion**.  
 It presents projects, skills, experience, and contact details with animated UI, 3D effects, and responsive design.
