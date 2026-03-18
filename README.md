@@ -3,24 +3,6 @@
 An interactive, multilingual personal portfolio built with **React**, **Three.js**, and **Framer Motion**.  
 It presents projects, skills, experience, and contact details with animated UI, 3D effects, and responsive design.
 
-## Suggested GitHub Repository Name & Description
-
-- **Suggested repository name:** `youssef-3d-portfolio`
-- **Suggested repository description:**  
-  `Interactive multilingual developer portfolio built with React, Three.js, and Framer Motion.`
-
-> GitHub repository name/description must be changed from **Settings** on GitHub.  
-> This project is already updated internally with matching package metadata (`package.json`).
-
-## Security & Exposure Audit (Public Repo Readiness)
-
-Audit summary performed for this codebase:
-
-- ✅ No committed `.env` files were found.
-- ✅ No private keys, API tokens, or obvious credential patterns were found in source files.
-- ✅ Contact form now reads EmailJS values from environment variables instead of hardcoded constants.
-- ℹ️ Public contact data (email, GitHub, LinkedIn) is intentionally visible in `src/data/cv.js`.
-
 ## Secure Contact Form Setup (EmailJS)
 
 1. Copy the example environment file:
@@ -97,6 +79,4 @@ This repository uses a GitHub Actions workflow to deploy on pushes to `main`.
 
 If you rename the GitHub repository, update `base` in `vite.config.js` to match the new repository path.
 
-## License
 
-MIT
