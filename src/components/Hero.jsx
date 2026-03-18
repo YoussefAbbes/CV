@@ -1,7 +1,9 @@
 import React, { lazy, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import cv from '../data/cv';
+import { useTranslation } from '../i18n';
 import ErrorBoundary from './ErrorBoundary';
+import ResumeButton from './ResumeButton';
 import './Hero.css';
 
 const HeroScene = lazy(() => import('./HeroScene'));
@@ -19,6 +21,8 @@ const childVariants = {
 };
 
 export default function Hero() {
+  const { t, localize } = useTranslation();
+
   return (
     <section id="hero" className="hero">
       <div className="hero__canvas" aria-hidden="true">
@@ -36,23 +40,31 @@ export default function Hero() {
         animate="visible"
       >
         <motion.p className="hero__greeting mono" variants={childVariants}>
-          Hi, I&apos;m
+          {t('hero.greeting')}
         </motion.p>
         <motion.h1 className="hero__name" variants={childVariants}>
           {cv.name}
         </motion.h1>
         <motion.p className="hero__title" variants={childVariants}>
-          {cv.title}
+          {localize(cv.title)}
         </motion.p>
-        <motion.a
-          href="#contact"
-          className="hero__cta"
-          variants={childVariants}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.97 }}
-        >
-          Get in Touch
-        </motion.a>
+        {cv.status && (
+          <motion.div className="hero__status" variants={childVariants}>
+            <span className={`hero__status-dot ${cv.status.available ? 'hero__status-dot--active' : ''}`} />
+            <span className="hero__status-text">{localize(cv.status.text)}</span>
+          </motion.div>
+        )}
+        <motion.div className="hero__actions" variants={childVariants}>
+          <motion.a
+            href="#contact"
+            className="hero__cta"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
+          >
+            {t('hero.cta')}
+          </motion.a>
+          <ResumeButton />
+        </motion.div>
       </motion.div>
 
       <div className="hero__scroll-hint" aria-hidden="true">

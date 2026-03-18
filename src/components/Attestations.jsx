@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import cv from '../data/cv';
+import { useTranslation } from '../i18n';
 import './Attestations.css';
 
 const cardVariants = {
@@ -27,10 +28,11 @@ const modalVariants = {
 
 export default function Attestations() {
   const [selected, setSelected] = useState(null);
+  const { t, localize } = useTranslation();
 
   return (
     <section id="attestations" className="section">
-      <h2 className="section-title gradient-heading">Certifications & Attestations</h2>
+      <h2 className="section-title gradient-heading">{t('attestations.title')}</h2>
 
       <div className="attestations__grid">
         {cv.attestations.map((item, i) => (
@@ -47,19 +49,19 @@ export default function Attestations() {
             role="button"
             tabIndex={0}
             onKeyDown={(e) => { if (e.key === 'Enter') setSelected(item); }}
-            aria-label={`View ${item.title}`}
+            aria-label={`${localize(item.title)}`}
           >
             <div className="attestation-card__shimmer" />
             <div className="attestation-card__image-wrapper">
               <img
                 src={item.image}
-                alt={item.title}
+                alt={localize(item.title)}
                 className="attestation-card__image"
                 loading="lazy"
               />
             </div>
-            <h3 className="attestation-card__title">{item.title}</h3>
-            <span className="attestation-card__view mono">Click to view ↗</span>
+            <h3 className="attestation-card__title">{localize(item.title)}</h3>
+            <span className="attestation-card__view mono">{t('attestations.viewText')} ↗</span>
           </motion.div>
         ))}
       </div>
@@ -92,10 +94,10 @@ export default function Attestations() {
               </button>
               <img
                 src={selected.image}
-                alt={selected.title}
+                alt={localize(selected.title)}
                 className="attestation-modal__image"
               />
-              <h3 className="attestation-modal__title">{selected.title}</h3>
+              <h3 className="attestation-modal__title">{localize(selected.title)}</h3>
             </motion.div>
           </motion.div>
         )}

@@ -6,8 +6,8 @@
 
 .project-card {
   display: block;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
   border-radius: 20px;
   padding: 32px;
   position: relative;
@@ -63,18 +63,18 @@
 .project-card__title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-heading);
 }
 
-.project-card__arrow {
-  color: #a0a0b0;
+.project-card__github-link {
+  color: var(--text-muted);
   opacity: 0;
   transform: translate(-4px, 4px);
   transition: opacity 0.3s, transform 0.3s, color 0.3s;
   flex-shrink: 0;
 }
 
-.project-card:hover .project-card__arrow {
+.project-card:hover .project-card__github-link {
   opacity: 1;
   transform: translate(0, 0);
   color: var(--accent);
@@ -82,7 +82,7 @@
 
 .project-card__desc {
   font-size: 0.9rem;
-  color: #a0a0b0;
+  color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 24px;
 }
@@ -97,9 +97,9 @@
   padding: 5px 14px;
   border-radius: 8px;
   font-size: 0.75rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #c0c0d0;
+  background: var(--bg-card);
+  border: 1px solid var(--border-input);
+  color: var(--text-secondary);
   transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 
@@ -107,8 +107,190 @@
   border-color: color-mix(in srgb, var(--accent) 40%, transparent);
 }
 
+/* ── Project Modal ── */
+
+.project-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-overlay);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 24px;
+}
+
+.project-modal__content {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--bg-overlay);
+  border: 1px solid var(--border-secondary);
+  border-radius: 24px;
+  padding: 32px;
+}
+
+.project-modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--border-input);
+  background: var(--bg-card);
+  color: var(--text-heading);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.project-modal__close:hover {
+  background: var(--border-input);
+  border-color: var(--accent-cyan);
+}
+
+.project-modal__gallery {
+  margin-bottom: 24px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.project-modal__placeholder {
+  width: 100%;
+  height: 200px;
+  background: var(--bg-card);
+  border: 2px dashed var(--border-input);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-dimmed);
+  font-size: 0.9rem;
+}
+
+.project-modal__image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.project-modal__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin-bottom: 12px;
+}
+
+.project-modal__desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.project-modal__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.project-modal__tag {
+  padding: 5px 14px;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-secondary);
+  color: var(--text-secondary);
+}
+
+.project-modal__section {
+  margin-bottom: 20px;
+}
+
+.project-modal__section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  margin-bottom: 8px;
+}
+
+.project-modal__text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.project-modal__features {
+  list-style: none;
+  padding: 0;
+}
+
+.project-modal__features li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  padding-left: 20px;
+  position: relative;
+}
+
+.project-modal__features li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent-cyan);
+}
+
+.project-modal__links {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-primary);
+}
+
+.project-modal__link {
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: rgba(124, 58, 237, 0.2);
+  border: 1px solid rgba(124, 58, 237, 0.4);
+  color: var(--text-heading);
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.project-modal__link:hover {
+  background: rgba(124, 58, 237, 0.35);
+  border-color: #7c3aed;
+}
+
+.project-modal__link--demo {
+  background: rgba(0, 212, 255, 0.2);
+  border-color: rgba(0, 212, 255, 0.4);
+}
+
+.project-modal__link--demo:hover {
+  background: rgba(0, 212, 255, 0.35);
+  border-color: var(--accent-cyan);
+}
+
 @media (max-width: 768px) {
   .projects__grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-modal__content {
+    padding: 24px;
+    max-height: 85vh;
   }
 }

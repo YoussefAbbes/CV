@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#00d4ff"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#00d4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#050510"/>
+  <text x="600" y="240" text-anchor="middle" font-family="monospace" font-size="120" font-weight="700" fill="url(#grad)">Y</text>
+  <text x="660" y="240" text-anchor="middle" font-family="monospace" font-size="120" font-weight="700" fill="#00d4ff">.</text>
+  <rect x="450" y="280" width="300" height="3" rx="2" fill="url(#line)"/>
+  <text x="600" y="340" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="700" fill="#ffffff">Youssef Abbes</text>
+  <text x="600" y="390" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#a0a0b0">3rd Year Engineering Student &amp; Full-Stack Developer</text>
+  <text x="600" y="430" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#00d4ff">ESPRIT School of Engineering</text>
+</svg>

@@ -1,0 +1,28 @@
+.lang-switcher {
+  display: flex;
+  gap: 4px;
+}
+
+.lang-switcher__btn {
+  background: var(--bg-card, rgba(255, 255, 255, 0.06));
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 4px 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s, opacity 0.2s, background 0.2s;
+  opacity: 0.6;
+  line-height: 1;
+  color: var(--text-primary, #fff);
+}
+
+.lang-switcher__btn:hover {
+  opacity: 0.9;
+  background: var(--bg-card-hover, rgba(255, 255, 255, 0.12));
+}
+
+.lang-switcher__btn--active {
+  opacity: 1;
+  border-color: var(--accent-cyan, #00d4ff);
+  background: var(--bg-card-hover, rgba(255, 255, 255, 0.12));
+}

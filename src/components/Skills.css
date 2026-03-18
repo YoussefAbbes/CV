@@ -5,8 +5,8 @@
 }
 
 .skills__card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--bg-card);
+  border: 1px solid var(--border-primary);
   border-radius: 20px;
   padding: 32px;
   backdrop-filter: blur(12px);
@@ -32,26 +32,57 @@
   margin-bottom: 20px;
 }
 
-.skills__tags {
+.skills__chips {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.skills__tag {
-  padding: 8px 16px;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
-  color: #d0d0e0;
-  transition: background 0.2s, border-color 0.2s;
+.skills__chip {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 14px;
+  border-radius: 50px;
+  border: 1px solid color-mix(in srgb, var(--chip-color) 40%, transparent);
+  background: color-mix(in srgb, var(--chip-color) 8%, transparent);
+  cursor: default;
+  transition: border-color 0.2s, background 0.2s, box-shadow 0.2s;
 }
 
-.skills__tag:hover {
-  background: color-mix(in srgb, var(--accent) 12%, transparent);
-  border-color: var(--accent);
-  color: #fff;
+.skills__chip:hover {
+  border-color: color-mix(in srgb, var(--chip-color) 70%, transparent);
+  background: color-mix(in srgb, var(--chip-color) 15%, transparent);
+  box-shadow: 0 0 14px color-mix(in srgb, var(--chip-color) 35%, transparent);
+}
+
+.skills__chip-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.skills__chip-initial {
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 9px;
+  background: var(--chip-color);
+  color: #0a0a1a;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.skills__chip-name {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {

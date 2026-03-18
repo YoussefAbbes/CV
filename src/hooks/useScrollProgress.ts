@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
  * Hook to track scroll progress (0 to 1)
  * Returns normalized scroll position for parallax effects
  */
-export function useScrollProgress() {
+export function useScrollProgress(): number {
   const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {

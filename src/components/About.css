@@ -12,8 +12,8 @@
 }
 
 .about__stat-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(124, 58, 237, 0.2);
+  background: var(--bg-card);
+  border: 1px solid var(--border-secondary);
   border-radius: 16px;
   padding: 28px 32px;
   display: flex;
@@ -34,18 +34,77 @@
 
 .about__stat-label {
   font-size: 1rem;
-  color: #a0a0b0;
+  color: var(--text-muted);
 }
 
 .about__bio p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #c0c0d0;
+  color: var(--text-secondary);
+}
+
+/* Shared subtitle */
+.about__subtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* ---------- What I'm Learning ---------- */
+.about__learning {
+  margin-top: 64px;
+}
+
+.about__learning-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about__learning-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid;
+  border-radius: 16px;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  backdrop-filter: blur(8px);
+  cursor: default;
+}
+
+.about__learning-icon {
+  font-size: 1.6rem;
+}
+
+.about__learning-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.about__learning-glow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  opacity: 0.6;
 }
 
 @media (max-width: 768px) {
   .about__grid {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+
+  .about__learning-cards {
+    flex-direction: column;
+    align-items: stretch;
   }
 }

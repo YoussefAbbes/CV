@@ -1,8 +1,15 @@
-import React, { lazy, Suspense, useState } from 'react';
+import React, { lazy, Suspense, useState, useRef } from 'react';
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
 import cv from '../data/cv';
+import { useTranslation } from '../i18n';
 import ErrorBoundary from './ErrorBoundary';
 import './Contact.css';
+
+// EmailJS configuration — replace with your actual IDs from https://emailjs.com
+const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
+const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
+const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
 
 const ContactScene = lazy(() => import('./ContactScene'));
 
@@ -34,6 +41,8 @@ const sectionVariants = {
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
+  const formRef = useRef(null);
+  const { t } = useTranslation();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -43,17 +52,14 @@ export default function Contact() {
     e.preventDefault();
     setStatus('sending');
     try {
-      const res = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
-      if (res.ok) {
-        setStatus('success');
-        setForm({ name: '', email: '', message: '' });
-      } else {
-        setStatus('error');
-      }
+      await emailjs.sendForm(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        EMAILJS_PUBLIC_KEY,
+      );
+      setStatus('success');
+      setForm({ name: '', email: '', message: '' });
     } catch {
       setStatus('error');
     }
@@ -76,7 +82,7 @@ export default function Contact() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
       >
-        <h2 className="section-title gradient-heading">Get in Touch</h2>
+        <h2 className="section-title gradient-heading">{t('contact.title')}</h2>
 
         <div className="contact__links">
           <a href={`mailto:${cv.email}`} className="contact__icon-link" aria-label="Email">
@@ -90,34 +96,34 @@ export default function Contact() {
           </a>
         </div>
 
-        <form className="contact__form" onSubmit={handleSubmit}>
-          <label htmlFor="contact-name" className="sr-only">Your Name</label>
+        <form ref={formRef} className="contact__form" onSubmit={handleSubmit}>
+          <label htmlFor="contact-name" className="sr-only">{t('contact.namePlaceholder')}</label>
           <input
             id="contact-name"
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder={t('contact.namePlaceholder')}
             value={form.name}
             onChange={handleChange}
             required
             className="contact__input"
           />
-          <label htmlFor="contact-email" className="sr-only">Your Email</label>
+          <label htmlFor="contact-email" className="sr-only">{t('contact.emailPlaceholder')}</label>
           <input
             id="contact-email"
             type="email"
             name="email"
-            placeholder="Your Email"
+            placeholder={t('contact.emailPlaceholder')}
             value={form.email}
             onChange={handleChange}
             required
             className="contact__input"
           />
-          <label htmlFor="contact-message" className="sr-only">Your Message</label>
+          <label htmlFor="contact-message" className="sr-only">{t('contact.messagePlaceholder')}</label>
           <textarea
             id="contact-message"
             name="message"
-            placeholder="Your Message"
+            placeholder={t('contact.messagePlaceholder')}
             rows="5"
             value={form.message}
             onChange={handleChange}
@@ -125,19 +131,19 @@ export default function Contact() {
             className="contact__input contact__textarea"
           />
           <button type="submit" className="contact__submit" disabled={status === 'sending'}>
-            {status === 'sending' ? 'Sending…' : 'Send Message'}
+            {status === 'sending' ? t('contact.sending') : t('contact.send')}
           </button>
 
           {status === 'success' && (
-            <p className="contact__feedback contact__feedback--success">Message sent successfully!</p>
+            <p className="contact__feedback contact__feedback--success">{t('contact.successMessage')}</p>
           )}
           {status === 'error' && (
-            <p className="contact__feedback contact__feedback--error">Something went wrong. Please try again.</p>
+            <p className="contact__feedback contact__feedback--error">{t('contact.errorMessage')}</p>
           )}
         </form>
 
         <p className="contact__footer mono">
-          © {new Date().getFullYear()} {cv.name}. All rights reserved.
+          © {new Date().getFullYear()} {cv.name}. {t('contact.footer')}
         </p>
       </motion.div>
     </section>
