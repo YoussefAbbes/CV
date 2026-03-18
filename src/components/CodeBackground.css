@@ -1,0 +1,239 @@
+.code-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+  pointer-events: none;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.code-element-wrapper {
+  position: absolute;
+  will-change: transform;
+  transform-style: preserve-3d;
+}
+
+.code-element {
+  display: block;
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+  will-change: transform;
+  user-select: none;
+  transform-style: preserve-3d;
+  filter: blur(0.3px);
+  --base-rotation: 0deg;
+  --base-scale: 1;
+}
+
+/* 3D floating animations with base transforms */
+@keyframes float3d-1 {
+  0%, 100% {
+    transform: rotate(var(--base-rotation)) scale(var(--base-scale))
+               translateZ(0) rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotate(var(--base-rotation)) scale(calc(var(--base-scale) * 1.05))
+               translateZ(30px) rotateX(8deg) rotateY(-10deg);
+  }
+  50% {
+    transform: rotate(var(--base-rotation)) scale(calc(var(--base-scale) * 1.02))
+               translateZ(50px) rotateX(-5deg) rotateY(12deg);
+  }
+  75% {
+    transform: rotate(var(--base-rotation)) scale(calc(var(--base-scale) * 1.08))
+               translateZ(25px) rotateX(6deg) rotateY(-6deg);
+  }
+}
+
+@keyframes float3d-2 {
+  0%, 100% {
+    transform: rotate(var(--base-rotation)) scale(var(--base-scale))
+               translateZ(0) rotateX(0deg) rotateY(0deg);
+  }
+  33% {
+    transform: rotate(var(--base-rotation)) scale(calc(var(--base-scale) * 1.06))
+               translateZ(40px) rotateX(-10deg) rotateY(15deg);
+  }
+  66% {
+    transform: rotate(var(--base-rotation)) scale(calc(var(--base-scale) * 1.03))
+               translateZ(60px) rotateX(12deg) rotateY(-8deg);
+  }
+}
+
+@keyframes float3d-3 {
+  0%, 100% {
+    transform: rotate(var(--base-rotation)) scale(var(--base-scale))
+               translateZ(0) rotateX(0deg) rotateY(0deg);
+  }
+  20% {
+    transform: rotate(var(--base-rotation)) scale(calc(var(--base-scale) * 1.04))
+               translateZ(35px) rotateX(6deg) rotateY(10deg);
+  }
+  40% {
+    transform: rotate(var(--base-rotation)) scale(calc(var(--base-scale) * 1.07))
+               translateZ(55px) rotateX(-8deg) rotateY(-12deg);
+  }
+  60% {
+    transform: rotate(var(--base-rotation)) scale(calc(var(--base-scale) * 1.02))
+               translateZ(45px) rotateX(10deg) rotateY(6deg);
+  }
+  80% {
+    transform: rotate(var(--base-rotation)) scale(calc(var(--base-scale) * 1.05))
+               translateZ(20px) rotateX(-4deg) rotateY(-8deg);
+  }
+}
+
+@keyframes float3d-4 {
+  0%, 100% {
+    transform: rotate(var(--base-rotation)) scale(var(--base-scale))
+               translateZ(0) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: rotate(var(--base-rotation)) scale(calc(var(--base-scale) * 1.1))
+               translateZ(70px) rotateX(-12deg) rotateY(18deg);
+  }
+}
+
+/* Apply different animations based on nth-child for variety */
+.code-element-wrapper:nth-child(4n + 1) .code-element {
+  animation: float3d-1 8s ease-in-out infinite;
+}
+
+.code-element-wrapper:nth-child(4n + 2) .code-element {
+  animation: float3d-2 10s ease-in-out infinite;
+}
+
+.code-element-wrapper:nth-child(4n + 3) .code-element {
+  animation: float3d-3 12s ease-in-out infinite;
+}
+
+.code-element-wrapper:nth-child(4n + 4) .code-element {
+  animation: float3d-4 9s ease-in-out infinite;
+}
+
+/* Stagger animation delays for organic movement */
+.code-element-wrapper:nth-child(1) .code-element { animation-delay: 0s; }
+.code-element-wrapper:nth-child(2) .code-element { animation-delay: -2s; }
+.code-element-wrapper:nth-child(3) .code-element { animation-delay: -4s; }
+.code-element-wrapper:nth-child(4) .code-element { animation-delay: -1s; }
+.code-element-wrapper:nth-child(5) .code-element { animation-delay: -3s; }
+.code-element-wrapper:nth-child(6) .code-element { animation-delay: -5s; }
+.code-element-wrapper:nth-child(7) .code-element { animation-delay: -0.5s; }
+.code-element-wrapper:nth-child(8) .code-element { animation-delay: -2.5s; }
+.code-element-wrapper:nth-child(9) .code-element { animation-delay: -4.5s; }
+.code-element-wrapper:nth-child(10) .code-element { animation-delay: -1.5s; }
+.code-element-wrapper:nth-child(11) .code-element { animation-delay: -3.5s; }
+.code-element-wrapper:nth-child(12) .code-element { animation-delay: -6s; }
+.code-element-wrapper:nth-child(13) .code-element { animation-delay: -0.8s; }
+.code-element-wrapper:nth-child(14) .code-element { animation-delay: -2.8s; }
+.code-element-wrapper:nth-child(15) .code-element { animation-delay: -4.8s; }
+.code-element-wrapper:nth-child(16) .code-element { animation-delay: -1.8s; }
+.code-element-wrapper:nth-child(17) .code-element { animation-delay: -3.8s; }
+.code-element-wrapper:nth-child(18) .code-element { animation-delay: -5.5s; }
+.code-element-wrapper:nth-child(19) .code-element { animation-delay: -0.3s; }
+.code-element-wrapper:nth-child(20) .code-element { animation-delay: -2.3s; }
+
+/* Color variants with glowing "floating in space" effect */
+.code-element--keyword {
+  color: var(--accent-purple);
+  text-shadow:
+    0 0 8px var(--accent-purple),
+    0 0 20px rgba(124, 58, 237, 0.5),
+    0 0 40px rgba(124, 58, 237, 0.3);
+}
+
+.code-element--bracket {
+  color: var(--accent-cyan);
+  text-shadow:
+    0 0 8px var(--accent-cyan),
+    0 0 20px rgba(0, 212, 255, 0.5),
+    0 0 40px rgba(0, 212, 255, 0.3);
+}
+
+.code-element--operator {
+  color: var(--accent-pink);
+  text-shadow:
+    0 0 8px var(--accent-pink),
+    0 0 20px rgba(255, 0, 110, 0.5),
+    0 0 40px rgba(255, 0, 110, 0.3);
+}
+
+.code-element--comment {
+  color: var(--text-muted);
+  text-shadow:
+    0 0 6px var(--text-muted),
+    0 0 15px rgba(160, 160, 176, 0.4);
+}
+
+.code-element--value {
+  color: var(--accent-green);
+  text-shadow:
+    0 0 8px var(--accent-green),
+    0 0 20px rgba(34, 197, 94, 0.5),
+    0 0 40px rgba(34, 197, 94, 0.3);
+}
+
+/* Light mode: reduce glow intensity slightly */
+[data-theme='light'] .code-element {
+  filter: blur(0.2px);
+}
+
+[data-theme='light'] .code-element--keyword {
+  text-shadow:
+    0 0 6px var(--accent-purple),
+    0 0 15px rgba(124, 58, 237, 0.4);
+}
+
+[data-theme='light'] .code-element--bracket {
+  text-shadow:
+    0 0 6px var(--accent-cyan),
+    0 0 15px rgba(0, 212, 255, 0.4);
+}
+
+[data-theme='light'] .code-element--operator {
+  text-shadow:
+    0 0 6px var(--accent-pink),
+    0 0 15px rgba(255, 0, 110, 0.4);
+}
+
+[data-theme='light'] .code-element--comment {
+  text-shadow:
+    0 0 4px var(--text-muted),
+    0 0 10px rgba(106, 106, 124, 0.3);
+}
+
+[data-theme='light'] .code-element--value {
+  text-shadow:
+    0 0 6px var(--accent-green),
+    0 0 15px rgba(34, 197, 94, 0.4);
+}
+
+/* Reduce density on mobile for cleaner look */
+@media (max-width: 768px) {
+  .code-element-wrapper:nth-child(n + 12) {
+    display: none;
+  }
+
+  .code-element {
+    font-size: 0.85rem;
+  }
+}
+
+/* Hide on very small screens */
+@media (max-width: 480px) {
+  .code-element-wrapper:nth-child(n + 8) {
+    display: none;
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .code-background {
+    display: none;
+  }
+}

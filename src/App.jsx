@@ -9,6 +9,7 @@ import Attestations from './components/Attestations';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ParallaxBackground from './components/ParallaxBackground';
+import CodeBackground from './components/CodeBackground';
 import LoadingScreen from './components/LoadingScreen';
 import BackToTop from './components/BackToTop';
 import Cursor from './components/Cursor';
@@ -31,6 +32,7 @@ export default function App() {
       >
         <a href="#main-content" className="skip-link">Skip to content</a>
         <ParallaxBackground />
+        <CodeBackground />
         <Nav />
         <Hero />
         <main id="main-content">
