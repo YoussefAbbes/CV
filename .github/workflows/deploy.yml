@@ -32,6 +32,36 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Export EmailJS environment
+        run: |
+          set -euo pipefail
+
+          SERVICE_ID="${{ secrets.VITE_EMAILJS_SERVICE_ID }}"
+          if [ -z "$SERVICE_ID" ]; then SERVICE_ID="${{ vars.VITE_EMAILJS_SERVICE_ID }}"; fi
+          if [ -z "$SERVICE_ID" ]; then SERVICE_ID="${{ secrets.EMAILJS_SERVICE_ID }}"; fi
+          if [ -z "$SERVICE_ID" ]; then SERVICE_ID="${{ vars.EMAILJS_SERVICE_ID }}"; fi
+
+          TEMPLATE_ID="${{ secrets.VITE_EMAILJS_TEMPLATE_ID }}"
+          if [ -z "$TEMPLATE_ID" ]; then TEMPLATE_ID="${{ vars.VITE_EMAILJS_TEMPLATE_ID }}"; fi
+          if [ -z "$TEMPLATE_ID" ]; then TEMPLATE_ID="${{ secrets.EMAILJS_TEMPLATE_ID }}"; fi
+          if [ -z "$TEMPLATE_ID" ]; then TEMPLATE_ID="${{ vars.EMAILJS_TEMPLATE_ID }}"; fi
+
+          PUBLIC_KEY="${{ secrets.VITE_EMAILJS_PUBLIC_KEY }}"
+          if [ -z "$PUBLIC_KEY" ]; then PUBLIC_KEY="${{ vars.VITE_EMAILJS_PUBLIC_KEY }}"; fi
+          if [ -z "$PUBLIC_KEY" ]; then PUBLIC_KEY="${{ secrets.EMAILJS_PUBLIC_KEY }}"; fi
+          if [ -z "$PUBLIC_KEY" ]; then PUBLIC_KEY="${{ vars.EMAILJS_PUBLIC_KEY }}"; fi
+
+          if [ -z "$SERVICE_ID" ] || [ -z "$TEMPLATE_ID" ] || [ -z "$PUBLIC_KEY" ]; then
+            echo "Missing EmailJS environment values; ensure service, template, and public key are set as repository variables or secrets."
+            exit 1
+          fi
+
+          {
+            echo "VITE_EMAILJS_SERVICE_ID=$SERVICE_ID"
+            echo "VITE_EMAILJS_TEMPLATE_ID=$TEMPLATE_ID"
+            echo "VITE_EMAILJS_PUBLIC_KEY=$PUBLIC_KEY"
+          } >> "$GITHUB_ENV"
+
       - name: Build
         run: npm run build
 
