@@ -38,7 +38,7 @@ const cv = {
         fr: 'Projets réalisés',
         ar: 'مشاريع منجزة',
       },
-      value: '5+',
+      value: '7+',
     },
     {
       label: {
@@ -435,6 +435,212 @@ const cv = {
         en: 'React SPA with Vite bundler, Three.js scenes lazy-loaded via React.lazy() and wrapped in ErrorBoundary components, Framer Motion for declarative animations, and a single cv.js data source.',
         fr: 'SPA React avec le bundler Vite, scènes Three.js chargées paresseusement via React.lazy() et encapsulées dans des composants ErrorBoundary, Framer Motion pour les animations déclaratives, et une source de données unique cv.js.',
         ar: 'تطبيق React أحادي الصفحة مع حزمة Vite، مشاهد Three.js محملة بشكل كسول عبر React.lazy() ومغلفة في مكونات ErrorBoundary، Framer Motion للرسوم المتحركة التصريحية، ومصدر بيانات cv.js واحد.',
+      },
+      images: [],
+    },
+    {
+      title: {
+        en: 'EspritSphere — Campus Management Platform',
+        fr: 'EspritSphere — Plateforme de gestion du campus',
+        ar: 'EspritSphere — منصة إدارة الحرم الجامعي',
+      },
+      description: {
+        en: 'A robust, cross-platform application built with Flutter and Firebase to centralize student life at Esprit University. Empowers the campus community to seamlessly manage club memberships, organize university events, and reserve movie seats via an interactive seat-map.',
+        fr: 'Une application multiplateforme robuste développée avec Flutter et Firebase pour centraliser la vie étudiante à l\'Université Esprit. Permet à la communauté du campus de gérer facilement les adhésions aux clubs, d\'organiser des événements universitaires et de réserver des places de cinéma via une carte de sièges interactive.',
+        ar: 'تطبيق قوي متعدد المنصات مبني بـ Flutter وFirebase لمركزية حياة الطلاب في جامعة Esprit. يمكّن مجتمع الحرم الجامعي من إدارة عضويات النوادي بسلاسة، تنظيم الأحداث الجامعية، وحجز مقاعد السينما عبر خريطة مقاعد تفاعلية.',
+      },
+      tech: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'GitHub'],
+      link: 'https://github.com/YoussefAbbes/EspritSphere-Project',
+      demo: '',
+      color: '#f59e0b',
+      features: [
+        {
+          en: 'Club membership management',
+          fr: 'Gestion des adhésions aux clubs',
+          ar: 'إدارة عضويات النوادي',
+        },
+        {
+          en: 'University event organization',
+          fr: 'Organisation d\'événements universitaires',
+          ar: 'تنظيم الأحداث الجامعية',
+        },
+        {
+          en: 'Interactive movie seat reservation',
+          fr: 'Réservation de sièges de cinéma interactive',
+          ar: 'حجز مقاعد السينما التفاعلية',
+        },
+        {
+          en: 'Cross-platform: iOS, Android, and Web',
+          fr: 'Multi-plateforme : iOS, Android et Web',
+          ar: 'متعدد المنصات: iOS وAndroid والويب',
+        },
+      ],
+      challenges: {
+        en: 'Building a seamless seat-map UI for movie reservations that works across all platforms while handling real-time seat availability updates through Firestore.',
+        fr: 'Créer une interface de carte de sièges fluide pour les réservations de cinéma qui fonctionne sur toutes les plateformes tout en gérant les mises à jour de disponibilité des sièges en temps réel via Firestore.',
+        ar: 'بناء واجهة سلسة لخريطة المقاعد لحجوزات السينما تعمل عبر جميع المنصات مع التعامل مع تحديثات توفر المقاعد في الوقت الفعلي عبر Firestore.',
+      },
+      architecture: {
+        en: 'Flutter frontend with Firebase Authentication, Firestore for real-time data synchronization, and Cloud Functions for business logic.',
+        fr: 'Frontend Flutter avec Firebase Authentication, Firestore pour la synchronisation des données en temps réel, et Cloud Functions pour la logique métier.',
+        ar: 'واجهة Flutter أمامية مع مصادقة Firebase، Firestore لمزامنة البيانات في الوقت الفعلي، وCloud Functions لمنطق الأعمال.',
+      },
+      images: [],
+    },
+    {
+      title: {
+        en: 'Synapse — Enterprise RAG Document Engine',
+        fr: 'Synapse — Moteur de documents RAG pour entreprise',
+        ar: 'Synapse — محرك مستندات RAG للمؤسسات',
+      },
+      description: {
+        en: 'A production-ready RAG engine for chatting with your PDFs. Built with Next.js 14, FastAPI, Qdrant, and Gemini/OpenAI. Fully containerized and built for scale with semantic search, vector embeddings, and intelligent document retrieval.',
+        fr: 'Un moteur RAG prêt pour la production pour discuter avec vos PDF. Développé avec Next.js 14, FastAPI, Qdrant et Gemini/OpenAI. Entièrement conteneurisé et conçu pour l\'échelle avec recherche sémantique, embeddings vectoriels et récupération intelligente de documents.',
+        ar: 'محرك RAG جاهز للإنتاج للمحادثة مع ملفات PDF الخاصة بك. مبني بـ Next.js 14 وFastAPI وQdrant وGemini/OpenAI. مُحوسَب بالكامل ومصمم للتوسع مع البحث الدلالي، تضمينات المتجهات، واسترجاع المستندات الذكي.',
+      },
+      tech: ['Next.js', 'FastAPI', 'Python', 'Qdrant', 'Docker', 'PostgreSQL', 'LangChain', 'Gemini AI', 'TypeScript'],
+      link: 'https://github.com/YoussefAbbes/Synapse-Entreprise-RAG-Document-Engine',
+      demo: '',
+      color: '#8b5cf6',
+      features: [
+        {
+          en: 'PDF document parsing and chunking',
+          fr: 'Analyse et segmentation de documents PDF',
+          ar: 'تحليل وتقسيم مستندات PDF',
+        },
+        {
+          en: 'Semantic search with vector embeddings',
+          fr: 'Recherche sémantique avec embeddings vectoriels',
+          ar: 'البحث الدلالي مع تضمينات المتجهات',
+        },
+        {
+          en: 'RAG-powered conversational AI',
+          fr: 'IA conversationnelle alimentée par RAG',
+          ar: 'ذكاء اصطناعي محادثاتي مدعوم بـ RAG',
+        },
+        {
+          en: 'Document management with MinIO',
+          fr: 'Gestion de documents avec MinIO',
+          ar: 'إدارة المستندات مع MinIO',
+        },
+        {
+          en: 'Fully containerized with Docker',
+          fr: 'Entièrement conteneurisé avec Docker',
+          ar: 'مُحوسَب بالكامل مع Docker',
+        },
+      ],
+      challenges: {
+        en: 'Optimizing vector search performance for large document collections while maintaining context relevance across multi-turn conversations and handling various PDF formats reliably.',
+        fr: 'Optimiser les performances de recherche vectorielle pour de grandes collections de documents tout en maintenant la pertinence du contexte à travers des conversations multi-tours et en gérant de manière fiable divers formats PDF.',
+        ar: 'تحسين أداء البحث المتجه لمجموعات المستندات الكبيرة مع الحفاظ على ملاءمة السياق عبر المحادثات متعددة الدورات والتعامل بشكل موثوق مع تنسيقات PDF المختلفة.',
+      },
+      architecture: {
+        en: 'Microservices architecture with Next.js frontend, FastAPI backend, Qdrant vector database, PostgreSQL for metadata, MinIO for object storage, and LangChain for RAG orchestration.',
+        fr: 'Architecture microservices avec frontend Next.js, backend FastAPI, base de données vectorielle Qdrant, PostgreSQL pour les métadonnées, MinIO pour le stockage d\'objets, et LangChain pour l\'orchestration RAG.',
+        ar: 'هندسة الخدمات الصغرى مع واجهة Next.js أمامية، خلفية FastAPI، قاعدة بيانات Qdrant المتجهة، PostgreSQL للبيانات الوصفية، MinIO لتخزين الكائنات، وLangChain لتنسيق RAG.',
+      },
+      images: [],
+    },
+    {
+      title: {
+        en: 'Autonomous Market — Crypto Analytics Platform',
+        fr: 'Autonomous Market — Plateforme d\'analyse crypto',
+        ar: 'Autonomous Market — منصة تحليل العملات المشفرة',
+      },
+      description: {
+        en: 'A full-stack crypto analytics platform that combines real-time market data, AI sentiment analysis, and ML price forecasting in one interactive dashboard. Features ARIMA and LSTM models for price prediction, integrated with n8n for workflow automation.',
+        fr: 'Une plateforme d\'analyse crypto full-stack qui combine des données de marché en temps réel, une analyse de sentiment par IA et des prévisions de prix par ML dans un tableau de bord interactif. Comprend des modèles ARIMA et LSTM pour la prédiction de prix, intégré avec n8n pour l\'automatisation des workflows.',
+        ar: 'منصة تحليل العملات المشفرة full-stack تجمع بين بيانات السوق في الوقت الفعلي، تحليل المشاعر بالذكاء الاصطناعي، والتنبؤ بالأسعار بتعلم الآلة في لوحة تحكم تفاعلية واحدة. تتضمن نماذج ARIMA وLSTM للتنبؤ بالأسعار، مدمجة مع n8n لأتمتة سير العمل.',
+      },
+      tech: ['React', 'Python', 'PyTorch', 'PostgreSQL', 'Docker', 'n8n', 'ARIMA', 'LSTM', 'Machine Learning'],
+      link: 'https://github.com/YoussefAbbes/Autonomous-Market',
+      demo: '',
+      color: '#10b981',
+      features: [
+        {
+          en: 'Real-time cryptocurrency market data',
+          fr: 'Données de marché crypto en temps réel',
+          ar: 'بيانات سوق العملات المشفرة في الوقت الفعلي',
+        },
+        {
+          en: 'AI-powered sentiment analysis',
+          fr: 'Analyse de sentiment par IA',
+          ar: 'تحليل المشاعر بالذكاء الاصطناعي',
+        },
+        {
+          en: 'LSTM and ARIMA price forecasting',
+          fr: 'Prévision de prix LSTM et ARIMA',
+          ar: 'التنبؤ بالأسعار بـ LSTM وARIMA',
+        },
+        {
+          en: 'n8n workflow automation',
+          fr: 'Automatisation des workflows n8n',
+          ar: 'أتمتة سير العمل n8n',
+        },
+        {
+          en: 'Interactive analytics dashboard',
+          fr: 'Tableau de bord analytique interactif',
+          ar: 'لوحة تحكم تحليلية تفاعلية',
+        },
+      ],
+      challenges: {
+        en: 'Training accurate LSTM models on volatile cryptocurrency data while integrating multiple data sources (market data, social sentiment, news) and providing real-time predictions through the dashboard.',
+        fr: 'Entraîner des modèles LSTM précis sur des données de crypto-monnaie volatiles tout en intégrant plusieurs sources de données (données de marché, sentiment social, actualités) et en fournissant des prédictions en temps réel via le tableau de bord.',
+        ar: 'تدريب نماذج LSTM دقيقة على بيانات العملات المشفرة المتقلبة مع دمج مصادر بيانات متعددة (بيانات السوق، المشاعر الاجتماعية، الأخبار) وتوفير التنبؤات في الوقت الفعلي عبر لوحة التحكم.',
+      },
+      architecture: {
+        en: 'React dashboard frontend, Python backend with PyTorch for ML models, PostgreSQL for time-series data, Docker for containerization, and n8n for automating data pipelines.',
+        fr: 'Frontend de tableau de bord React, backend Python avec PyTorch pour les modèles ML, PostgreSQL pour les données de séries temporelles, Docker pour la conteneurisation, et n8n pour automatiser les pipelines de données.',
+        ar: 'واجهة لوحة تحكم React أمامية، خلفية Python مع PyTorch لنماذج ML، PostgreSQL لبيانات السلاسل الزمنية، Docker للحوسبة، وn8n لأتمتة خطوط أنابيب البيانات.',
+      },
+      images: [],
+    },
+    {
+      title: {
+        en: 'HelpDesk — Support Ticket Management',
+        fr: 'HelpDesk — Gestion des tickets de support',
+        ar: 'HelpDesk — إدارة تذاكر الدعم',
+      },
+      description: {
+        en: 'A comprehensive helpdesk and support ticket management system built with modern web technologies. Streamlines customer support workflows with ticket tracking, priority management, and team collaboration features.',
+        fr: 'Un système complet de gestion de helpdesk et de tickets de support construit avec des technologies web modernes. Rationalise les workflows de support client avec suivi des tickets, gestion des priorités et fonctionnalités de collaboration d\'équipe.',
+        ar: 'نظام شامل لإدارة مكتب المساعدة وتذاكر الدعم مبني بتقنيات الويب الحديثة. يبسط سير عمل دعم العملاء مع تتبع التذاكر، إدارة الأولويات، وميزات تعاون الفريق.',
+      },
+      tech: ['JavaScript', 'Node.js', 'React', 'Database'],
+      link: 'https://github.com/YoussefAbbes/HelpDesk-Project',
+      demo: '',
+      color: '#06b6d4',
+      features: [
+        {
+          en: 'Ticket creation and tracking',
+          fr: 'Création et suivi des tickets',
+          ar: 'إنشاء وتتبع التذاكر',
+        },
+        {
+          en: 'Priority and status management',
+          fr: 'Gestion des priorités et statuts',
+          ar: 'إدارة الأولويات والحالات',
+        },
+        {
+          en: 'Team collaboration tools',
+          fr: 'Outils de collaboration d\'équipe',
+          ar: 'أدوات تعاون الفريق',
+        },
+        {
+          en: 'Customer support workflows',
+          fr: 'Workflows de support client',
+          ar: 'سير عمل دعم العملاء',
+        },
+      ],
+      challenges: {
+        en: 'Designing an intuitive ticket management interface that scales with team size while maintaining fast response times and ensuring no tickets fall through the cracks.',
+        fr: 'Concevoir une interface de gestion de tickets intuitive qui évolue avec la taille de l\'équipe tout en maintenant des temps de réponse rapides et en garantissant qu\'aucun ticket ne passe entre les mailles du filet.',
+        ar: 'تصميم واجهة إدارة تذاكر بديهية تتوسع مع حجم الفريق مع الحفاظ على أوقات استجابة سريعة وضمان عدم فقدان أي تذاكر.',
+      },
+      architecture: {
+        en: 'Full-stack JavaScript application with React frontend, Node.js backend, and database for persistent storage.',
+        fr: 'Application JavaScript full-stack avec frontend React, backend Node.js, et base de données pour le stockage persistant.',
+        ar: 'تطبيق JavaScript full-stack مع واجهة React أمامية، خلفية Node.js، وقاعدة بيانات للتخزين الدائم.',
       },
       images: [],
     },
