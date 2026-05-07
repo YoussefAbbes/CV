@@ -16,7 +16,7 @@ export default function ResumeButton() {
 
   return (
     <motion.a
-      href="/CV/Youssef_Abbes_CV.pdf"
+      href="/CV/Cv_Youssef_Abbes.pdf"
       download
       className="resume-btn"
       whileHover={{ scale: 1.05 }}
