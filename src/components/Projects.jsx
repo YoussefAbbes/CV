@@ -85,17 +85,19 @@ export default function Projects() {
             <div className="project-card__top-border" />
             <div className="project-card__header">
               <h3 className="project-card__title">{localize(project.title)}</h3>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-card__github-link"
-                onClick={(e) => e.stopPropagation()}
-                onKeyDown={(e) => e.stopPropagation()}
-                aria-label={`View ${localize(project.title)} on GitHub`}
-              >
-                <ArrowIcon />
-              </a>
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-card__github-link"
+                  onClick={(e) => e.stopPropagation()}
+                  onKeyDown={(e) => e.stopPropagation()}
+                  aria-label={`View ${localize(project.title)} on GitHub`}
+                >
+                  <ArrowIcon />
+                </a>
+              )}
             </div>
             <p className="project-card__desc">{localize(project.description)}</p>
             <div className="project-card__tags">
@@ -196,9 +198,11 @@ export default function Projects() {
 
               {/* Links */}
               <div className="project-modal__links">
-                <a href={selected.link} target="_blank" rel="noopener noreferrer" className="project-modal__link">
-                  {t('projects.github')}
-                </a>
+                {selected.link && (
+                  <a href={selected.link} target="_blank" rel="noopener noreferrer" className="project-modal__link">
+                    {t('projects.github')}
+                  </a>
+                )}
                 {selected.demo && (
                   <a href={selected.demo} target="_blank" rel="noopener noreferrer" className="project-modal__link project-modal__link--demo">
                     {t('projects.liveDemo')}
