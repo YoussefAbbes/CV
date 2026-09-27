@@ -1,4 +1,4 @@
-const { chromium } = require('playwright');
+const { chromium } = require(process.env.PLAYWRIGHT || 'playwright');
 (async () => {
   const b = await chromium.launch(); const p = await b.newPage();
   await p.goto('file://' + __dirname + '/cv.html', { waitUntil: 'networkidle' });

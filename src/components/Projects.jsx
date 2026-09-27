@@ -83,6 +83,14 @@ export default function Projects() {
           >
             <div className="project-card__glow" />
             <div className="project-card__top-border" />
+            {project.images && project.images.length > 0 && (
+              <img
+                src={project.images[0]}
+                alt=""
+                className="project-card__cover"
+                loading="lazy"
+              />
+            )}
             <div className="project-card__header">
               <h3 className="project-card__title">{localize(project.title)}</h3>
               {project.link && (
@@ -146,17 +154,15 @@ export default function Projects() {
               </button>
 
               {/* Image gallery */}
-              <div className="project-modal__gallery">
-                {selected.images && selected.images.length > 0 ? (
-                  selected.images.map((img, idx) => (
-                    <img key={idx} src={img} alt={`${localize(selected.title)} screenshot ${idx + 1}`} className="project-modal__image" />
-                  ))
-                ) : (
-                  <div className="project-modal__placeholder">
-                    <span>{t('projects.screenshotsComing')}</span>
-                  </div>
-                )}
-              </div>
+              {selected.images && selected.images.length > 0 && (
+                <div className="project-modal__gallery">
+                  {selected.images.map((img, idx) => (
+                    <a key={img} href={img} target="_blank" rel="noopener noreferrer" className="project-modal__image-link">
+                      <img src={img} alt={`${localize(selected.title)} screenshot ${idx + 1}`} className="project-modal__image" loading="lazy" />
+                    </a>
+                  ))}
+                </div>
+              )}
 
               <h3 className="project-modal__title">{localize(selected.title)}</h3>
               <p className="project-modal__desc">{localize(selected.description)}</p>

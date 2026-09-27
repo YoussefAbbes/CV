@@ -53,6 +53,17 @@
   transform: scaleX(1);
 }
 
+.project-card__cover {
+  display: block;
+  width: calc(100% + 64px);
+  max-width: none;
+  height: 180px;
+  margin: -32px -32px 24px;
+  object-fit: cover;
+  object-position: top center;
+  border-bottom: 1px solid var(--border-primary);
+}
+
 .project-card__header {
   display: flex;
   align-items: center;
@@ -159,9 +170,21 @@
 }
 
 .project-modal__gallery {
+  display: flex;
+  gap: 12px;
   margin-bottom: 24px;
-  border-radius: 12px;
-  overflow: hidden;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 6px;
+}
+
+.project-modal__image-link {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+.project-modal__gallery:has(.project-modal__image-link + .project-modal__image-link) .project-modal__image-link {
+  flex-basis: 88%;
 }
 
 .project-modal__placeholder {
@@ -178,9 +201,13 @@
 }
 
 .project-modal__image {
+  display: block;
   width: 100%;
+  max-height: 420px;
   border-radius: 12px;
   object-fit: cover;
+  object-position: top center;
+  border: 1px solid var(--border-primary);
 }
 
 .project-modal__title {
