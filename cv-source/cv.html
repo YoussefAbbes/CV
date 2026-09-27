@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>CV — Abbes Youssef</title>
+<link href="inter-local.css" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root { --ink: #18171c; --muted: #6b6a72; --accent: #b45309; --line: #e4e2de; --soft: #faf3ef; }
+  html, body { font-family: 'Inter', sans-serif; color: var(--ink); font-size: 8.1pt; line-height: 1.42; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  a { color: var(--accent); text-decoration: none; }
+  .page { width: 210mm; height: 297mm; padding: 15mm 18mm 12mm; position: relative; page-break-after: always; overflow: hidden; }
+  .page:last-child { page-break-after: auto; }
+  .folio { position: absolute; bottom: 4.5mm; right: 18mm; font-size: 7pt; letter-spacing: 0.15em; color: var(--muted); }
+
+  header.main { display: flex; align-items: center; gap: 7mm; padding-bottom: 5mm; border-bottom: 1.5px solid var(--ink); }
+  header.main img { width: 30mm; height: 30mm; object-fit: cover; object-position: center 20%; border-radius: 3mm; box-shadow: 0 0 0 1.5mm #fdf0e6; }
+  header.main .id { flex: 1; }
+  header.main h1 { font-size: 25pt; font-weight: 800; letter-spacing: -0.04em; line-height: 1.05; }
+  header.main .role { color: var(--accent); font-size: 10pt; margin-top: 2mm; }
+  header.main .contact { text-align: right; font-size: 7.6pt; line-height: 1.65; }
+  header.main .contact strong { font-weight: 600; }
+
+  header.cont { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 3.5mm; border-bottom: 1px solid var(--line); }
+  header.cont .kicker { font-size: 7.5pt; letter-spacing: 0.2em; color: var(--muted); }
+  header.cont h2 { font-size: 13pt; font-weight: 700; letter-spacing: -0.02em; margin-top: 1mm; }
+  header.cont .contact { text-align: right; font-size: 7.6pt; line-height: 1.6; }
+
+  h3.sec { font-size: 7.4pt; font-weight: 700; letter-spacing: 0.22em; color: var(--accent); text-transform: uppercase; margin: 4.6mm 0 2mm; }
+  p.about { font-size: 8.5pt; line-height: 1.55; }
+
+  .row { display: grid; grid-template-columns: 30mm 1fr; gap: 4mm; border-top: 1px solid var(--line); padding: 2.1mm 0; }
+  .row .date { color: var(--muted); font-size: 7.8pt; }
+  .row .title { font-weight: 600; font-size: 9pt; display: flex; justify-content: space-between; }
+  .row .title span.loc { font-weight: 400; color: var(--muted); font-size: 7.6pt; }
+  .row .org { color: var(--accent); font-size: 8.2pt; margin-top: 0.4mm; }
+  ul.bul { list-style: none; margin-top: 1.2mm; }
+  ul.bul li { position: relative; padding-left: 4mm; margin-bottom: 0.6mm; }
+  ul.bul li::before { content: ''; position: absolute; left: 0; top: 2.1mm; width: 2mm; height: 1.2px; background: var(--accent); }
+
+  table.skills { width: 100%; border-collapse: collapse; }
+  table.skills td { border-top: 1px solid var(--line); padding: 1.05mm 0; vertical-align: top; }
+  table.skills td:first-child { width: 36mm; color: var(--muted); font-size: 7.8pt; }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; column-gap: 8mm; }
+  .proj { border-top: 1px solid var(--line); padding: 2.3mm 0 2.4mm; }
+  .proj .h { font-weight: 700; font-size: 9pt; }
+  .proj .h small { font-weight: 400; font-size: 6.6pt; letter-spacing: 0.08em; color: var(--muted); margin-left: 1.5mm; text-transform: uppercase; }
+  .proj p { margin: 1mm 0 0.8mm; font-size: 7.9pt; line-height: 1.5; }
+  .proj a { font-size: 7.5pt; }
+
+  .item { border-top: 1px solid var(--line); padding: 2mm 0; display: flex; justify-content: space-between; gap: 3mm; }
+  .item .t { font-size: 8.6pt; }
+  .item .s { color: var(--muted); font-size: 7.5pt; margin-top: 0.5mm; }
+  .item .y { color: var(--muted); font-size: 7.8pt; white-space: nowrap; }
+
+  .langs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; }
+  .langs div { background: var(--soft); border-radius: 1.5mm; padding: 2.5mm 3mm; }
+  .langs strong { display: block; font-weight: 600; font-size: 8.6pt; }
+  .langs span { color: var(--muted); font-size: 7.5pt; }
+  footer.end { position: absolute; left: 18mm; right: 18mm; bottom: 14mm; border-top: 1.5px solid var(--ink); padding-top: 2.5mm; text-align: right; font-weight: 600; font-size: 7.8pt; }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<section class="page">
+  <header class="main">
+    <img src="photo.jpg" alt="Youssef Abbes">
+    <div class="id">
+      <h1>Abbes Youssef</h1>
+      <div class="role">Élève ingénieur en 4ème année — Data Science</div>
+    </div>
+    <div class="contact">
+      <strong>Tunis, Tunisie</strong><br>
+      <a href="mailto:abbes.youssef@esprit.tn">abbes.youssef@esprit.tn</a><br>
+      <a href="mailto:youssefabbes204@gmail.com">youssefabbes204@gmail.com</a><br>
+      <a href="tel:+21656207742">+216 56 207 742</a><br>
+      <a href="https://youssefabbes.github.io/CV/">youssefabbes.github.io/CV</a><br>
+      <a href="https://github.com/YoussefAbbes">github.com/youssefabbes</a><br>
+      <a href="https://linkedin.com/in/youssefabbes">linkedin.com/in/youssefabbes</a>
+    </div>
+  </header>
+
+  <h3 class="sec">À propos</h3>
+  <p class="about">Élève ingénieur en 4ème année à ESPRIT, spécialité Data Science. Je conçois des systèmes de machine learning et des applications full-stack web, mobiles et IA. Stage 2026 chez TICOP : système de recommandation commerciale (CatBoost, FastAPI) sur 1,8M+ transactions réelles. Lauréat du 1er prix et de la 2ème place au Bal des Projets ESPRIT, vice-président du club BRAINIX IA.</p>
+
+  <h3 class="sec">Expérience</h3>
+  <div class="row">
+    <div class="date">Juil. — Août 2026</div>
+    <div>
+      <div class="title">Stagiaire Data Science — Système de recommandation commerciale <span class="loc">Tunisie</span></div>
+      <div class="org">TICOP</div>
+      <ul class="bul">
+        <li>Système de recommandation pour un distributeur de pièces automobiles : quels clients contacter et quels articles proposer. Pipeline depuis Microsoft Dynamics NAV (1,8M+ lignes, 52K articles, 6,3K clients).</li>
+        <li>Deux modèles CatBoost validés par backtests chronologiques sans fuite : rachat (AUC 0,77, precision@30 ≈ 2× la référence) et adoption de nouveaux articles (AUC 0,87).</li>
+        <li>Livraison en API REST FastAPI typée (OpenAPI), 280+ tests automatisés, données anonymisées.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="date">2024 — 2025</div>
+    <div>
+      <div class="title">Stagiaire — Développement Commercial &amp; Marketing <span class="loc">Tunis, Tunisie</span></div>
+      <div class="org">Green Pharma</div>
+      <ul class="bul">
+        <li>Stratégies marketing pour la gamme « Bambini » (maternité &amp; bébés) dans un marché parapharmaceutique de 690M USD · analyse SWOT de 60+ concurrents.</li>
+        <li>Recommandations : marketing digital ciblé, programme de fidélité, visibilité produit, partenariats avec cliniques pédiatriques.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 class="sec">Formation</h3>
+  <div class="row">
+    <div class="date">2022 — Présent</div>
+    <div>
+      <div class="title">Cycle d'ingénieur — Informatique, spécialité Data Science (4ème année)</div>
+      <div class="org">École Supérieure Privée d'Ingénierie et de Technologies (ESPRIT)</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="date">2018 — 2022</div>
+    <div>
+      <div class="title">Baccalauréat — Mathématiques</div>
+      <div class="org">Lycée Kheireddine</div>
+    </div>
+  </div>
+
+  <h3 class="sec">Compétences techniques</h3>
+  <table class="skills">
+    <tr><td>Langages</td><td>Python · Java · PHP · JavaScript · TypeScript · Dart · C · C++ · SQL · HTML/CSS</td></tr>
+    <tr><td>Data Science / ML</td><td>pandas · NumPy · scikit-learn · CatBoost · LightGBM · PyTorch · Hugging Face · DistilBERT · YOLOv8 · MediaPipe · Jupyter</td></tr>
+    <tr><td>IA / LLM</td><td>RAG · LangChain · Qdrant · Gemini / OpenAI / GROQ APIs · OpenCV · Tesseract OCR · MCP</td></tr>
+    <tr><td>Web / Frontend</td><td>React · Next.js · Symfony · Twig · Three.js · Framer Motion · Tailwind CSS · Bootstrap · Vite</td></tr>
+    <tr><td>Backend &amp; APIs</td><td>FastAPI · Django REST · Spring Boot · Node.js · Celery · Stripe · SendGrid · Google Meet API</td></tr>
+    <tr><td>Mobile</td><td>Flutter (Dart) · Android · iOS · Firebase Auth · Firestore · Firebase Storage</td></tr>
+    <tr><td>Bases de données</td><td>PostgreSQL · MySQL · Supabase · Firestore · Qdrant · Redis · Doctrine ORM</td></tr>
+    <tr><td>DevOps &amp; Sécurité</td><td>Docker &amp; Compose · Git / GitHub · Linux · Maven · Composer · n8n · PHPUnit · Pytest · JWT · OAuth · 2FA</td></tr>
+    <tr><td>Embarqué &amp; Design</td><td>Arduino · Raspberry Pi · MPLAB · ISIS · Figma · Photoshop · Illustrator · Premiere Pro · Canva</td></tr>
+    <tr><td>Outils</td><td>IntelliJ IDEA · VS Code · Fleet · Qt Creator · Antigravity · Claude · ChatGPT · GitHub Copilot · Gemini</td></tr>
+  </table>
+
+  <div class="folio">01 / 02</div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page">
+  <header class="cont">
+    <div>
+      <div class="kicker">ABBES YOUSSEF · SUITE</div>
+      <h2>Élève ingénieur en 4ème année — Data Science</h2>
+    </div>
+    <div class="contact">
+      <a href="mailto:abbes.youssef@esprit.tn">abbes.youssef@esprit.tn</a><br>
+      <a href="https://youssefabbes.github.io/CV/">youssefabbes.github.io/CV</a>
+    </div>
+  </header>
+
+  <h3 class="sec">Projets sélectionnés</h3>
+  <div class="grid2">
+    <div>
+      <div class="proj">
+        <div class="h">Synapse RAG Engine <small>Next.js · FastAPI · Qdrant · LLM</small></div>
+        <p>Moteur RAG prêt pour la production — chat avec vos PDFs. Next.js 14, FastAPI, Qdrant, Gemini / OpenAI. Entièrement conteneurisé, recherche sémantique vectorielle.</p>
+        <a href="https://github.com/YoussefAbbes/Synapse-Entreprise-RAG-Document-Engine">github.com/youssefabbes/Synapse-Entreprise-RAG-Document-Engine</a>
+      </div>
+      <div class="proj">
+        <div class="h">Autonomous Market <small>Python · React · Docker · ML</small></div>
+        <p>Plateforme d'analyse crypto full-stack : données de marché temps réel, analyse de sentiment IA et prévisions ML (LSTM/ARIMA). Tableau de bord interactif, PostgreSQL, n8n.</p>
+        <a href="https://github.com/YoussefAbbes/Autonomous-Market">github.com/youssefabbes/Autonomous-Market</a>
+      </div>
+      <div class="proj">
+        <div class="h">HelpDesk AI <small>Django · React · Celery · Hugging Face</small></div>
+        <p>Helpdesk / CRM intelligent : chaque ticket est analysé en asynchrone (Celery + Redis) par des modèles NLP — sentiment, catégorisation zero-shot, réponse suggérée. Accès par rôles (JWT), tableau de bord BI.</p>
+        <a href="https://github.com/YoussefAbbes/HelpDesk-Project">github.com/youssefabbes/HelpDesk-Project</a>
+      </div>
+      <div class="proj">
+        <div class="h">LiftBuddy <small>Flutter · ML Kit · MediaPipe · En cours</small></div>
+        <p>Application mobile de coaching sportif pour débutants (en développement) : vérification de posture par IA sur l'appareil, comptage de répétitions, journal offline-first, progression adaptative, nutrition avec reconnaissance d'aliments par photo.</p>
+      </div>
+    </div>
+    <div>
+      <div class="proj">
+        <div class="h">LogiXpress <small>1er prix · Bal des Projets ESPRIT</small></div>
+        <p>Plateforme web intelligente de gestion logistique. Symfony, PHP, JavaScript, Bootstrap. Chatbot IA, reconnaissance faciale, prédiction écologique d'itinéraires, front/back office responsive.</p>
+      </div>
+      <div class="proj">
+        <div class="h">Waveworx <small>2ème place · Bal des Projets ESPRIT</small></div>
+        <p>Application de bureau C++ / Qt pour la maintenance maritime : interventions, contrats, factures. Détection d'anomalies, analyse prédictive, capteurs Arduino simulés.</p>
+      </div>
+      <div class="proj">
+        <div class="h">EspritSphere <small>Flutter · Firebase · Déployé</small></div>
+        <p>Application cross-platform pour centraliser la vie étudiante à ESPRIT : clubs, événements, réservation de sièges via carte interactive. Déployée en production.</p>
+        <a href="https://espritsphere-youssefabbes.netlify.app">espritsphere-youssefabbes.netlify.app</a>
+      </div>
+      <div class="proj">
+        <div class="h">LammaPlay <small>Flutter · Firebase · Multijoueur</small></div>
+        <p>Application de quiz et jeux de cartes avec multijoueur temps réel, animations soignées et gameplay synchronisé iOS / Android / Web.</p>
+        <a href="https://github.com/YoussefAbbes/LammaPlay">github.com/youssefabbes/LammaPlay</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div>
+      <h3 class="sec">Projets IA</h3>
+      <div class="item"><div><div class="t">Recommandation de cultures agricoles — Machine Learning</div><div class="s">LightGBM · Jupyter Notebooks · Projet académique ESPRIT</div></div><div class="y">2024</div></div>
+      <div class="item"><div><div class="t">Chatbot IA conversationnel — NLP &amp; RAG</div><div class="s">GROQ API · Qdrant Vector DB · Projet d'ingénierie ESPRIT</div></div><div class="y">2024</div></div>
+      <div class="item"><div><div class="t">Analyse de sentiment crypto — DistilBERT</div><div class="s">Autonomous Market · Python · PyTorch</div></div><div class="y">2025</div></div>
+
+      <h3 class="sec">Distinctions</h3>
+      <div class="item"><div><div class="t">1er Prix — Bal des Projets ESPRIT</div><div class="s">LogiXpress · Plateforme web IA logistique</div></div><div class="y">2024</div></div>
+      <div class="item"><div><div class="t">2ème Place — Bal des Projets ESPRIT</div><div class="s">Waveworx · Application maintenance maritime C++</div></div><div class="y">2024</div></div>
+      <div class="item"><div><div class="t">Bal des Projets ESPRIT — Participant</div><div class="s">Jeu 3D SDL/C (Linux · C)</div></div><div class="y">2023</div></div>
+    </div>
+    <div>
+      <h3 class="sec">Acquis récents</h3>
+      <div class="item"><div class="t">Machine Learning appliqué — systèmes de recommandation</div><div class="y">2026</div></div>
+      <div class="item"><div class="t">Développement Web Full-Stack (Symfony + React)</div><div class="y">2026</div></div>
+      <div class="item"><div class="t">Fondamentaux Docker &amp; Conteneurisation</div><div class="y">2024</div></div>
+      <div class="item"><div class="t">Développement Mobile Flutter &amp; Dart</div><div class="y">2023</div></div>
+
+      <h3 class="sec">Vie associative</h3>
+      <div class="item"><div><div class="t">Vice-Président — Club BRAINIX IA</div><div class="s">ESPRIT</div></div><div class="y">2024/2025</div></div>
+      <div class="item"><div><div class="t">Responsable IT — Comité des Étudiants</div><div class="s">ESPRIT</div></div><div class="y">Mandat 2024/2025</div></div>
+    </div>
+  </div>
+
+  <h3 class="sec">Langues</h3>
+  <div class="langs">
+    <div><strong>Arabe</strong><span>Langue maternelle</span></div>
+    <div><strong>Français</strong><span>Courant B2</span></div>
+    <div><strong>Anglais</strong><span>Professionnel B2</span></div>
+    <div><strong>Allemand</strong><span>B1</span></div>
+  </div>
+
+  <div class="folio">02 / 02</div>
+</section>
+</body>
+</html>

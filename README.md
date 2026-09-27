@@ -1,7 +1,9 @@
-# Youssef Portfolio
+# Youssef Abbes — Portfolio
 
-An interactive, multilingual personal portfolio built with **React**, **Three.js**, and **Framer Motion**.  
+An interactive, multilingual (EN / FR / AR) personal portfolio built with **React**, **Three.js**, and **Framer Motion**.  
 It presents projects, skills, experience, and contact details with animated UI, 3D effects, and responsive design.
+
+**Live site:** https://youssefabbes.github.io/CV/
 
 ## Secure Contact Form Setup (EmailJS)
 
@@ -63,12 +65,15 @@ src/
 
 Most portfolio content is centralized in `src/data/cv.js`:
 
-- identity and bio
+- identity, bio, phone and location
 - skills
 - experience
 - education
 - projects
+- languages and student activities
 - social links and contact info
+
+The downloadable CV lives at `public/Cv_Youssef_Abbes.pdf`; keep that file name so the download button keeps working.
 
 ## Deployment (GitHub Pages)
 

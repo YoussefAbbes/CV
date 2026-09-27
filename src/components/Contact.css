@@ -21,7 +21,28 @@
 .contact__links {
   display: flex;
   gap: 24px;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
+}
+
+.contact__details {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+  margin: 0 0 40px;
+  padding: 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.contact__details a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact__details a:hover {
+  color: var(--accent-cyan);
 }
 
 .contact__icon-link {

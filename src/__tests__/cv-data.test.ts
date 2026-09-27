@@ -17,6 +17,27 @@ describe('CV Data Validation', () => {
     expect(cv.email).toMatch(/@/);
   });
 
+  it('has phone and localized location', () => {
+    expect(cv.phone).toMatch(/^\+?[\d\s]+$/);
+    expect(cv.location.en).toBeTruthy();
+    expect(cv.location.fr).toBeTruthy();
+    expect(cv.location.ar).toBeTruthy();
+  });
+
+  it('has languages and activities with localized fields', () => {
+    expect(cv.languages.length).toBeGreaterThan(0);
+    cv.languages.forEach((lang) => {
+      expect(lang.name.en).toBeTruthy();
+      expect(lang.level.en).toBeTruthy();
+    });
+    expect(cv.activities.length).toBeGreaterThan(0);
+    cv.activities.forEach((a) => {
+      expect(a.role.en).toBeTruthy();
+      expect(a.organization).toBeTruthy();
+      expect(a.period).toBeTruthy();
+    });
+  });
+
   it('has skills with categories and items', () => {
     expect(cv.skills.length).toBeGreaterThan(0);
     cv.skills.forEach((group) => {
@@ -59,16 +80,6 @@ describe('CV Data Validation', () => {
       expect(post.content.en).toBeTruthy();
       expect(post.readTime).toBeGreaterThan(0);
       expect(post.tags.length).toBeGreaterThan(0);
-    });
-  });
-
-  it('has testimonials with required fields', () => {
-    expect(cv.testimonials.length).toBeGreaterThan(0);
-    cv.testimonials.forEach((t) => {
-      expect(t.name).toBeTruthy();
-      expect(t.role.en).toBeTruthy();
-      expect(t.quote.en).toBeTruthy();
-      expect(t.relationship.en).toBeTruthy();
     });
   });
 

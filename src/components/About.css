@@ -88,6 +88,14 @@
   color: var(--text-primary);
 }
 
+.about__language-level {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
 .about__learning-glow {
   position: absolute;
   bottom: 0;

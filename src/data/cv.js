@@ -8,6 +8,12 @@ const cv = {
   email: 'abbes.youssef@esprit.tn',
   github: 'https://github.com/YoussefAbbes',
   linkedin: 'https://linkedin.com/in/youssefabbes',
+  phone: '+216 56 207 742',
+  location: {
+    en: 'Tunis, Tunisia',
+    fr: 'Tunis, Tunisie',
+    ar: 'تونس، تونس',
+  },
   status: {
     text: {
       en: 'Available for Hire',
@@ -47,6 +53,33 @@ const cv = {
         ar: 'جوائز',
       },
       value: '2',
+    },
+  ],
+
+  languages: [
+    {
+      name: { en: 'Arabic', fr: 'Arabe', ar: 'العربية' },
+      level: { en: 'Native', fr: 'Langue maternelle', ar: 'اللغة الأم' },
+      icon: '🇹🇳',
+      color: '#ff006e',
+    },
+    {
+      name: { en: 'French', fr: 'Français', ar: 'الفرنسية' },
+      level: { en: 'Fluent (B2)', fr: 'Courant (B2)', ar: 'بطلاقة (B2)' },
+      icon: '🇫🇷',
+      color: '#00d4ff',
+    },
+    {
+      name: { en: 'English', fr: 'Anglais', ar: 'الإنجليزية' },
+      level: { en: 'Professional (B2)', fr: 'Professionnel (B2)', ar: 'مهني (B2)' },
+      icon: '🇬🇧',
+      color: '#7c3aed',
+    },
+    {
+      name: { en: 'German', fr: 'Allemand', ar: 'الألمانية' },
+      level: { en: 'Intermediate (B1)', fr: 'Intermédiaire (B1)', ar: 'متوسط (B1)' },
+      icon: '🇩🇪',
+      color: '#f59e0b',
     },
   ],
 
@@ -309,6 +342,37 @@ const cv = {
     },
   ],
 
+  activities: [
+    {
+      role: {
+        en: 'Vice-President — BRAINIX AI Club',
+        fr: 'Vice-Président — Club BRAINIX IA',
+        ar: 'نائب رئيس — نادي BRAINIX للذكاء الاصطناعي',
+      },
+      organization: 'ESPRIT School of Engineering',
+      period: '2024 — 2025',
+      description: {
+        en: 'Vice-president of BRAINIX, ESPRIT\'s artificial intelligence student club, for the 2024/2025 term.',
+        fr: 'Vice-président de BRAINIX, le club étudiant d\'intelligence artificielle d\'ESPRIT, pour le mandat 2024/2025.',
+        ar: 'نائب رئيس BRAINIX، نادي الطلبة للذكاء الاصطناعي في ESPRIT، خلال عهدة 2024/2025.',
+      },
+    },
+    {
+      role: {
+        en: 'IT Lead — Student Committee',
+        fr: 'Responsable IT — Comité des Étudiants',
+        ar: 'مسؤول تقنية المعلومات — لجنة الطلبة',
+      },
+      organization: 'ESPRIT School of Engineering',
+      period: '2024 — 2025',
+      description: {
+        en: 'In charge of IT and digital tools for the ESPRIT student committee during the 2024/2025 term.',
+        fr: 'Responsable de l\'informatique et des outils numériques du comité des étudiants d\'ESPRIT pour le mandat 2024/2025.',
+        ar: 'مسؤول عن تقنية المعلومات والأدوات الرقمية للجنة طلبة ESPRIT خلال عهدة 2024/2025.',
+      },
+    },
+  ],
+
   attestations: [
     {
       title: {
@@ -496,6 +560,60 @@ const cv = {
         en: 'React dashboard frontend, Python backend with PyTorch for ML models, PostgreSQL for time-series data, Docker for containerization, and n8n for automating data pipelines.',
         fr: 'Frontend de tableau de bord React, backend Python avec PyTorch pour les modèles ML, PostgreSQL pour les données de séries temporelles, Docker pour la conteneurisation, et n8n pour automatiser les pipelines de données.',
         ar: 'واجهة لوحة تحكم React أمامية، خلفية Python مع PyTorch لنماذج ML، PostgreSQL لبيانات السلاسل الزمنية، Docker للحوسبة، وn8n لأتمتة خطوط أنابيب البيانات.',
+      },
+      images: [],
+    },
+    {
+      title: {
+        en: 'HelpDesk AI — Smart Support Ticket System',
+        fr: 'HelpDesk AI — Système intelligent de tickets de support',
+        ar: 'HelpDesk AI — نظام ذكي لتذاكر الدعم',
+      },
+      description: {
+        en: 'An AI-powered helpdesk / CRM built with Django REST Framework and React. Every new ticket is analysed asynchronously by Hugging Face NLP models that detect customer sentiment, auto-categorise the ticket and draft a suggested reply for agents, with role-based access and a business intelligence dashboard.',
+        fr: 'Un helpdesk / CRM propulsé par l\'IA, développé avec Django REST Framework et React. Chaque nouveau ticket est analysé de façon asynchrone par des modèles NLP Hugging Face qui détectent le sentiment du client, catégorisent automatiquement le ticket et rédigent une réponse suggérée pour les agents, avec contrôle d\'accès par rôles et tableau de bord BI.',
+        ar: 'نظام مكتب مساعدة / CRM مدعوم بالذكاء الاصطناعي مبني بـ Django REST Framework وReact. يتم تحليل كل تذكرة جديدة بشكل غير متزامن بنماذج Hugging Face للغة الطبيعية التي تكشف مشاعر العميل، تصنف التذكرة تلقائيًا وتقترح ردًا للوكلاء، مع تحكم في الوصول حسب الأدوار ولوحة ذكاء أعمال.',
+      },
+      tech: ['Django REST', 'Python', 'React', 'Celery', 'Redis', 'PostgreSQL', 'Hugging Face', 'Tailwind CSS', 'Docker'],
+      link: 'https://github.com/YoussefAbbes/HelpDesk-Project',
+      demo: '',
+      color: '#06b6d4',
+      features: [
+        {
+          en: 'Sentiment analysis of every ticket (RoBERTa)',
+          fr: 'Analyse de sentiment de chaque ticket (RoBERTa)',
+          ar: 'تحليل مشاعر كل تذكرة (RoBERTa)',
+        },
+        {
+          en: 'Zero-shot auto-categorisation (BART-MNLI)',
+          fr: 'Catégorisation automatique zero-shot (BART-MNLI)',
+          ar: 'تصنيف تلقائي بدون أمثلة (BART-MNLI)',
+        },
+        {
+          en: 'AI-drafted reply suggestions for agents (FLAN-T5)',
+          fr: 'Réponses suggérées par IA pour les agents (FLAN-T5)',
+          ar: 'ردود مقترحة بالذكاء الاصطناعي للوكلاء (FLAN-T5)',
+        },
+        {
+          en: 'Role-based access: customer, agent, admin (JWT)',
+          fr: 'Accès par rôles : client, agent, admin (JWT)',
+          ar: 'وصول حسب الأدوار: عميل، وكيل، مسؤول (JWT)',
+        },
+        {
+          en: 'BI dashboard: volume trends, sentiment, resolution time, agent workload',
+          fr: 'Tableau de bord BI : tendances, sentiment, temps de résolution, charge des agents',
+          ar: 'لوحة ذكاء أعمال: اتجاهات الحجم، المشاعر، وقت الحل، عبء عمل الوكلاء',
+        },
+      ],
+      challenges: {
+        en: 'Running three transformer models on every ticket without slowing down the app: inference runs in Celery workers with Redis as the broker, so the API responds instantly and AI insights appear as soon as they are ready.',
+        fr: 'Exécuter trois modèles transformers sur chaque ticket sans ralentir l\'application : l\'inférence tourne dans des workers Celery avec Redis comme broker, l\'API répond instantanément et les analyses IA apparaissent dès qu\'elles sont prêtes.',
+        ar: 'تشغيل ثلاثة نماذج transformer على كل تذكرة دون إبطاء التطبيق: يتم الاستدلال في عمال Celery مع Redis كوسيط، فتستجيب الواجهة البرمجية فورًا وتظهر تحليلات الذكاء الاصطناعي بمجرد جاهزيتها.',
+      },
+      architecture: {
+        en: 'React (Vite, Tailwind, Zustand, Recharts) frontend talking to a Django REST Framework API with JWT auth; Celery workers and Redis for asynchronous NLP inference; PostgreSQL database; everything orchestrated with Docker Compose.',
+        fr: 'Frontend React (Vite, Tailwind, Zustand, Recharts) communiquant avec une API Django REST Framework authentifiée par JWT ; workers Celery et Redis pour l\'inférence NLP asynchrone ; base PostgreSQL ; le tout orchestré avec Docker Compose.',
+        ar: 'واجهة React (Vite وTailwind وZustand وRecharts) تتواصل مع واجهة Django REST Framework بمصادقة JWT؛ عمال Celery وRedis للاستدلال غير المتزامن؛ قاعدة بيانات PostgreSQL؛ وكل ذلك منسق بـ Docker Compose.',
       },
       images: [],
     },
@@ -790,55 +908,6 @@ const cv = {
     },
     {
       title: {
-        en: 'HelpDesk — Support Ticket Management',
-        fr: 'HelpDesk — Gestion des tickets de support',
-        ar: 'HelpDesk — إدارة تذاكر الدعم',
-      },
-      description: {
-        en: 'A comprehensive helpdesk and support ticket management system built with modern web technologies. Streamlines customer support workflows with ticket tracking, priority management, and team collaboration features.',
-        fr: 'Un système complet de gestion de helpdesk et de tickets de support construit avec des technologies web modernes. Rationalise les workflows de support client avec suivi des tickets, gestion des priorités et fonctionnalités de collaboration d\'équipe.',
-        ar: 'نظام شامل لإدارة مكتب المساعدة وتذاكر الدعم مبني بتقنيات الويب الحديثة. يبسط سير عمل دعم العملاء مع تتبع التذاكر، إدارة الأولويات، وميزات تعاون الفريق.',
-      },
-      tech: ['JavaScript', 'Node.js', 'React', 'Database'],
-      link: 'https://github.com/YoussefAbbes/HelpDesk-Project',
-      demo: '',
-      color: '#06b6d4',
-      features: [
-        {
-          en: 'Ticket creation and tracking',
-          fr: 'Création et suivi des tickets',
-          ar: 'إنشاء وتتبع التذاكر',
-        },
-        {
-          en: 'Priority and status management',
-          fr: 'Gestion des priorités et statuts',
-          ar: 'إدارة الأولويات والحالات',
-        },
-        {
-          en: 'Team collaboration tools',
-          fr: 'Outils de collaboration d\'équipe',
-          ar: 'أدوات تعاون الفريق',
-        },
-        {
-          en: 'Customer support workflows',
-          fr: 'Workflows de support client',
-          ar: 'سير عمل دعم العملاء',
-        },
-      ],
-      challenges: {
-        en: 'Designing an intuitive ticket management interface that scales with team size while maintaining fast response times and ensuring no tickets fall through the cracks.',
-        fr: 'Concevoir une interface de gestion de tickets intuitive qui évolue avec la taille de l\'équipe tout en maintenant des temps de réponse rapides et en garantissant qu\'aucun ticket ne passe entre les mailles du filet.',
-        ar: 'تصميم واجهة إدارة تذاكر بديهية تتوسع مع حجم الفريق مع الحفاظ على أوقات استجابة سريعة وضمان عدم فقدان أي تذاكر.',
-      },
-      architecture: {
-        en: 'Full-stack JavaScript application with React frontend, Node.js backend, and database for persistent storage.',
-        fr: 'Application JavaScript full-stack avec frontend React, backend Node.js, et base de données pour le stockage persistant.',
-        ar: 'تطبيق JavaScript full-stack مع واجهة React أمامية، خلفية Node.js، وقاعدة بيانات للتخزين الدائم.',
-      },
-      images: [],
-    },
-    {
-      title: {
         en: 'Line-Following Robot',
         fr: 'Robot suiveur de ligne',
         ar: 'روبوت تتبع الخط',
@@ -955,66 +1024,6 @@ Résultat : Scores Lighthouse supérieurs à 90 pour la performance et 100 pour 
       readTime: 4,
       tags: ['React', 'Three.js', 'Performance', 'A11y'],
       color: '#7c3aed',
-    },
-  ],
-
-  testimonials: [
-    {
-      name: 'Prof. Ahmed Ben Salah',
-      role: {
-        en: 'Professor at ESPRIT School of Engineering',
-        fr: 'Professeur à ESPRIT School of Engineering',
-        ar: 'أستاذ في مدرسة ESPRIT للهندسة',
-      },
-      quote: {
-        en: 'Youssef consistently demonstrated exceptional problem-solving skills and creativity in his engineering projects. His EL-Firma project stood out for its innovative AI integration and clean architecture. A highly motivated student with a strong technical foundation.',
-        fr: 'Youssef a systématiquement démontré des compétences exceptionnelles en résolution de problèmes et en créativité dans ses projets d\'ingénierie. Son projet EL-Firma s\'est distingué par son intégration innovante de l\'IA et son architecture propre. Un étudiant très motivé avec une solide base technique.',
-        ar: 'أظهر يوسف باستمرار مهارات استثنائية في حل المشكلات والإبداع في مشاريعه الهندسية. تميز مشروعه EL-Firma بدمج مبتكر للذكاء الاصطناعي وبنية نظيفة. طالب متحمس للغاية ذو أساس تقني قوي.',
-      },
-      avatar: '',
-      relationship: {
-        en: 'Academic Supervisor',
-        fr: 'Superviseur Académique',
-        ar: 'المشرف الأكاديمي',
-      },
-    },
-    {
-      name: 'Sana Mejri',
-      role: {
-        en: 'Fellow Engineering Student at ESPRIT',
-        fr: 'Étudiante en ingénierie à ESPRIT',
-        ar: 'زميلة طالبة هندسة في ESPRIT',
-      },
-      quote: {
-        en: 'Working with Youssef on group projects was an outstanding experience. He has a natural ability to break down complex problems and leads by example with clean, well-documented code. His full-stack skills and willingness to help teammates made him invaluable to our team.',
-        fr: 'Travailler avec Youssef sur des projets de groupe était une expérience remarquable. Il a une capacité naturelle à décomposer les problèmes complexes et montre l\'exemple avec un code propre et bien documenté. Ses compétences full-stack et sa volonté d\'aider ses coéquipiers l\'ont rendu indispensable.',
-        ar: 'كان العمل مع يوسف في المشاريع الجماعية تجربة رائعة. لديه قدرة طبيعية على تقسيم المشكلات المعقدة ويقود بالقدوة مع كود نظيف وموثق جيدًا. مهاراته في full-stack واستعداده لمساعدة زملائه جعلته لا يُقدر بثمن لفريقنا.',
-      },
-      avatar: '',
-      relationship: {
-        en: 'Project Teammate',
-        fr: 'Coéquipière de projet',
-        ar: 'زميلة في المشروع',
-      },
-    },
-    {
-      name: 'Mohamed Trabelsi',
-      role: {
-        en: 'Senior Developer & Mentor',
-        fr: 'Développeur Senior & Mentor',
-        ar: 'مطور أول ومرشد',
-      },
-      quote: {
-        en: 'I mentored Youssef during his exploration of mobile development with Flutter. His learning speed is remarkable — he went from basics to building a polished multiplayer quiz platform in weeks. He asks the right questions and isn\'t afraid to tackle challenging technical problems.',
-        fr: 'J\'ai encadré Youssef lors de son exploration du développement mobile avec Flutter. Sa vitesse d\'apprentissage est remarquable — il est passé des bases à la construction d\'une plateforme de quiz multijoueur sophistiquée en quelques semaines. Il pose les bonnes questions et n\'a pas peur de s\'attaquer à des problèmes techniques complexes.',
-        ar: 'قمت بتوجيه يوسف خلال استكشافه لتطوير تطبيقات الهاتف المحمول باستخدام Flutter. سرعة تعلمه مذهلة — انتقل من الأساسيات إلى بناء منصة اختبارات متعددة اللاعبين متقنة في أسابيع. يطرح الأسئلة الصحيحة ولا يخشى مواجهة المشكلات التقنية الصعبة.',
-      },
-      avatar: '',
-      relationship: {
-        en: 'Technical Mentor',
-        fr: 'Mentor Technique',
-        ar: 'مرشد تقني',
-      },
     },
   ],
 };

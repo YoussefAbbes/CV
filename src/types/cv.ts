@@ -76,12 +76,18 @@ export interface BlogPost {
   color: string;
 }
 
-export interface Testimonial {
-  name: string;
+export interface Language {
+  name: LocalizedString;
+  level: LocalizedString;
+  icon: string;
+  color: string;
+}
+
+export interface Activity {
   role: LocalizedString;
-  quote: LocalizedString;
-  avatar: string;
-  relationship: LocalizedString;
+  organization: string;
+  period: string;
+  description: LocalizedString;
 }
 
 export interface CV {
@@ -90,6 +96,8 @@ export interface CV {
   email: string;
   github: string;
   linkedin: string;
+  phone: string;
+  location: LocalizedString;
   status: Status;
   bio: LocalizedString;
   stats: Stat[];
@@ -97,8 +105,9 @@ export interface CV {
   experience: Experience[];
   education: Education[];
   achievements: Achievement[];
+  languages: Language[];
+  activities: Activity[];
   attestations: Attestation[];
   projects: Project[];
   blog: BlogPost[];
-  testimonials: Testimonial[];
 }
