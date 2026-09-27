@@ -12,7 +12,7 @@
   a { color: var(--accent); text-decoration: none; }
   .page { width: 210mm; height: 297mm; padding: 15mm 18mm 12mm; position: relative; page-break-after: always; overflow: hidden; }
   .page:last-child { page-break-after: auto; }
-  .folio { position: absolute; bottom: 4.5mm; right: 18mm; font-size: 7pt; letter-spacing: 0.15em; color: var(--muted); }
+  .folio { position: absolute; bottom: 3mm; right: 18mm; font-size: 7pt; letter-spacing: 0.15em; color: var(--muted); }
 
   header.main { display: flex; align-items: center; gap: 7mm; padding-bottom: 5mm; border-bottom: 1.5px solid var(--ink); }
   header.main img { width: 30mm; height: 30mm; object-fit: cover; object-position: center 20%; border-radius: 3mm; box-shadow: 0 0 0 1.5mm #fdf0e6; }
@@ -44,13 +44,13 @@
   table.skills td:first-child { width: 36mm; color: var(--muted); font-size: 7.8pt; }
 
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; column-gap: 8mm; }
-  .proj { border-top: 1px solid var(--line); padding: 2.3mm 0 2.4mm; }
+  .proj { border-top: 1px solid var(--line); padding: 2mm 0 2.1mm; }
   .proj .h { font-weight: 700; font-size: 9pt; }
   .proj .h small { font-weight: 400; font-size: 6.6pt; letter-spacing: 0.08em; color: var(--muted); margin-left: 1.5mm; text-transform: uppercase; }
   .proj p { margin: 1mm 0 0.8mm; font-size: 7.9pt; line-height: 1.5; }
   .proj a { font-size: 7.5pt; }
 
-  .item { border-top: 1px solid var(--line); padding: 2mm 0; display: flex; justify-content: space-between; gap: 3mm; }
+  .item { border-top: 1px solid var(--line); padding: 1.6mm 0; display: flex; justify-content: space-between; gap: 3mm; }
   .item .t { font-size: 8.6pt; }
   .item .s { color: var(--muted); font-size: 7.5pt; margin-top: 0.5mm; }
   .item .y { color: var(--muted); font-size: 7.8pt; white-space: nowrap; }
@@ -84,7 +84,7 @@
   </header>
 
   <h3 class="sec">À propos</h3>
-  <p class="about">Élève ingénieur en 4ème année à ESPRIT, spécialité Data Science. Je conçois des systèmes de machine learning et des applications full-stack web, mobiles et IA. Stage 2026 chez TICOP : système de recommandation commerciale (CatBoost, FastAPI) sur 1,8M+ transactions réelles. Lauréat du 1er prix et de la 2ème place au Bal des Projets ESPRIT, vice-président du club BRAINIX IA.</p>
+  <p class="about">Élève ingénieur en 4ème année à ESPRIT, spécialité Data Science. Je conçois des systèmes de machine learning et des applications full-stack web, mobiles et IA. Stage 2026 chez TICOP : système de recommandation commerciale basé sur le machine learning. Deux fois lauréat du 1er prix au Bal des Projets ESPRIT (LogiXpress, EL-Firma), ancien vice-président du club BRAINIX IA.</p>
 
   <h3 class="sec">Expérience</h3>
   <div class="row">
@@ -93,9 +93,9 @@
       <div class="title">Stagiaire Data Science — Système de recommandation commerciale <span class="loc">Tunisie</span></div>
       <div class="org">TICOP</div>
       <ul class="bul">
-        <li>Système de recommandation pour un distributeur de pièces automobiles : quels clients contacter et quels articles proposer. Pipeline depuis Microsoft Dynamics NAV (1,8M+ lignes, 52K articles, 6,3K clients).</li>
-        <li>Deux modèles CatBoost validés par backtests chronologiques sans fuite : rachat (AUC 0,77, precision@30 ≈ 2× la référence) et adoption de nouveaux articles (AUC 0,87).</li>
-        <li>Livraison en API REST FastAPI typée (OpenAPI), 280+ tests automatisés, données anonymisées.</li>
+        <li>Conception d'un système de recommandation commerciale pour un distributeur de pièces de rechange automobiles.</li>
+        <li>À partir de l'historique des ventes, l'outil aide chaque commercial à savoir quels clients contacter et quels articles leur proposer.</li>
+        <li>Projet mené de bout en bout : préparation des données, modèles de machine learning et API web prête à être intégrée aux outils de l'équipe commerciale.</li>
       </ul>
     </div>
   </div>
@@ -186,8 +186,8 @@
         <p>Plateforme web intelligente de gestion logistique. Symfony, PHP, JavaScript, Bootstrap. Chatbot IA, reconnaissance faciale, prédiction écologique d'itinéraires, front/back office responsive.</p>
       </div>
       <div class="proj">
-        <div class="h">Waveworx <small>2ème place · Bal des Projets ESPRIT</small></div>
-        <p>Application de bureau C++ / Qt pour la maintenance maritime : interventions, contrats, factures. Détection d'anomalies, analyse prédictive, capteurs Arduino simulés.</p>
+        <div class="h">EL-Firma <small>1er prix · Bal des Projets ESPRIT 2026</small></div>
+        <p>Application web et Java (JavaFX) de gestion agricole. IA intégrée : reconnaissance faciale, commandes vocales, chatbot. Paiements Stripe, cartes interactives, tableaux de bord.</p>
       </div>
       <div class="proj">
         <div class="h">EspritSphere <small>Flutter · Firebase · Déployé</small></div>
@@ -205,25 +205,25 @@
   <div class="grid2">
     <div>
       <h3 class="sec">Projets IA</h3>
-      <div class="item"><div><div class="t">Recommandation de cultures agricoles — Machine Learning</div><div class="s">LightGBM · Jupyter Notebooks · Projet académique ESPRIT</div></div><div class="y">2024</div></div>
+      <div class="item"><div><div class="t">Recommandation de cultures — Machine Learning</div><div class="s">LightGBM · Jupyter · Projet académique ESPRIT</div></div><div class="y">2024</div></div>
       <div class="item"><div><div class="t">Chatbot IA conversationnel — NLP &amp; RAG</div><div class="s">GROQ API · Qdrant Vector DB · Projet d'ingénierie ESPRIT</div></div><div class="y">2024</div></div>
       <div class="item"><div><div class="t">Analyse de sentiment crypto — DistilBERT</div><div class="s">Autonomous Market · Python · PyTorch</div></div><div class="y">2025</div></div>
 
       <h3 class="sec">Distinctions</h3>
-      <div class="item"><div><div class="t">1er Prix — Bal des Projets ESPRIT</div><div class="s">LogiXpress · Plateforme web IA logistique</div></div><div class="y">2024</div></div>
+      <div class="item"><div><div class="t">1er Prix — Bal des Projets ESPRIT (3ème année)</div><div class="s">EL-Firma · Application web &amp; Java de gestion agricole</div></div><div class="y">2026</div></div>
+      <div class="item"><div><div class="t">1er Prix — Bal des Projets ESPRIT (2ème année)</div><div class="s">LogiXpress · Plateforme web IA logistique</div></div><div class="y">2024</div></div>
       <div class="item"><div><div class="t">2ème Place — Bal des Projets ESPRIT</div><div class="s">Waveworx · Application maintenance maritime C++</div></div><div class="y">2024</div></div>
       <div class="item"><div><div class="t">Bal des Projets ESPRIT — Participant</div><div class="s">Jeu 3D SDL/C (Linux · C)</div></div><div class="y">2023</div></div>
     </div>
     <div>
       <h3 class="sec">Acquis récents</h3>
-      <div class="item"><div class="t">Machine Learning appliqué — systèmes de recommandation</div><div class="y">2026</div></div>
       <div class="item"><div class="t">Développement Web Full-Stack (Symfony + React)</div><div class="y">2026</div></div>
       <div class="item"><div class="t">Fondamentaux Docker &amp; Conteneurisation</div><div class="y">2024</div></div>
       <div class="item"><div class="t">Développement Mobile Flutter &amp; Dart</div><div class="y">2023</div></div>
 
       <h3 class="sec">Vie associative</h3>
-      <div class="item"><div><div class="t">Vice-Président — Club BRAINIX IA</div><div class="s">ESPRIT</div></div><div class="y">2024/2025</div></div>
-      <div class="item"><div><div class="t">Responsable IT — Comité des Étudiants</div><div class="s">ESPRIT</div></div><div class="y">Mandat 2024/2025</div></div>
+      <div class="item"><div><div class="t">Vice-Président — Club BRAINIX IA</div><div class="s">ESPRIT</div></div><div class="y">2023/2024</div></div>
+      <div class="item"><div><div class="t">Responsable IT — Comité des Étudiants</div><div class="s">ESPRIT</div></div><div class="y">2023 — 2025</div></div>
     </div>
   </div>
 

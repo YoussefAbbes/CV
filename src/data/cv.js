@@ -24,9 +24,9 @@ const cv = {
   },
 
   bio: {
-    en: `I'm a 4th year engineering student at ESPRIT School of Engineering, specializing in Data Science. I build machine learning systems and full-stack web, mobile and AI applications. During my 2026 internship at TICOP I built a sales recommendation system with CatBoost and FastAPI, trained on 1.8M+ real transactions. I won 1st prize and 2nd place at ESPRIT's "Bal des Projets", and I'm vice-president of the BRAINIX AI club and IT lead of the student committee. I love turning complex data and problems into useful, well-designed products.`,
-    fr: `Je suis étudiant en 4ème année d'ingénierie à ESPRIT School of Engineering, spécialisé en Data Science. Je conçois des systèmes de machine learning et des applications full-stack web, mobiles et IA. Lors de mon stage 2026 chez TICOP, j'ai développé un système de recommandation commerciale avec CatBoost et FastAPI, entraîné sur plus de 1,8 million de transactions réelles. Lauréat du 1er prix et de la 2ème place au « Bal des Projets » d'ESPRIT, je suis vice-président du club BRAINIX IA et responsable IT du comité étudiant. J'aime transformer des données et des problèmes complexes en produits utiles et soignés.`,
-    ar: `أنا طالب في السنة الرابعة هندسة في مدرسة ESPRIT للهندسة، متخصص في علوم البيانات. أبني أنظمة تعلم الآلة وتطبيقات full-stack للويب والهاتف والذكاء الاصطناعي. خلال تربصي سنة 2026 في TICOP، طورت نظام توصيات للمبيعات باستخدام CatBoost وFastAPI، مدرّبًا على أكثر من 1.8 مليون معاملة حقيقية. فزت بالجائزة الأولى والمركز الثاني في "Bal des Projets" بـ ESPRIT، وأنا نائب رئيس نادي BRAINIX للذكاء الاصطناعي ومسؤول تقنية المعلومات في لجنة الطلبة. أحب تحويل البيانات والمشكلات المعقدة إلى منتجات مفيدة ومتقنة.`,
+    en: `I'm a 4th year engineering student at ESPRIT School of Engineering, specializing in Data Science. I build machine learning systems and full-stack web, mobile and AI applications. During my 2026 internship at TICOP I built a sales recommendation system that helps sales representatives know which clients to contact and what to offer them. I won 1st prize twice at ESPRIT's "Bal des Projets" (LogiXpress in 2nd year, EL-Firma in 3rd year) plus a 2nd place, and I've been vice-president of the BRAINIX AI club and IT lead of the student committee. I love turning complex data and problems into useful, well-designed products.`,
+    fr: `Je suis étudiant en 4ème année d'ingénierie à ESPRIT School of Engineering, spécialisé en Data Science. Je conçois des systèmes de machine learning et des applications full-stack web, mobiles et IA. Lors de mon stage 2026 chez TICOP, j'ai développé un système de recommandation commerciale qui aide les commerciaux à savoir quels clients contacter et quoi leur proposer. J'ai remporté deux fois le 1er prix au « Bal des Projets » d'ESPRIT (LogiXpress en 2ème année, EL-Firma en 3ème année) ainsi qu'une 2ème place, et j'ai été vice-président du club BRAINIX IA et responsable IT du comité étudiant. J'aime transformer des données et des problèmes complexes en produits utiles et soignés.`,
+    ar: `أنا طالب في السنة الرابعة هندسة في مدرسة ESPRIT للهندسة، متخصص في علوم البيانات. أبني أنظمة تعلم الآلة وتطبيقات full-stack للويب والهاتف والذكاء الاصطناعي. خلال تربصي سنة 2026 في TICOP، طورت نظام توصيات للمبيعات يساعد المندوبين على معرفة العملاء الذين يجب الاتصال بهم وما يجب اقتراحه عليهم. فزت بالجائزة الأولى مرتين في "Bal des Projets" بـ ESPRIT (LogiXpress في السنة الثانية وEL-Firma في السنة الثالثة) إضافة إلى المركز الثاني، وكنت نائب رئيس نادي BRAINIX للذكاء الاصطناعي ومسؤول تقنية المعلومات في لجنة الطلبة. أحب تحويل البيانات والمشكلات المعقدة إلى منتجات مفيدة ومتقنة.`,
   },
 
   stats: [
@@ -52,7 +52,7 @@ const cv = {
         fr: 'Prix remportés',
         ar: 'جوائز',
       },
-      value: '2',
+      value: '3',
     },
   ],
 
@@ -228,9 +228,9 @@ const cv = {
       company: 'TICOP',
       period: 'Jul — Aug 2026',
       description: {
-        en: 'Built an end-to-end recommendation system for an auto spare-parts distributor, helping each sales rep know which clients to contact and which articles to offer. Built the data pipeline from Microsoft Dynamics NAV (1.8M+ ledger rows, 52K articles, 6.3K clients), trained two CatBoost models with leak-free rolling chronological backtests (repurchase AUC 0.77 with precision@30 nearly 2× the baseline; new-article adoption AUC 0.87), and delivered them as a typed FastAPI REST service with 280+ automated tests and anonymised fixtures.',
-        fr: 'Conception d\'un système de recommandation de bout en bout pour un distributeur de pièces de rechange automobiles, aidant chaque commercial à savoir quels clients contacter et quels articles proposer. Construction du pipeline de données depuis Microsoft Dynamics NAV (1,8M+ lignes, 52K articles, 6,3K clients), entraînement de deux modèles CatBoost validés par backtests chronologiques glissants sans fuite de données (rachat : AUC 0,77, precision@30 près de 2× la référence ; adoption de nouveaux articles : AUC 0,87), et livraison sous forme d\'API REST FastAPI typée avec plus de 280 tests automatisés et des données anonymisées.',
-        ar: 'بناء نظام توصيات متكامل لموزع قطع غيار السيارات يساعد كل مندوب مبيعات على معرفة العملاء الذين يجب الاتصال بهم والمنتجات التي يجب اقتراحها. إنشاء خط معالجة البيانات من Microsoft Dynamics NAV (أكثر من 1.8 مليون سطر، 52 ألف منتج، 6.3 ألف عميل)، تدريب نموذجين CatBoost مع اختبارات زمنية متدحرجة بدون تسرب للبيانات (إعادة الشراء: AUC 0.77 ودقة@30 تقارب ضعف خط الأساس؛ تبني منتجات جديدة: AUC 0.87)، وتسليمهما كخدمة REST بـ FastAPI مع أكثر من 280 اختبارًا آليًا وبيانات مجهولة الهوية.',
+        en: 'Designed and built a sales recommendation system for an auto spare-parts distributor. Using the company\'s sales history, it helps each sales representative see which clients to contact, which articles to offer them, and which clients are the best prospects for a given product. Covered the whole project: data preparation, machine learning models, and a web API ready to be plugged into the sales team\'s tools.',
+        fr: 'Conception et réalisation d\'un système de recommandation commerciale pour un distributeur de pièces de rechange automobiles. À partir de l\'historique des ventes, il aide chaque commercial à savoir quels clients contacter, quels articles leur proposer et quels clients sont les meilleurs prospects pour un produit. Prise en charge du projet de bout en bout : préparation des données, modèles de machine learning et API web prête à être intégrée aux outils de l\'équipe commerciale.',
+        ar: 'تصميم وإنجاز نظام توصيات للمبيعات لموزع قطع غيار السيارات. انطلاقًا من سجل المبيعات، يساعد كل مندوب مبيعات على معرفة العملاء الذين يجب الاتصال بهم، والمنتجات التي يجب اقتراحها عليهم، وأفضل العملاء المحتملين لكل منتج. التكفل بالمشروع من البداية إلى النهاية: تحضير البيانات، نماذج تعلم الآلة، وواجهة برمجية ويب جاهزة للدمج في أدوات فريق المبيعات.',
       },
     },
     {
@@ -242,9 +242,9 @@ const cv = {
       company: 'ESPRIT School of Engineering',
       period: '2025 — 2026',
       description: {
-        en: 'Developed EL-Firma, a comprehensive farm management desktop application with JavaFX. Integrated AI features including facial recognition, voice commands, chatbot assistance, and DNA-based gender prediction. Implemented Stripe payments, interactive maps, and real-time dashboards.',
-        fr: 'Développement d\'EL-Firma, une application desktop complète de gestion agricole avec JavaFX. Intégration de fonctionnalités IA incluant la reconnaissance faciale, les commandes vocales, l\'assistance par chatbot et la prédiction de genre basée sur l\'ADN. Mise en place des paiements Stripe, cartes interactives et tableaux de bord en temps réel.',
-        ar: 'تطوير EL-Firma، تطبيق سطح مكتب شامل لإدارة المزارع باستخدام JavaFX. دمج ميزات الذكاء الاصطناعي بما في ذلك التعرف على الوجه، الأوامر الصوتية، المساعد الآلي، والتنبؤ بالجنس بناءً على الحمض النووي. تنفيذ مدفوعات Stripe، خرائط تفاعلية، ولوحات معلومات في الوقت الفعلي.',
+        en: 'Developed EL-Firma, a farm management web and Java (JavaFX) application that won 1st prize at the Bal des Projets ESPRIT 2026. Integrated AI features including facial recognition, voice commands, chatbot assistance, and DNA-based gender prediction. Implemented Stripe payments, interactive maps, and real-time dashboards.',
+        fr: 'Développement d\'EL-Firma, une application web et Java (JavaFX) de gestion agricole, lauréate du 1er prix au Bal des Projets ESPRIT 2026. Intégration de fonctionnalités IA incluant la reconnaissance faciale, les commandes vocales, l\'assistance par chatbot et la prédiction de genre basée sur l\'ADN. Mise en place des paiements Stripe, cartes interactives et tableaux de bord en temps réel.',
+        ar: 'تطوير EL-Firma، تطبيق ويب وJava (JavaFX) لإدارة المزارع فاز بالجائزة الأولى في Bal des Projets ESPRIT 2026. دمج ميزات الذكاء الاصطناعي بما في ذلك التعرف على الوجه، الأوامر الصوتية، المساعد الآلي، والتنبؤ بالجنس بناءً على الحمض النووي. تنفيذ مدفوعات Stripe، خرائط تفاعلية، ولوحات معلومات في الوقت الفعلي.',
       },
     },
     {
@@ -301,11 +301,26 @@ const cv = {
         fr: '1er Prix — Bal des Projets ESPRIT',
         ar: 'الجائزة الأولى — Bal des Projets ESPRIT',
       },
+      event: 'EL-Firma — ESPRIT School of Engineering',
+      year: '2026',
+      description: {
+        en: 'First place among 3rd year projects for EL-Firma, a farm management web and Java application with AI features (facial recognition, voice commands, chatbot).',
+        fr: 'Premier prix parmi les projets de 3ème année pour EL-Firma, une application web et Java de gestion agricole avec des fonctionnalités IA (reconnaissance faciale, commandes vocales, chatbot).',
+        ar: 'المركز الأول بين مشاريع السنة الثالثة عن EL-Firma، تطبيق ويب وJava لإدارة المزارع مع ميزات ذكاء اصطناعي (التعرف على الوجه، الأوامر الصوتية، روبوت المحادثة).',
+      },
+      icon: '🏆',
+    },
+    {
+      title: {
+        en: '1st Prize — Bal des Projets ESPRIT',
+        fr: '1er Prix — Bal des Projets ESPRIT',
+        ar: 'الجائزة الأولى — Bal des Projets ESPRIT',
+      },
       event: 'LogiXpress — ESPRIT School of Engineering',
       year: '2024',
       description: {
-        en: 'First place for LogiXpress, an AI-powered logistics management web platform (Symfony) with a chatbot, facial recognition and eco-friendly route prediction.',
-        fr: 'Premier prix pour LogiXpress, une plateforme web de gestion logistique (Symfony) intégrant un chatbot IA, la reconnaissance faciale et la prédiction écologique d\'itinéraires.',
+        en: 'First place among 2nd year projects for LogiXpress, an AI-powered logistics management web platform (Symfony) with a chatbot, facial recognition and eco-friendly route prediction.',
+        fr: 'Premier prix parmi les projets de 2ème année pour LogiXpress, une plateforme web de gestion logistique (Symfony) intégrant un chatbot IA, la reconnaissance faciale et la prédiction écologique d\'itinéraires.',
         ar: 'المركز الأول عن LogiXpress، منصة ويب لإدارة اللوجستيك (Symfony) مدعومة بالذكاء الاصطناعي مع روبوت محادثة، التعرف على الوجه، والتنبؤ البيئي بالمسارات.',
       },
       icon: '🏆',
@@ -350,11 +365,11 @@ const cv = {
         ar: 'نائب رئيس — نادي BRAINIX للذكاء الاصطناعي',
       },
       organization: 'ESPRIT School of Engineering',
-      period: '2024 — 2025',
+      period: '2023 — 2024',
       description: {
-        en: 'Vice-president of BRAINIX, ESPRIT\'s artificial intelligence student club, for the 2024/2025 term.',
-        fr: 'Vice-président de BRAINIX, le club étudiant d\'intelligence artificielle d\'ESPRIT, pour le mandat 2024/2025.',
-        ar: 'نائب رئيس BRAINIX، نادي الطلبة للذكاء الاصطناعي في ESPRIT، خلال عهدة 2024/2025.',
+        en: 'Vice-president of BRAINIX, ESPRIT\'s artificial intelligence student club, for the 2023/2024 term.',
+        fr: 'Vice-président de BRAINIX, le club étudiant d\'intelligence artificielle d\'ESPRIT, pour le mandat 2023/2024.',
+        ar: 'نائب رئيس BRAINIX، نادي الطلبة للذكاء الاصطناعي في ESPRIT، خلال عهدة 2023/2024.',
       },
     },
     {
@@ -364,11 +379,11 @@ const cv = {
         ar: 'مسؤول تقنية المعلومات — لجنة الطلبة',
       },
       organization: 'ESPRIT School of Engineering',
-      period: '2024 — 2025',
+      period: '2023 — 2025',
       description: {
-        en: 'In charge of IT and digital tools for the ESPRIT student committee during the 2024/2025 term.',
-        fr: 'Responsable de l\'informatique et des outils numériques du comité des étudiants d\'ESPRIT pour le mandat 2024/2025.',
-        ar: 'مسؤول عن تقنية المعلومات والأدوات الرقمية للجنة طلبة ESPRIT خلال عهدة 2024/2025.',
+        en: 'In charge of IT and digital tools for the ESPRIT student committee from 2023 to 2025.',
+        fr: 'Responsable de l\'informatique et des outils numériques du comité des étudiants d\'ESPRIT de 2023 à 2025.',
+        ar: 'مسؤول عن تقنية المعلومات والأدوات الرقمية للجنة طلبة ESPRIT من 2023 إلى 2025.',
       },
     },
   ],
@@ -453,7 +468,10 @@ const cv = {
         fr: 'Application Flutter avec gestion d\'état Riverpod et base locale Drift (SQLite) pour une synchronisation offline-first, détection de posture ML Kit derrière une couche d\'abstraction, Firebase Auth, et fonctions serverless Appwrite pour la reconnaissance d\'aliments.',
         ar: 'تطبيق Flutter مع إدارة الحالة Riverpod وقاعدة بيانات محلية Drift (SQLite) للمزامنة دون اتصال، كشف الوضعية ML Kit خلف طبقة تجريد، مصادقة Firebase، ودوال Appwrite بدون خادم للتعرف على الطعام.',
       },
-      images: [],
+      images: [
+        '/CV/projects/liftbuddy-1.jpg',
+        '/CV/projects/liftbuddy-2.jpg',
+      ],
     },
     {
       title: {
@@ -507,7 +525,10 @@ const cv = {
         fr: 'Architecture microservices avec frontend Next.js, backend FastAPI, base de données vectorielle Qdrant, PostgreSQL pour les métadonnées, MinIO pour le stockage d\'objets, et LangChain pour l\'orchestration RAG.',
         ar: 'هندسة الخدمات الصغرى مع واجهة Next.js أمامية، خلفية FastAPI، قاعدة بيانات Qdrant المتجهة، PostgreSQL للبيانات الوصفية، MinIO لتخزين الكائنات، وLangChain لتنسيق RAG.',
       },
-      images: [],
+      images: [
+        '/CV/projects/synapse-1.jpg',
+        '/CV/projects/synapse-2.jpg',
+      ],
     },
     {
       title: {
@@ -561,7 +582,12 @@ const cv = {
         fr: 'Frontend de tableau de bord React, backend Python avec PyTorch pour les modèles ML, PostgreSQL pour les données de séries temporelles, Docker pour la conteneurisation, et n8n pour automatiser les pipelines de données.',
         ar: 'واجهة لوحة تحكم React أمامية، خلفية Python مع PyTorch لنماذج ML، PostgreSQL لبيانات السلاسل الزمنية، Docker للحوسبة، وn8n لأتمتة خطوط أنابيب البيانات.',
       },
-      images: [],
+      images: [
+        '/CV/projects/autonomous-market-1.jpg',
+        '/CV/projects/autonomous-market-2.jpg',
+        '/CV/projects/autonomous-market-3.jpg',
+        '/CV/projects/autonomous-market-4.jpg',
+      ],
     },
     {
       title: {
@@ -615,7 +641,11 @@ const cv = {
         fr: 'Frontend React (Vite, Tailwind, Zustand, Recharts) communiquant avec une API Django REST Framework authentifiée par JWT ; workers Celery et Redis pour l\'inférence NLP asynchrone ; base PostgreSQL ; le tout orchestré avec Docker Compose.',
         ar: 'واجهة React (Vite وTailwind وZustand وRecharts) تتواصل مع واجهة Django REST Framework بمصادقة JWT؛ عمال Celery وRedis للاستدلال غير المتزامن؛ قاعدة بيانات PostgreSQL؛ وكل ذلك منسق بـ Docker Compose.',
       },
-      images: [],
+      images: [
+        '/CV/projects/helpdesk-1.jpg',
+        '/CV/projects/helpdesk-2.jpg',
+        '/CV/projects/helpdesk-3.jpg',
+      ],
     },
     {
       title: {
@@ -658,48 +688,14 @@ const cv = {
     },
     {
       title: {
-        en: 'Waveworx — Maritime Maintenance App (2nd Place)',
-        fr: 'Waveworx — Application de maintenance maritime (2ème Place)',
-        ar: 'Waveworx — تطبيق الصيانة البحرية (المركز الثاني)',
+        en: 'EL-Firma — Farm Management System (1st Prize)',
+        fr: 'EL-Firma — Système de gestion agricole (1er Prix)',
+        ar: 'EL-Firma — نظام إدارة المزارع (الجائزة الأولى)',
       },
       description: {
-        en: 'A C++/Qt desktop application for maritime maintenance that took 2nd place at ESPRIT\'s Bal des Projets 2024. Manages interventions, contracts and invoices, with anomaly detection, predictive analysis and simulated Arduino sensors.',
-        fr: 'Une application de bureau C++/Qt pour la maintenance maritime, 2ème place au Bal des Projets ESPRIT 2024. Gestion des interventions, contrats et factures, avec détection d\'anomalies, analyse prédictive et capteurs Arduino simulés.',
-        ar: 'تطبيق سطح مكتب C++/Qt للصيانة البحرية حصل على المركز الثاني في Bal des Projets ESPRIT 2024. يدير التدخلات والعقود والفواتير، مع كشف الحالات الشاذة، التحليل التنبؤي، وحساسات Arduino محاكاة.',
-      },
-      tech: ['C++', 'Qt', 'Arduino', 'SQL'],
-      link: '',
-      demo: '',
-      color: '#0ea5e9',
-      features: [
-        {
-          en: 'Intervention, contract and invoice management',
-          fr: 'Gestion des interventions, contrats et factures',
-          ar: 'إدارة التدخلات والعقود والفواتير',
-        },
-        {
-          en: 'Anomaly detection and predictive analysis',
-          fr: 'Détection d\'anomalies et analyse prédictive',
-          ar: 'كشف الحالات الشاذة والتحليل التنبؤي',
-        },
-        {
-          en: 'Simulated Arduino sensors',
-          fr: 'Capteurs Arduino simulés',
-          ar: 'حساسات Arduino محاكاة',
-        },
-      ],
-      images: [],
-    },
-    {
-      title: {
-        en: 'EL-Firma — Farm Management System',
-        fr: 'EL-Firma — Système de gestion agricole',
-        ar: 'EL-Firma — نظام إدارة المزارع',
-      },
-      description: {
-        en: 'A comprehensive full-stack desktop application for integrated farm management built as part of PIDEV 3A at ESPRIT. Features AI-powered facial recognition, voice commands, chatbot assistance, DNA-based gender prediction, Stripe payments, interactive maps, real-time dashboards, and multi-factor authentication.',
-        fr: 'Une application desktop full-stack complète pour la gestion agricole intégrée, développée dans le cadre du PIDEV 3A à ESPRIT. Comprend la reconnaissance faciale par IA, les commandes vocales, l\'assistance par chatbot, la prédiction de genre basée sur l\'ADN, les paiements Stripe, les cartes interactives, les tableaux de bord en temps réel et l\'authentification multi-facteurs.',
-        ar: 'تطبيق سطح مكتب شامل full-stack لإدارة المزارع المتكاملة، تم تطويره كجزء من PIDEV 3A في ESPRIT. يتضمن التعرف على الوجه بالذكاء الاصطناعي، الأوامر الصوتية، المساعد الآلي، التنبؤ بالجنس بناءً على الحمض النووي، مدفوعات Stripe، خرائط تفاعلية، لوحات معلومات في الوقت الفعلي، والمصادقة متعددة العوامل.',
+        en: 'A full-stack web and Java (JavaFX) application for integrated farm management, built as part of PIDEV 3A at ESPRIT and winner of 1st prize at the Bal des Projets 2026. Features AI-powered facial recognition, voice commands, chatbot assistance, DNA-based gender prediction, Stripe payments, interactive maps, real-time dashboards, and multi-factor authentication.',
+        fr: 'Une application full-stack web et Java (JavaFX) pour la gestion agricole intégrée, développée dans le cadre du PIDEV 3A à ESPRIT et lauréate du 1er prix au Bal des Projets 2026. Comprend la reconnaissance faciale par IA, les commandes vocales, l\'assistance par chatbot, la prédiction de genre basée sur l\'ADN, les paiements Stripe, les cartes interactives, les tableaux de bord en temps réel et l\'authentification multi-facteurs.',
+        ar: 'تطبيق full-stack للويب وJava (JavaFX) لإدارة المزارع المتكاملة، تم تطويره كجزء من PIDEV 3A في ESPRIT وفاز بالجائزة الأولى في Bal des Projets 2026. يتضمن التعرف على الوجه بالذكاء الاصطناعي، الأوامر الصوتية، المساعد الآلي، التنبؤ بالجنس بناءً على الحمض النووي، مدفوعات Stripe، خرائط تفاعلية، لوحات معلومات في الوقت الفعلي، والمصادقة متعددة العوامل.',
       },
       tech: ['Java 21', 'JavaFX', 'MySQL', 'OpenCV', 'Stripe API', 'Maven'],
       link: 'https://github.com/Ikam2/Esprit-PIDEV-3A3--2026-ELFIRMA',
@@ -904,25 +900,10 @@ const cv = {
         fr: 'SPA React avec le bundler Vite, scènes Three.js chargées paresseusement via React.lazy() et encapsulées dans des composants ErrorBoundary, Framer Motion pour les animations déclaratives, et une source de données unique cv.js.',
         ar: 'تطبيق React أحادي الصفحة مع حزمة Vite، مشاهد Three.js محملة بشكل كسول عبر React.lazy() ومغلفة في مكونات ErrorBoundary، Framer Motion للرسوم المتحركة التصريحية، ومصدر بيانات cv.js واحد.',
       },
-      images: [],
-    },
-    {
-      title: {
-        en: 'Line-Following Robot',
-        fr: 'Robot suiveur de ligne',
-        ar: 'روبوت تتبع الخط',
-      },
-      description: {
-        en: 'An autonomous robot that follows a line drawn on the ground, using infrared sensors and an Arduino microcontroller programmed in C.',
-        fr: 'Un robot autonome capable de suivre une ligne tracée au sol, grâce à des capteurs infrarouges et un microcontrôleur Arduino programmé en C.',
-        ar: 'روبوت مستقل قادر على تتبع خط مرسوم على الأرض، باستخدام حساسات الأشعة تحت الحمراء ومتحكم Arduino مبرمج بلغة C.',
-      },
-      tech: ['Arduino', 'C', 'Embedded', 'IR Sensors'],
-      link: '',
-      demo: '',
-      color: '#64748b',
-      features: [],
-      images: [],
+      images: [
+        '/CV/projects/portfolio-1.jpg',
+        '/CV/projects/portfolio-2.jpg',
+      ],
     },
   ],
 
