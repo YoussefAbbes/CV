@@ -1,13 +1,19 @@
 const cv = {
   name: 'Youssef Abbes',
   title: {
-    en: '3rd Year Engineering Student — Full-Stack Developer',
-    fr: 'Étudiant ingénieur en 3ème année — Développeur Full-Stack',
-    ar: 'طالب هندسة في السنة الثالثة — مطور Full-Stack',
+    en: '4th Year Engineering Student — Data Science & Full-Stack Developer',
+    fr: 'Étudiant ingénieur en 4ème année — Data Science & Développeur Full-Stack',
+    ar: 'طالب هندسة في السنة الرابعة — علوم البيانات ومطور Full-Stack',
   },
-  email: 'youssef.abbes@esprit.tn',
+  email: 'abbes.youssef@esprit.tn',
   github: 'https://github.com/YoussefAbbes',
   linkedin: 'https://linkedin.com/in/youssefabbes',
+  phone: '+216 56 207 742',
+  location: {
+    en: 'Tunis, Tunisia',
+    fr: 'Tunis, Tunisie',
+    ar: 'تونس، تونس',
+  },
   status: {
     text: {
       en: 'Available for Hire',
@@ -18,9 +24,9 @@ const cv = {
   },
 
   bio: {
-    en: `I'm a 3rd year engineering student at ESPRIT School of Engineering, passionate about building full-stack applications with modern technologies. I specialize in Java, JavaFX, Flutter, and web development. I won the "Bal de Projet" award for Best Web Project among 2nd year students at ESPRIT — a recognition that fuels my drive to keep pushing boundaries. From AI-powered farm management systems to real-time multiplayer quiz platforms, I love turning complex problems into elegant, user-friendly solutions.`,
-    fr: `Je suis étudiant en 3ème année d'ingénierie à ESPRIT School of Engineering, passionné par le développement d'applications full-stack avec des technologies modernes. Je me spécialise en Java, JavaFX, Flutter et développement web. J'ai remporté le prix « Bal de Projet » pour le meilleur projet web parmi les étudiants de 2ème année à ESPRIT — une reconnaissance qui alimente ma motivation à repousser les limites. Des systèmes de gestion agricole alimentés par l'IA aux plateformes de quiz multijoueur en temps réel, j'aime transformer des problèmes complexes en solutions élégantes et conviviales.`,
-    ar: `أنا طالب في السنة الثالثة هندسة في مدرسة ESPRIT للهندسة، شغوف ببناء تطبيقات full-stack باستخدام التقنيات الحديثة. أتخصص في Java وJavaFX وFlutter وتطوير الويب. فزت بجائزة "Bal de Projet" لأفضل مشروع ويب بين طلاب السنة الثانية في ESPRIT — تقدير يغذي طموحي لمواصلة تجاوز الحدود. من أنظمة إدارة المزارع المدعومة بالذكاء الاصطناعي إلى منصات الاختبارات التفاعلية متعددة اللاعبين، أحب تحويل المشكلات المعقدة إلى حلول أنيقة وسهلة الاستخدام.`,
+    en: `I'm a 4th year engineering student at ESPRIT School of Engineering, specializing in Data Science. I build machine learning systems and full-stack web, mobile and AI applications. During my 2026 internship at TICOP I built a sales recommendation system with CatBoost and FastAPI, trained on 1.8M+ real transactions. I won 1st prize and 2nd place at ESPRIT's "Bal des Projets", and I'm vice-president of the BRAINIX AI club and IT lead of the student committee. I love turning complex data and problems into useful, well-designed products.`,
+    fr: `Je suis étudiant en 4ème année d'ingénierie à ESPRIT School of Engineering, spécialisé en Data Science. Je conçois des systèmes de machine learning et des applications full-stack web, mobiles et IA. Lors de mon stage 2026 chez TICOP, j'ai développé un système de recommandation commerciale avec CatBoost et FastAPI, entraîné sur plus de 1,8 million de transactions réelles. Lauréat du 1er prix et de la 2ème place au « Bal des Projets » d'ESPRIT, je suis vice-président du club BRAINIX IA et responsable IT du comité étudiant. J'aime transformer des données et des problèmes complexes en produits utiles et soignés.`,
+    ar: `أنا طالب في السنة الرابعة هندسة في مدرسة ESPRIT للهندسة، متخصص في علوم البيانات. أبني أنظمة تعلم الآلة وتطبيقات full-stack للويب والهاتف والذكاء الاصطناعي. خلال تربصي سنة 2026 في TICOP، طورت نظام توصيات للمبيعات باستخدام CatBoost وFastAPI، مدرّبًا على أكثر من 1.8 مليون معاملة حقيقية. فزت بالجائزة الأولى والمركز الثاني في "Bal des Projets" بـ ESPRIT، وأنا نائب رئيس نادي BRAINIX للذكاء الاصطناعي ومسؤول تقنية المعلومات في لجنة الطلبة. أحب تحويل البيانات والمشكلات المعقدة إلى منتجات مفيدة ومتقنة.`,
   },
 
   stats: [
@@ -30,7 +36,7 @@ const cv = {
         fr: 'Année d\'ingénierie',
         ar: 'سنة الهندسة',
       },
-      value: '3rd',
+      value: '4th',
     },
     {
       label: {
@@ -38,15 +44,42 @@ const cv = {
         fr: 'Projets réalisés',
         ar: 'مشاريع منجزة',
       },
-      value: '7+',
+      value: '10+',
     },
     {
       label: {
-        en: 'Award Won',
-        fr: 'Prix remporté',
-        ar: 'جائزة',
+        en: 'Awards Won',
+        fr: 'Prix remportés',
+        ar: 'جوائز',
       },
-      value: '🏆',
+      value: '2',
+    },
+  ],
+
+  languages: [
+    {
+      name: { en: 'Arabic', fr: 'Arabe', ar: 'العربية' },
+      level: { en: 'Native', fr: 'Langue maternelle', ar: 'اللغة الأم' },
+      icon: '🇹🇳',
+      color: '#ff006e',
+    },
+    {
+      name: { en: 'French', fr: 'Français', ar: 'الفرنسية' },
+      level: { en: 'Fluent (B2)', fr: 'Courant (B2)', ar: 'بطلاقة (B2)' },
+      icon: '🇫🇷',
+      color: '#00d4ff',
+    },
+    {
+      name: { en: 'English', fr: 'Anglais', ar: 'الإنجليزية' },
+      level: { en: 'Professional (B2)', fr: 'Professionnel (B2)', ar: 'مهني (B2)' },
+      icon: '🇬🇧',
+      color: '#7c3aed',
+    },
+    {
+      name: { en: 'German', fr: 'Allemand', ar: 'الألمانية' },
+      level: { en: 'Intermediate (B1)', fr: 'Intermédiaire (B1)', ar: 'متوسط (B1)' },
+      icon: '🇩🇪',
+      color: '#f59e0b',
     },
   ],
 
@@ -71,6 +104,24 @@ const cv = {
   skills: [
     {
       category: {
+        en: 'Data Science & ML',
+        fr: 'Data Science & ML',
+        ar: 'علوم البيانات وتعلم الآلة',
+      },
+      color: '#22c55e',
+      items: [
+        { name: 'Python', level: 90 },
+        { name: 'pandas / NumPy', level: 85 },
+        { name: 'scikit-learn', level: 80 },
+        { name: 'CatBoost / LightGBM', level: 80 },
+        { name: 'PyTorch', level: 65 },
+        { name: 'OpenCV / MediaPipe', level: 70 },
+        { name: 'RAG / LLM APIs', level: 75 },
+        { name: 'Jupyter', level: 85 },
+      ],
+    },
+    {
+      category: {
         en: 'Frontend',
         fr: 'Frontend',
         ar: 'الواجهة الأمامية',
@@ -79,6 +130,8 @@ const cv = {
       items: [
         { name: 'React', level: 90 },
         { name: 'HTML/CSS', level: 95 },
+        { name: 'TypeScript', level: 75 },
+        { name: 'Next.js', level: 70 },
         { name: 'Three.js', level: 70 },
         { name: 'Framer Motion', level: 75 },
         { name: 'JavaFX', level: 85 },
@@ -94,7 +147,9 @@ const cv = {
       items: [
         { name: 'Java', level: 90 },
         { name: 'Node.js', level: 80 },
-        { name: 'Python', level: 75 },
+        { name: 'FastAPI', level: 85 },
+        { name: 'PHP / Symfony', level: 80 },
+        { name: 'C / C++ (Qt)', level: 70 },
         { name: 'Spring Boot', level: 70 },
         { name: 'Django', level: 65 },
         { name: 'MySQL', level: 80 },
@@ -166,9 +221,23 @@ const cv = {
   experience: [
     {
       role: {
-        en: 'Full-Stack Developer — PIDEV 3A',
-        fr: 'Développeur Full-Stack — PIDEV 3A',
-        ar: 'مطور Full-Stack — PIDEV 3A',
+        en: 'Data Science Intern — Sales Recommendation System',
+        fr: 'Stagiaire Data Science — Système de recommandation commerciale',
+        ar: 'متربص في علوم البيانات — نظام توصيات المبيعات',
+      },
+      company: 'TICOP',
+      period: 'Jul — Aug 2026',
+      description: {
+        en: 'Built an end-to-end recommendation system for an auto spare-parts distributor, helping each sales rep know which clients to contact and which articles to offer. Built the data pipeline from Microsoft Dynamics NAV (1.8M+ ledger rows, 52K articles, 6.3K clients), trained two CatBoost models with leak-free rolling chronological backtests (repurchase AUC 0.77 with precision@30 nearly 2× the baseline; new-article adoption AUC 0.87), and delivered them as a typed FastAPI REST service with 280+ automated tests and anonymised fixtures.',
+        fr: 'Conception d\'un système de recommandation de bout en bout pour un distributeur de pièces de rechange automobiles, aidant chaque commercial à savoir quels clients contacter et quels articles proposer. Construction du pipeline de données depuis Microsoft Dynamics NAV (1,8M+ lignes, 52K articles, 6,3K clients), entraînement de deux modèles CatBoost validés par backtests chronologiques glissants sans fuite de données (rachat : AUC 0,77, precision@30 près de 2× la référence ; adoption de nouveaux articles : AUC 0,87), et livraison sous forme d\'API REST FastAPI typée avec plus de 280 tests automatisés et des données anonymisées.',
+        ar: 'بناء نظام توصيات متكامل لموزع قطع غيار السيارات يساعد كل مندوب مبيعات على معرفة العملاء الذين يجب الاتصال بهم والمنتجات التي يجب اقتراحها. إنشاء خط معالجة البيانات من Microsoft Dynamics NAV (أكثر من 1.8 مليون سطر، 52 ألف منتج، 6.3 ألف عميل)، تدريب نموذجين CatBoost مع اختبارات زمنية متدحرجة بدون تسرب للبيانات (إعادة الشراء: AUC 0.77 ودقة@30 تقارب ضعف خط الأساس؛ تبني منتجات جديدة: AUC 0.87)، وتسليمهما كخدمة REST بـ FastAPI مع أكثر من 280 اختبارًا آليًا وبيانات مجهولة الهوية.',
+      },
+    },
+    {
+      role: {
+        en: 'Full-Stack Developer — PIDEV 3A (Academic Project)',
+        fr: 'Développeur Full-Stack — PIDEV 3A (Projet académique)',
+        ar: 'مطور Full-Stack — PIDEV 3A (مشروع أكاديمي)',
       },
       company: 'ESPRIT School of Engineering',
       period: '2025 — 2026',
@@ -180,30 +249,16 @@ const cv = {
     },
     {
       role: {
-        en: 'Mobile Developer — LammaPlay',
-        fr: 'Développeur Mobile — LammaPlay',
-        ar: 'مطور تطبيقات الهاتف — LammaPlay',
+        en: 'Intern — Business Development & Marketing',
+        fr: 'Stagiaire — Développement Commercial & Marketing',
+        ar: 'متربص — تطوير الأعمال والتسويق',
       },
-      company: 'Personal Project',
-      period: '2025',
+      company: 'Green Pharma',
+      period: '2024 — 2025',
       description: {
-        en: 'Built a real-time multiplayer quiz game platform using Flutter and Firebase. Implemented live gameplay with session codes, dynamic scoring with streak bonuses, and real-time leaderboards. Deployed on Android, iOS, and Web.',
-        fr: 'Création d\'une plateforme de jeu de quiz multijoueur en temps réel avec Flutter et Firebase. Implémentation du gameplay en direct avec codes de session, scoring dynamique avec bonus de série, et classements en temps réel. Déployé sur Android, iOS et Web.',
-        ar: 'بناء منصة ألعاب اختبارات متعددة اللاعبين في الوقت الفعلي باستخدام Flutter وFirebase. تنفيذ اللعب المباشر مع رموز الجلسات، التسجيل الديناميكي مع مكافآت السلسلة، ولوحات المتصدرين في الوقت الفعلي. نشر على Android وiOS والويب.',
-      },
-    },
-    {
-      role: {
-        en: 'Award-Winning Web Developer — Bal de Projet',
-        fr: 'Développeur Web Primé — Bal de Projet',
-        ar: 'مطور ويب حائز على جائزة — Bal de Projet',
-      },
-      company: 'ESPRIT School of Engineering',
-      period: '2024',
-      description: {
-        en: 'Won the "Bal de Projet" award for Best Web Project among all 2nd year engineering students. Demonstrated strong web development skills and creative problem-solving in a competitive university-wide showcase.',
-        fr: 'Lauréat du prix « Bal de Projet » pour le meilleur projet web parmi tous les étudiants ingénieurs de 2ème année. Démonstration de solides compétences en développement web et résolution créative de problèmes lors d\'une vitrine universitaire compétitive.',
-        ar: 'الفوز بجائزة "Bal de Projet" لأفضل مشروع ويب بين جميع طلاب الهندسة في السنة الثانية. إظهار مهارات قوية في تطوير الويب وحل المشكلات الإبداعي في عرض تنافسي على مستوى الجامعة.',
+        en: 'Developed marketing strategies for the "Bambini" range (maternity & baby products) in a 690M USD parapharmaceutical market. Took part in the North-West Parapharmaceutical Days and ran a competitive SWOT analysis of 60+ companies active in Tunisia. Delivered recommendations on targeted digital marketing, a loyalty program, product visibility and partnerships with pediatric clinics.',
+        fr: 'Développement et mise en œuvre de stratégies marketing pour la gamme « Bambini » (produits maternité & bébés) dans un marché parapharmaceutique de 690M USD. Participation aux Journées Parapharmaceutiques du Nord-Ouest et analyse SWOT concurrentielle (60+ entreprises actives sur le marché tunisien). Recommandations stratégiques : marketing digital ciblé, programme de fidélité, visibilité produit et partenariats avec cliniques pédiatriques.',
+        ar: 'تطوير وتنفيذ استراتيجيات تسويقية لمجموعة "Bambini" (منتجات الأمومة والرضع) في سوق شبه صيدلاني بقيمة 690 مليون دولار. المشاركة في الأيام شبه الصيدلانية للشمال الغربي وإجراء تحليل SWOT تنافسي لأكثر من 60 شركة ناشطة في تونس. تقديم توصيات حول التسويق الرقمي الموجه، برنامج الولاء، ظهور المنتج والشراكات مع عيادات طب الأطفال.',
       },
     },
   ],
@@ -211,16 +266,30 @@ const cv = {
   education: [
     {
       degree: {
-        en: 'Engineering Degree in Computer Science (3rd Year)',
-        fr: 'Diplôme d\'ingénieur en informatique (3ème année)',
-        ar: 'شهادة هندسة في علوم الحاسوب (السنة الثالثة)',
+        en: 'Engineering Degree in Computer Science — Data Science (4th Year)',
+        fr: 'Diplôme d\'ingénieur en informatique — Data Science (4ème année)',
+        ar: 'شهادة هندسة في علوم الحاسوب — علوم البيانات (السنة الرابعة)',
       },
       school: 'ESPRIT School of Engineering — Tunisia',
-      period: '2023 — Present',
+      period: '2022 — Present',
       description: {
-        en: 'Currently in the 3rd year of the engineering program, specializing in software engineering. Studying advanced algorithms, distributed systems, AI/ML, and full-stack development. Won the Bal de Projet award for Best Web Project in 2nd year.',
-        fr: 'Actuellement en 3ème année du cycle ingénieur, spécialisé en génie logiciel. Étude des algorithmes avancés, systèmes distribués, IA/ML et développement full-stack. Lauréat du prix Bal de Projet pour le meilleur projet web en 2ème année.',
-        ar: 'حاليًا في السنة الثالثة من برنامج الهندسة، متخصص في هندسة البرمجيات. دراسة الخوارزميات المتقدمة، الأنظمة الموزعة، الذكاء الاصطناعي/تعلم الآلة، وتطوير Full-Stack. فائز بجائزة Bal de Projet لأفضل مشروع ويب في السنة الثانية.',
+        en: 'Currently in the 4th year of the engineering program, specializing in Data Science: machine learning, deep learning, big data and data engineering, on top of a strong full-stack software engineering foundation.',
+        fr: 'Actuellement en 4ème année du cycle ingénieur, spécialité Data Science : machine learning, deep learning, big data et data engineering, sur une solide base en génie logiciel full-stack.',
+        ar: 'حاليًا في السنة الرابعة من برنامج الهندسة، تخصص علوم البيانات: تعلم الآلة، التعلم العميق، البيانات الضخمة وهندسة البيانات، إلى جانب أساس قوي في هندسة البرمجيات full-stack.',
+      },
+    },
+    {
+      degree: {
+        en: 'Baccalaureate — Mathematics',
+        fr: 'Baccalauréat — Mathématiques',
+        ar: 'البكالوريا — رياضيات',
+      },
+      school: 'Lycée Kheireddine — Tunisia',
+      period: '2018 — 2022',
+      description: {
+        en: 'Mathematics track.',
+        fr: 'Section Mathématiques.',
+        ar: 'شعبة الرياضيات.',
       },
     },
   ],
@@ -228,18 +297,79 @@ const cv = {
   achievements: [
     {
       title: {
-        en: 'Bal de Projet — Best Web Project',
-        fr: 'Bal de Projet — Meilleur projet web',
-        ar: 'Bal de Projet — أفضل مشروع ويب',
+        en: '1st Prize — Bal des Projets ESPRIT',
+        fr: '1er Prix — Bal des Projets ESPRIT',
+        ar: 'الجائزة الأولى — Bal des Projets ESPRIT',
       },
-      event: 'ESPRIT School of Engineering',
+      event: 'LogiXpress — ESPRIT School of Engineering',
       year: '2024',
       description: {
-        en: 'Won first place for Best Web Project among all 2nd year engineering students at ESPRIT university-wide project showcase.',
-        fr: 'Premier prix pour le meilleur projet web parmi tous les étudiants ingénieurs de 2ème année lors de la vitrine de projets à l\'échelle de l\'université ESPRIT.',
-        ar: 'الفوز بالمركز الأول لأفضل مشروع ويب بين جميع طلاب الهندسة في السنة الثانية في معرض المشاريع على مستوى جامعة ESPRIT.',
+        en: 'First place for LogiXpress, an AI-powered logistics management web platform (Symfony) with a chatbot, facial recognition and eco-friendly route prediction.',
+        fr: 'Premier prix pour LogiXpress, une plateforme web de gestion logistique (Symfony) intégrant un chatbot IA, la reconnaissance faciale et la prédiction écologique d\'itinéraires.',
+        ar: 'المركز الأول عن LogiXpress، منصة ويب لإدارة اللوجستيك (Symfony) مدعومة بالذكاء الاصطناعي مع روبوت محادثة، التعرف على الوجه، والتنبؤ البيئي بالمسارات.',
       },
       icon: '🏆',
+    },
+    {
+      title: {
+        en: '2nd Place — Bal des Projets ESPRIT',
+        fr: '2ème Place — Bal des Projets ESPRIT',
+        ar: 'المركز الثاني — Bal des Projets ESPRIT',
+      },
+      event: 'Waveworx — ESPRIT School of Engineering',
+      year: '2024',
+      description: {
+        en: 'Second place for Waveworx, a C++/Qt desktop application for maritime maintenance with anomaly detection, predictive analysis and simulated Arduino sensors.',
+        fr: 'Deuxième place pour Waveworx, une application de bureau C++/Qt pour la maintenance maritime avec détection d\'anomalies, analyse prédictive et capteurs Arduino simulés.',
+        ar: 'المركز الثاني عن Waveworx، تطبيق سطح مكتب C++/Qt للصيانة البحرية مع كشف الحالات الشاذة، التحليل التنبؤي، وحساسات Arduino محاكاة.',
+      },
+      icon: '🥈',
+    },
+    {
+      title: {
+        en: 'Bal des Projets ESPRIT — Participant',
+        fr: 'Bal des Projets ESPRIT — Participant',
+        ar: 'Bal des Projets ESPRIT — مشارك',
+      },
+      event: 'ESPRIT School of Engineering',
+      year: '2023',
+      description: {
+        en: 'Presented a 3D game built in C with SDL on Linux.',
+        fr: 'Présentation d\'un jeu 3D développé en C avec SDL sous Linux.',
+        ar: 'تقديم لعبة ثلاثية الأبعاد مطورة بلغة C باستخدام SDL على Linux.',
+      },
+      icon: '🎮',
+    },
+  ],
+
+  activities: [
+    {
+      role: {
+        en: 'Vice-President — BRAINIX AI Club',
+        fr: 'Vice-Président — Club BRAINIX IA',
+        ar: 'نائب رئيس — نادي BRAINIX للذكاء الاصطناعي',
+      },
+      organization: 'ESPRIT School of Engineering',
+      period: '2024 — 2025',
+      description: {
+        en: 'Vice-president of BRAINIX, ESPRIT\'s artificial intelligence student club, for the 2024/2025 term.',
+        fr: 'Vice-président de BRAINIX, le club étudiant d\'intelligence artificielle d\'ESPRIT, pour le mandat 2024/2025.',
+        ar: 'نائب رئيس BRAINIX، نادي الطلبة للذكاء الاصطناعي في ESPRIT، خلال عهدة 2024/2025.',
+      },
+    },
+    {
+      role: {
+        en: 'IT Lead — Student Committee',
+        fr: 'Responsable IT — Comité des Étudiants',
+        ar: 'مسؤول تقنية المعلومات — لجنة الطلبة',
+      },
+      organization: 'ESPRIT School of Engineering',
+      period: '2024 — 2025',
+      description: {
+        en: 'In charge of IT and digital tools for the ESPRIT student committee during the 2024/2025 term.',
+        fr: 'Responsable de l\'informatique et des outils numériques du comité des étudiants d\'ESPRIT pour le mandat 2024/2025.',
+        ar: 'مسؤول عن تقنية المعلومات والأدوات الرقمية للجنة طلبة ESPRIT خلال عهدة 2024/2025.',
+      },
     },
   ],
 
@@ -273,217 +403,55 @@ const cv = {
   projects: [
     {
       title: {
-        en: 'EL-Firma — Farm Management System',
-        fr: 'EL-Firma — Système de gestion agricole',
-        ar: 'EL-Firma — نظام إدارة المزارع',
+        en: 'LiftBuddy — AI Fitness Coach (Work in Progress)',
+        fr: 'LiftBuddy — Coach fitness IA (En cours de développement)',
+        ar: 'LiftBuddy — مدرب لياقة بالذكاء الاصطناعي (قيد التطوير)',
       },
       description: {
-        en: 'A comprehensive full-stack desktop application for integrated farm management built as part of PIDEV 3A at ESPRIT. Features AI-powered facial recognition, voice commands, chatbot assistance, DNA-based gender prediction, Stripe payments, interactive maps, real-time dashboards, and multi-factor authentication.',
-        fr: 'Une application desktop full-stack complète pour la gestion agricole intégrée, développée dans le cadre du PIDEV 3A à ESPRIT. Comprend la reconnaissance faciale par IA, les commandes vocales, l\'assistance par chatbot, la prédiction de genre basée sur l\'ADN, les paiements Stripe, les cartes interactives, les tableaux de bord en temps réel et l\'authentification multi-facteurs.',
-        ar: 'تطبيق سطح مكتب شامل full-stack لإدارة المزارع المتكاملة، تم تطويره كجزء من PIDEV 3A في ESPRIT. يتضمن التعرف على الوجه بالذكاء الاصطناعي، الأوامر الصوتية، المساعد الآلي، التنبؤ بالجنس بناءً على الحمض النووي، مدفوعات Stripe، خرائط تفاعلية، لوحات معلومات في الوقت الفعلي، والمصادقة متعددة العوامل.',
+        en: 'A mobile training app for beginners, currently in development. Its core is an on-device AI form check: the camera tracks body pose in real time, counts reps and flags technique mistakes, with video never leaving the phone. Around it: an offline-first workout logger, beginner programs, adaptive progression, progress charts, nutrition with AI food-photo recognition, and recipes.',
+        fr: 'Une application mobile d\'entraînement pour débutants, en cours de développement. Son cœur est une vérification de posture par IA sur l\'appareil : la caméra suit la posture en temps réel, compte les répétitions et signale les erreurs techniques, sans que la vidéo ne quitte le téléphone. Autour : un journal d\'entraînement offline-first, des programmes débutants, une progression adaptative, des graphiques de progrès, la nutrition avec reconnaissance d\'aliments par photo et des recettes.',
+        ar: 'تطبيق تدريب للهاتف موجه للمبتدئين، قيد التطوير حاليًا. جوهره فحص وضعية الجسم بالذكاء الاصطناعي على الجهاز: تتتبع الكاميرا وضعية الجسم في الوقت الفعلي، تعد التكرارات وتنبه إلى الأخطاء التقنية، دون أن يغادر الفيديو الهاتف. وحوله: سجل تمارين يعمل دون اتصال، برامج للمبتدئين، تقدم تكيفي، رسوم بيانية للتقدم، تغذية مع التعرف على الطعام بالصور، ووصفات.',
       },
-      tech: ['Java 21', 'JavaFX', 'MySQL', 'OpenCV', 'Stripe API', 'Maven'],
-      link: 'https://github.com/Ikam2/Esprit-PIDEV-3A3--2026-ELFIRMA',
+      tech: ['Flutter', 'Dart', 'ML Kit Pose', 'MediaPipe', 'Python', 'Riverpod', 'Drift (SQLite)', 'Firebase Auth', 'Appwrite'],
+      link: '',
       demo: '',
-      color: '#00d4ff',
+      color: '#dc2626',
       features: [
         {
-          en: 'AI-powered facial recognition login',
-          fr: 'Connexion par reconnaissance faciale IA',
-          ar: 'تسجيل الدخول بالتعرف على الوجه بالذكاء الاصطناعي',
+          en: 'Real-time AI form check with rep counting (on-device)',
+          fr: 'Vérification de posture IA en temps réel avec comptage des répétitions (sur l\'appareil)',
+          ar: 'فحص الوضعية بالذكاء الاصطناعي في الوقت الفعلي مع عد التكرارات (على الجهاز)',
         },
         {
-          en: 'Voice command navigation',
-          fr: 'Navigation par commandes vocales',
-          ar: 'التنقل بالأوامر الصوتية',
+          en: 'Offline-first workout logger and beginner programs',
+          fr: 'Journal d\'entraînement offline-first et programmes débutants',
+          ar: 'سجل تمارين يعمل دون اتصال وبرامج للمبتدئين',
         },
         {
-          en: 'Chatbot assistance',
-          fr: 'Assistance par chatbot',
-          ar: 'المساعدة عبر روبوت المحادثة',
+          en: 'Adaptive progression engine',
+          fr: 'Moteur de progression adaptative',
+          ar: 'محرك تقدم تكيفي',
         },
         {
-          en: 'Stripe payment integration',
-          fr: 'Intégration des paiements Stripe',
-          ar: 'دمج مدفوعات Stripe',
+          en: 'Nutrition tracking with AI food-photo recognition',
+          fr: 'Suivi nutritionnel avec reconnaissance d\'aliments par photo',
+          ar: 'تتبع التغذية مع التعرف على الطعام بالصور',
         },
         {
-          en: 'Interactive map dashboards',
-          fr: 'Tableaux de bord avec cartes interactives',
-          ar: 'لوحات معلومات بخرائط تفاعلية',
-        },
-        {
-          en: 'DNA-based gender prediction',
-          fr: 'Prédiction de genre basée sur l\'ADN',
-          ar: 'التنبؤ بالجنس بناءً على الحمض النووي',
+          en: 'Progress charts, streaks and weekly recap',
+          fr: 'Graphiques de progrès, séries et bilan hebdomadaire',
+          ar: 'رسوم بيانية للتقدم، سلاسل وملخص أسبوعي',
         },
       ],
       challenges: {
-        en: 'Integrating multiple AI services (facial recognition via OpenCV, voice commands, DNA prediction) into a single JavaFX desktop application while maintaining performance and a clean UX.',
-        fr: 'Intégration de multiples services IA (reconnaissance faciale via OpenCV, commandes vocales, prédiction ADN) dans une seule application desktop JavaFX tout en maintenant les performances et une UX soignée.',
-        ar: 'دمج خدمات ذكاء اصطناعي متعددة (التعرف على الوجه عبر OpenCV، الأوامر الصوتية، التنبؤ بالحمض النووي) في تطبيق سطح مكتب JavaFX واحد مع الحفاظ على الأداء وتجربة مستخدم نظيفة.',
+        en: 'Making pose-based form analysis reliable on a phone: the angle and rep-counting logic is prototyped and tuned in Python with MediaPipe on real video clips, then ported to Dart so it runs fully on-device and offline.',
+        fr: 'Rendre l\'analyse de posture fiable sur un téléphone : la logique d\'angles et de comptage est prototypée et calibrée en Python avec MediaPipe sur de vraies vidéos, puis portée en Dart pour fonctionner entièrement sur l\'appareil et hors ligne.',
+        ar: 'جعل تحليل الوضعية موثوقًا على الهاتف: يتم نمذجة منطق الزوايا وعد التكرارات وضبطه بلغة Python مع MediaPipe على مقاطع فيديو حقيقية، ثم نقله إلى Dart ليعمل بالكامل على الجهاز ودون اتصال.',
       },
       architecture: {
-        en: 'Layered MVC architecture with JavaFX frontend, service layer for business logic, and MySQL persistence. OpenCV and external APIs wrapped in dedicated service classes.',
-        fr: 'Architecture MVC en couches avec frontend JavaFX, couche de services pour la logique métier et persistance MySQL. OpenCV et les API externes encapsulés dans des classes de service dédiées.',
-        ar: 'هندسة MVC متعددة الطبقات مع واجهة JavaFX أمامية، طبقة خدمات لمنطق الأعمال، وتخزين MySQL. OpenCV والواجهات البرمجية الخارجية مغلفة في فئات خدمة مخصصة.',
-      },
-      images: [],
-    },
-    {
-      title: {
-        en: 'LammaPlay — Multiplayer Quiz Platform',
-        fr: 'LammaPlay — Plateforme de quiz multijoueur',
-        ar: 'LammaPlay — منصة اختبارات متعددة اللاعبين',
-      },
-      description: {
-        en: 'A real-time multiplayer quiz game platform supporting live gameplay, custom quiz creation with image support, dynamic scoring with streak bonuses, and live leaderboards. Built with Flutter and Firebase, targeting Android, iOS, and Web.',
-        fr: 'Une plateforme de jeu de quiz multijoueur en temps réel supportant le gameplay en direct, la création de quiz personnalisés avec support d\'images, le scoring dynamique avec bonus de série, et les classements en direct. Développée avec Flutter et Firebase, ciblant Android, iOS et Web.',
-        ar: 'منصة ألعاب اختبارات متعددة اللاعبين في الوقت الفعلي تدعم اللعب المباشر، إنشاء اختبارات مخصصة مع دعم الصور، التسجيل الديناميكي مع مكافآت السلسلة، ولوحات المتصدرين المباشرة. مبنية بـ Flutter وFirebase، تستهدف Android وiOS والويب.',
-      },
-      tech: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'ImgBB API'],
-      link: 'https://github.com/YoussefAbbes/LammaPlay',
-      demo: '',
-      color: '#7c3aed',
-      features: [
-        {
-          en: 'Real-time multiplayer gameplay with session codes',
-          fr: 'Gameplay multijoueur en temps réel avec codes de session',
-          ar: 'لعب جماعي في الوقت الفعلي مع رموز الجلسات',
-        },
-        {
-          en: 'Custom quiz creation with image support',
-          fr: 'Création de quiz personnalisés avec support d\'images',
-          ar: 'إنشاء اختبارات مخصصة مع دعم الصور',
-        },
-        {
-          en: 'Dynamic scoring with streak bonuses',
-          fr: 'Scoring dynamique avec bonus de série',
-          ar: 'تسجيل نقاط ديناميكي مع مكافآت السلسلة',
-        },
-        {
-          en: 'Live leaderboards and results',
-          fr: 'Classements et résultats en direct',
-          ar: 'لوحات المتصدرين والنتائج المباشرة',
-        },
-        {
-          en: 'Cross-platform: Android, iOS, and Web',
-          fr: 'Multi-plateforme : Android, iOS et Web',
-          ar: 'متعدد المنصات: Android وiOS والويب',
-        },
-      ],
-      challenges: {
-        en: 'Implementing real-time synchronization across multiple players using Firestore listeners while handling edge cases like disconnections, late joins, and score disputes.',
-        fr: 'Implémentation de la synchronisation en temps réel entre plusieurs joueurs à l\'aide des listeners Firestore tout en gérant les cas limites comme les déconnexions, les connexions tardives et les litiges de score.',
-        ar: 'تنفيذ المزامنة في الوقت الفعلي عبر لاعبين متعددين باستخدام مستمعي Firestore مع التعامل مع الحالات الحدية مثل انقطاع الاتصال، الانضمام المتأخر، والنزاعات في النقاط.',
-      },
-      architecture: {
-        en: 'Flutter frontend with Provider state management, Firebase Authentication for user management, Firestore for real-time data sync, and Cloud Storage for quiz images via ImgBB API.',
-        fr: 'Frontend Flutter avec gestion d\'état Provider, Firebase Authentication pour la gestion des utilisateurs, Firestore pour la synchronisation des données en temps réel, et Cloud Storage pour les images de quiz via l\'API ImgBB.',
-        ar: 'واجهة Flutter أمامية مع إدارة الحالة بـ Provider، مصادقة Firebase لإدارة المستخدمين، Firestore لمزامنة البيانات في الوقت الفعلي، وCloud Storage لصور الاختبارات عبر واجهة ImgBB البرمجية.',
-      },
-      images: [],
-    },
-    {
-      title: {
-        en: 'Portfolio Website',
-        fr: 'Site web Portfolio',
-        ar: 'موقع المحفظة الشخصية',
-      },
-      description: {
-        en: 'This immersive 3D portfolio website built with React, Three.js, and Framer Motion. Features particle effects, parallax scrolling, glassmorphism design, and smooth scroll-triggered animations.',
-        fr: 'Ce site portfolio 3D immersif construit avec React, Three.js et Framer Motion. Comprend des effets de particules, du défilement parallaxe, un design glassmorphisme et des animations fluides déclenchées par le défilement.',
-        ar: 'موقع محفظة ثلاثي الأبعاد غامر مبني بـ React وThree.js وFramer Motion. يتضمن تأثيرات الجسيمات، التمرير المتوازي، تصميم glassmorphism، ورسوم متحركة سلسة تُفعّل بالتمرير.',
-      },
-      tech: ['React', 'Three.js', 'Framer Motion', 'Vite', 'CSS'],
-      link: 'https://github.com/YoussefAbbes/CV',
-      demo: 'https://youssefabbes.github.io/CV/',
-      color: '#ff006e',
-      features: [
-        {
-          en: '3D particle effects and parallax scrolling',
-          fr: 'Effets de particules 3D et défilement parallaxe',
-          ar: 'تأثيرات جسيمات ثلاثية الأبعاد وتمرير متوازي',
-        },
-        {
-          en: 'Glassmorphism design with blur effects',
-          fr: 'Design glassmorphisme avec effets de flou',
-          ar: 'تصميم glassmorphism مع تأثيرات الضبابية',
-        },
-        {
-          en: 'Scroll-triggered Framer Motion animations',
-          fr: 'Animations Framer Motion déclenchées par le défilement',
-          ar: 'رسوم متحركة Framer Motion تُفعّل بالتمرير',
-        },
-        {
-          en: 'Responsive design for all devices',
-          fr: 'Design responsive pour tous les appareils',
-          ar: 'تصميم متجاوب لجميع الأجهزة',
-        },
-        {
-          en: 'Accessibility: skip links, ARIA labels, reduced motion support',
-          fr: 'Accessibilité : liens de saut, labels ARIA, support du mouvement réduit',
-          ar: 'إمكانية الوصول: روابط التخطي، تسميات ARIA، دعم تقليل الحركة',
-        },
-      ],
-      challenges: {
-        en: 'Balancing visual richness (Three.js 3D scenes, particle systems) with performance across devices, especially mobile browsers with limited GPU resources.',
-        fr: 'Équilibrer la richesse visuelle (scènes 3D Three.js, systèmes de particules) avec les performances sur tous les appareils, en particulier les navigateurs mobiles avec des ressources GPU limitées.',
-        ar: 'الموازنة بين الثراء البصري (مشاهد Three.js ثلاثية الأبعاد، أنظمة الجسيمات) والأداء عبر الأجهزة، خاصة متصفحات الهاتف المحمول ذات موارد GPU المحدودة.',
-      },
-      architecture: {
-        en: 'React SPA with Vite bundler, Three.js scenes lazy-loaded via React.lazy() and wrapped in ErrorBoundary components, Framer Motion for declarative animations, and a single cv.js data source.',
-        fr: 'SPA React avec le bundler Vite, scènes Three.js chargées paresseusement via React.lazy() et encapsulées dans des composants ErrorBoundary, Framer Motion pour les animations déclaratives, et une source de données unique cv.js.',
-        ar: 'تطبيق React أحادي الصفحة مع حزمة Vite، مشاهد Three.js محملة بشكل كسول عبر React.lazy() ومغلفة في مكونات ErrorBoundary، Framer Motion للرسوم المتحركة التصريحية، ومصدر بيانات cv.js واحد.',
-      },
-      images: [],
-    },
-    {
-      title: {
-        en: 'EspritSphere — Campus Management Platform',
-        fr: 'EspritSphere — Plateforme de gestion du campus',
-        ar: 'EspritSphere — منصة إدارة الحرم الجامعي',
-      },
-      description: {
-        en: 'A robust, cross-platform application built with Flutter and Firebase to centralize student life at Esprit University. Empowers the campus community to seamlessly manage club memberships, organize university events, and reserve movie seats via an interactive seat-map.',
-        fr: 'Une application multiplateforme robuste développée avec Flutter et Firebase pour centraliser la vie étudiante à l\'Université Esprit. Permet à la communauté du campus de gérer facilement les adhésions aux clubs, d\'organiser des événements universitaires et de réserver des places de cinéma via une carte de sièges interactive.',
-        ar: 'تطبيق قوي متعدد المنصات مبني بـ Flutter وFirebase لمركزية حياة الطلاب في جامعة Esprit. يمكّن مجتمع الحرم الجامعي من إدارة عضويات النوادي بسلاسة، تنظيم الأحداث الجامعية، وحجز مقاعد السينما عبر خريطة مقاعد تفاعلية.',
-      },
-      tech: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'GitHub'],
-      link: 'https://github.com/YoussefAbbes/EspritSphere-Project',
-      demo: '',
-      color: '#f59e0b',
-      features: [
-        {
-          en: 'Club membership management',
-          fr: 'Gestion des adhésions aux clubs',
-          ar: 'إدارة عضويات النوادي',
-        },
-        {
-          en: 'University event organization',
-          fr: 'Organisation d\'événements universitaires',
-          ar: 'تنظيم الأحداث الجامعية',
-        },
-        {
-          en: 'Interactive movie seat reservation',
-          fr: 'Réservation de sièges de cinéma interactive',
-          ar: 'حجز مقاعد السينما التفاعلية',
-        },
-        {
-          en: 'Cross-platform: iOS, Android, and Web',
-          fr: 'Multi-plateforme : iOS, Android et Web',
-          ar: 'متعدد المنصات: iOS وAndroid والويب',
-        },
-      ],
-      challenges: {
-        en: 'Building a seamless seat-map UI for movie reservations that works across all platforms while handling real-time seat availability updates through Firestore.',
-        fr: 'Créer une interface de carte de sièges fluide pour les réservations de cinéma qui fonctionne sur toutes les plateformes tout en gérant les mises à jour de disponibilité des sièges en temps réel via Firestore.',
-        ar: 'بناء واجهة سلسة لخريطة المقاعد لحجوزات السينما تعمل عبر جميع المنصات مع التعامل مع تحديثات توفر المقاعد في الوقت الفعلي عبر Firestore.',
-      },
-      architecture: {
-        en: 'Flutter frontend with Firebase Authentication, Firestore for real-time data synchronization, and Cloud Functions for business logic.',
-        fr: 'Frontend Flutter avec Firebase Authentication, Firestore pour la synchronisation des données en temps réel, et Cloud Functions pour la logique métier.',
-        ar: 'واجهة Flutter أمامية مع مصادقة Firebase، Firestore لمزامنة البيانات في الوقت الفعلي، وCloud Functions لمنطق الأعمال.',
+        en: 'Flutter app with Riverpod state management and a local Drift (SQLite) database for offline-first sync, ML Kit pose detection behind an abstraction layer, Firebase Auth, and Appwrite serverless functions for AI food recognition.',
+        fr: 'Application Flutter avec gestion d\'état Riverpod et base locale Drift (SQLite) pour une synchronisation offline-first, détection de posture ML Kit derrière une couche d\'abstraction, Firebase Auth, et fonctions serverless Appwrite pour la reconnaissance d\'aliments.',
+        ar: 'تطبيق Flutter مع إدارة الحالة Riverpod وقاعدة بيانات محلية Drift (SQLite) للمزامنة دون اتصال، كشف الوضعية ML Kit خلف طبقة تجريد، مصادقة Firebase، ودوال Appwrite بدون خادم للتعرف على الطعام.',
       },
       images: [],
     },
@@ -597,51 +565,363 @@ const cv = {
     },
     {
       title: {
-        en: 'HelpDesk — Support Ticket Management',
-        fr: 'HelpDesk — Gestion des tickets de support',
-        ar: 'HelpDesk — إدارة تذاكر الدعم',
+        en: 'HelpDesk AI — Smart Support Ticket System',
+        fr: 'HelpDesk AI — Système intelligent de tickets de support',
+        ar: 'HelpDesk AI — نظام ذكي لتذاكر الدعم',
       },
       description: {
-        en: 'A comprehensive helpdesk and support ticket management system built with modern web technologies. Streamlines customer support workflows with ticket tracking, priority management, and team collaboration features.',
-        fr: 'Un système complet de gestion de helpdesk et de tickets de support construit avec des technologies web modernes. Rationalise les workflows de support client avec suivi des tickets, gestion des priorités et fonctionnalités de collaboration d\'équipe.',
-        ar: 'نظام شامل لإدارة مكتب المساعدة وتذاكر الدعم مبني بتقنيات الويب الحديثة. يبسط سير عمل دعم العملاء مع تتبع التذاكر، إدارة الأولويات، وميزات تعاون الفريق.',
+        en: 'An AI-powered helpdesk / CRM built with Django REST Framework and React. Every new ticket is analysed asynchronously by Hugging Face NLP models that detect customer sentiment, auto-categorise the ticket and draft a suggested reply for agents, with role-based access and a business intelligence dashboard.',
+        fr: 'Un helpdesk / CRM propulsé par l\'IA, développé avec Django REST Framework et React. Chaque nouveau ticket est analysé de façon asynchrone par des modèles NLP Hugging Face qui détectent le sentiment du client, catégorisent automatiquement le ticket et rédigent une réponse suggérée pour les agents, avec contrôle d\'accès par rôles et tableau de bord BI.',
+        ar: 'نظام مكتب مساعدة / CRM مدعوم بالذكاء الاصطناعي مبني بـ Django REST Framework وReact. يتم تحليل كل تذكرة جديدة بشكل غير متزامن بنماذج Hugging Face للغة الطبيعية التي تكشف مشاعر العميل، تصنف التذكرة تلقائيًا وتقترح ردًا للوكلاء، مع تحكم في الوصول حسب الأدوار ولوحة ذكاء أعمال.',
       },
-      tech: ['JavaScript', 'Node.js', 'React', 'Database'],
+      tech: ['Django REST', 'Python', 'React', 'Celery', 'Redis', 'PostgreSQL', 'Hugging Face', 'Tailwind CSS', 'Docker'],
       link: 'https://github.com/YoussefAbbes/HelpDesk-Project',
       demo: '',
       color: '#06b6d4',
       features: [
         {
-          en: 'Ticket creation and tracking',
-          fr: 'Création et suivi des tickets',
-          ar: 'إنشاء وتتبع التذاكر',
+          en: 'Sentiment analysis of every ticket (RoBERTa)',
+          fr: 'Analyse de sentiment de chaque ticket (RoBERTa)',
+          ar: 'تحليل مشاعر كل تذكرة (RoBERTa)',
         },
         {
-          en: 'Priority and status management',
-          fr: 'Gestion des priorités et statuts',
-          ar: 'إدارة الأولويات والحالات',
+          en: 'Zero-shot auto-categorisation (BART-MNLI)',
+          fr: 'Catégorisation automatique zero-shot (BART-MNLI)',
+          ar: 'تصنيف تلقائي بدون أمثلة (BART-MNLI)',
         },
         {
-          en: 'Team collaboration tools',
-          fr: 'Outils de collaboration d\'équipe',
-          ar: 'أدوات تعاون الفريق',
+          en: 'AI-drafted reply suggestions for agents (FLAN-T5)',
+          fr: 'Réponses suggérées par IA pour les agents (FLAN-T5)',
+          ar: 'ردود مقترحة بالذكاء الاصطناعي للوكلاء (FLAN-T5)',
         },
         {
-          en: 'Customer support workflows',
-          fr: 'Workflows de support client',
-          ar: 'سير عمل دعم العملاء',
+          en: 'Role-based access: customer, agent, admin (JWT)',
+          fr: 'Accès par rôles : client, agent, admin (JWT)',
+          ar: 'وصول حسب الأدوار: عميل، وكيل، مسؤول (JWT)',
+        },
+        {
+          en: 'BI dashboard: volume trends, sentiment, resolution time, agent workload',
+          fr: 'Tableau de bord BI : tendances, sentiment, temps de résolution, charge des agents',
+          ar: 'لوحة ذكاء أعمال: اتجاهات الحجم، المشاعر، وقت الحل، عبء عمل الوكلاء',
         },
       ],
       challenges: {
-        en: 'Designing an intuitive ticket management interface that scales with team size while maintaining fast response times and ensuring no tickets fall through the cracks.',
-        fr: 'Concevoir une interface de gestion de tickets intuitive qui évolue avec la taille de l\'équipe tout en maintenant des temps de réponse rapides et en garantissant qu\'aucun ticket ne passe entre les mailles du filet.',
-        ar: 'تصميم واجهة إدارة تذاكر بديهية تتوسع مع حجم الفريق مع الحفاظ على أوقات استجابة سريعة وضمان عدم فقدان أي تذاكر.',
+        en: 'Running three transformer models on every ticket without slowing down the app: inference runs in Celery workers with Redis as the broker, so the API responds instantly and AI insights appear as soon as they are ready.',
+        fr: 'Exécuter trois modèles transformers sur chaque ticket sans ralentir l\'application : l\'inférence tourne dans des workers Celery avec Redis comme broker, l\'API répond instantanément et les analyses IA apparaissent dès qu\'elles sont prêtes.',
+        ar: 'تشغيل ثلاثة نماذج transformer على كل تذكرة دون إبطاء التطبيق: يتم الاستدلال في عمال Celery مع Redis كوسيط، فتستجيب الواجهة البرمجية فورًا وتظهر تحليلات الذكاء الاصطناعي بمجرد جاهزيتها.',
       },
       architecture: {
-        en: 'Full-stack JavaScript application with React frontend, Node.js backend, and database for persistent storage.',
-        fr: 'Application JavaScript full-stack avec frontend React, backend Node.js, et base de données pour le stockage persistant.',
-        ar: 'تطبيق JavaScript full-stack مع واجهة React أمامية، خلفية Node.js، وقاعدة بيانات للتخزين الدائم.',
+        en: 'React (Vite, Tailwind, Zustand, Recharts) frontend talking to a Django REST Framework API with JWT auth; Celery workers and Redis for asynchronous NLP inference; PostgreSQL database; everything orchestrated with Docker Compose.',
+        fr: 'Frontend React (Vite, Tailwind, Zustand, Recharts) communiquant avec une API Django REST Framework authentifiée par JWT ; workers Celery et Redis pour l\'inférence NLP asynchrone ; base PostgreSQL ; le tout orchestré avec Docker Compose.',
+        ar: 'واجهة React (Vite وTailwind وZustand وRecharts) تتواصل مع واجهة Django REST Framework بمصادقة JWT؛ عمال Celery وRedis للاستدلال غير المتزامن؛ قاعدة بيانات PostgreSQL؛ وكل ذلك منسق بـ Docker Compose.',
       },
+      images: [],
+    },
+    {
+      title: {
+        en: 'LogiXpress — AI Logistics Platform (1st Prize)',
+        fr: 'LogiXpress — Plateforme logistique IA (1er Prix)',
+        ar: 'LogiXpress — منصة لوجستية بالذكاء الاصطناعي (الجائزة الأولى)',
+      },
+      description: {
+        en: 'An intelligent logistics management web platform that won 1st prize at ESPRIT\'s Bal des Projets 2024. Includes an AI chatbot, facial recognition, eco-friendly route prediction, and responsive front-office and back-office interfaces.',
+        fr: 'Une plateforme web intelligente de gestion logistique, lauréate du 1er prix au Bal des Projets ESPRIT 2024. Intègre un chatbot IA, la reconnaissance faciale, la prédiction écologique d\'itinéraires et des interfaces front-office et back-office responsives.',
+        ar: 'منصة ويب ذكية لإدارة اللوجستيك فازت بالجائزة الأولى في Bal des Projets ESPRIT 2024. تتضمن روبوت محادثة بالذكاء الاصطناعي، التعرف على الوجه، التنبؤ البيئي بالمسارات، وواجهات أمامية وخلفية متجاوبة.',
+      },
+      tech: ['Symfony', 'PHP', 'JavaScript', 'Bootstrap', 'MySQL'],
+      link: '',
+      demo: '',
+      color: '#eab308',
+      features: [
+        {
+          en: 'AI chatbot assistant',
+          fr: 'Assistant chatbot IA',
+          ar: 'مساعد روبوت محادثة بالذكاء الاصطناعي',
+        },
+        {
+          en: 'Facial recognition login',
+          fr: 'Connexion par reconnaissance faciale',
+          ar: 'تسجيل الدخول بالتعرف على الوجه',
+        },
+        {
+          en: 'Eco-friendly route prediction',
+          fr: 'Prédiction écologique d\'itinéraires',
+          ar: 'التنبؤ البيئي بالمسارات',
+        },
+        {
+          en: 'Responsive front-office and back-office',
+          fr: 'Front-office et back-office responsives',
+          ar: 'واجهات أمامية وخلفية متجاوبة',
+        },
+      ],
+      images: [],
+    },
+    {
+      title: {
+        en: 'Waveworx — Maritime Maintenance App (2nd Place)',
+        fr: 'Waveworx — Application de maintenance maritime (2ème Place)',
+        ar: 'Waveworx — تطبيق الصيانة البحرية (المركز الثاني)',
+      },
+      description: {
+        en: 'A C++/Qt desktop application for maritime maintenance that took 2nd place at ESPRIT\'s Bal des Projets 2024. Manages interventions, contracts and invoices, with anomaly detection, predictive analysis and simulated Arduino sensors.',
+        fr: 'Une application de bureau C++/Qt pour la maintenance maritime, 2ème place au Bal des Projets ESPRIT 2024. Gestion des interventions, contrats et factures, avec détection d\'anomalies, analyse prédictive et capteurs Arduino simulés.',
+        ar: 'تطبيق سطح مكتب C++/Qt للصيانة البحرية حصل على المركز الثاني في Bal des Projets ESPRIT 2024. يدير التدخلات والعقود والفواتير، مع كشف الحالات الشاذة، التحليل التنبؤي، وحساسات Arduino محاكاة.',
+      },
+      tech: ['C++', 'Qt', 'Arduino', 'SQL'],
+      link: '',
+      demo: '',
+      color: '#0ea5e9',
+      features: [
+        {
+          en: 'Intervention, contract and invoice management',
+          fr: 'Gestion des interventions, contrats et factures',
+          ar: 'إدارة التدخلات والعقود والفواتير',
+        },
+        {
+          en: 'Anomaly detection and predictive analysis',
+          fr: 'Détection d\'anomalies et analyse prédictive',
+          ar: 'كشف الحالات الشاذة والتحليل التنبؤي',
+        },
+        {
+          en: 'Simulated Arduino sensors',
+          fr: 'Capteurs Arduino simulés',
+          ar: 'حساسات Arduino محاكاة',
+        },
+      ],
+      images: [],
+    },
+    {
+      title: {
+        en: 'EL-Firma — Farm Management System',
+        fr: 'EL-Firma — Système de gestion agricole',
+        ar: 'EL-Firma — نظام إدارة المزارع',
+      },
+      description: {
+        en: 'A comprehensive full-stack desktop application for integrated farm management built as part of PIDEV 3A at ESPRIT. Features AI-powered facial recognition, voice commands, chatbot assistance, DNA-based gender prediction, Stripe payments, interactive maps, real-time dashboards, and multi-factor authentication.',
+        fr: 'Une application desktop full-stack complète pour la gestion agricole intégrée, développée dans le cadre du PIDEV 3A à ESPRIT. Comprend la reconnaissance faciale par IA, les commandes vocales, l\'assistance par chatbot, la prédiction de genre basée sur l\'ADN, les paiements Stripe, les cartes interactives, les tableaux de bord en temps réel et l\'authentification multi-facteurs.',
+        ar: 'تطبيق سطح مكتب شامل full-stack لإدارة المزارع المتكاملة، تم تطويره كجزء من PIDEV 3A في ESPRIT. يتضمن التعرف على الوجه بالذكاء الاصطناعي، الأوامر الصوتية، المساعد الآلي، التنبؤ بالجنس بناءً على الحمض النووي، مدفوعات Stripe، خرائط تفاعلية، لوحات معلومات في الوقت الفعلي، والمصادقة متعددة العوامل.',
+      },
+      tech: ['Java 21', 'JavaFX', 'MySQL', 'OpenCV', 'Stripe API', 'Maven'],
+      link: 'https://github.com/Ikam2/Esprit-PIDEV-3A3--2026-ELFIRMA',
+      demo: '',
+      color: '#00d4ff',
+      features: [
+        {
+          en: 'AI-powered facial recognition login',
+          fr: 'Connexion par reconnaissance faciale IA',
+          ar: 'تسجيل الدخول بالتعرف على الوجه بالذكاء الاصطناعي',
+        },
+        {
+          en: 'Voice command navigation',
+          fr: 'Navigation par commandes vocales',
+          ar: 'التنقل بالأوامر الصوتية',
+        },
+        {
+          en: 'Chatbot assistance',
+          fr: 'Assistance par chatbot',
+          ar: 'المساعدة عبر روبوت المحادثة',
+        },
+        {
+          en: 'Stripe payment integration',
+          fr: 'Intégration des paiements Stripe',
+          ar: 'دمج مدفوعات Stripe',
+        },
+        {
+          en: 'Interactive map dashboards',
+          fr: 'Tableaux de bord avec cartes interactives',
+          ar: 'لوحات معلومات بخرائط تفاعلية',
+        },
+        {
+          en: 'DNA-based gender prediction',
+          fr: 'Prédiction de genre basée sur l\'ADN',
+          ar: 'التنبؤ بالجنس بناءً على الحمض النووي',
+        },
+      ],
+      challenges: {
+        en: 'Integrating multiple AI services (facial recognition via OpenCV, voice commands, DNA prediction) into a single JavaFX desktop application while maintaining performance and a clean UX.',
+        fr: 'Intégration de multiples services IA (reconnaissance faciale via OpenCV, commandes vocales, prédiction ADN) dans une seule application desktop JavaFX tout en maintenant les performances et une UX soignée.',
+        ar: 'دمج خدمات ذكاء اصطناعي متعددة (التعرف على الوجه عبر OpenCV، الأوامر الصوتية، التنبؤ بالحمض النووي) في تطبيق سطح مكتب JavaFX واحد مع الحفاظ على الأداء وتجربة مستخدم نظيفة.',
+      },
+      architecture: {
+        en: 'Layered MVC architecture with JavaFX frontend, service layer for business logic, and MySQL persistence. OpenCV and external APIs wrapped in dedicated service classes.',
+        fr: 'Architecture MVC en couches avec frontend JavaFX, couche de services pour la logique métier et persistance MySQL. OpenCV et les API externes encapsulés dans des classes de service dédiées.',
+        ar: 'هندسة MVC متعددة الطبقات مع واجهة JavaFX أمامية، طبقة خدمات لمنطق الأعمال، وتخزين MySQL. OpenCV والواجهات البرمجية الخارجية مغلفة في فئات خدمة مخصصة.',
+      },
+      images: [],
+    },
+    {
+      title: {
+        en: 'EspritSphere — Campus Management Platform',
+        fr: 'EspritSphere — Plateforme de gestion du campus',
+        ar: 'EspritSphere — منصة إدارة الحرم الجامعي',
+      },
+      description: {
+        en: 'A robust, cross-platform application built with Flutter and Firebase to centralize student life at Esprit University. Empowers the campus community to seamlessly manage club memberships, organize university events, and reserve movie seats via an interactive seat-map.',
+        fr: 'Une application multiplateforme robuste développée avec Flutter et Firebase pour centraliser la vie étudiante à l\'Université Esprit. Permet à la communauté du campus de gérer facilement les adhésions aux clubs, d\'organiser des événements universitaires et de réserver des places de cinéma via une carte de sièges interactive.',
+        ar: 'تطبيق قوي متعدد المنصات مبني بـ Flutter وFirebase لمركزية حياة الطلاب في جامعة Esprit. يمكّن مجتمع الحرم الجامعي من إدارة عضويات النوادي بسلاسة، تنظيم الأحداث الجامعية، وحجز مقاعد السينما عبر خريطة مقاعد تفاعلية.',
+      },
+      tech: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'GitHub'],
+      link: 'https://github.com/YoussefAbbes/EspritSphere-Project',
+      demo: 'https://espritsphere-youssefabbes.netlify.app',
+      color: '#f59e0b',
+      features: [
+        {
+          en: 'Club membership management',
+          fr: 'Gestion des adhésions aux clubs',
+          ar: 'إدارة عضويات النوادي',
+        },
+        {
+          en: 'University event organization',
+          fr: 'Organisation d\'événements universitaires',
+          ar: 'تنظيم الأحداث الجامعية',
+        },
+        {
+          en: 'Interactive movie seat reservation',
+          fr: 'Réservation de sièges de cinéma interactive',
+          ar: 'حجز مقاعد السينما التفاعلية',
+        },
+        {
+          en: 'Cross-platform: iOS, Android, and Web',
+          fr: 'Multi-plateforme : iOS, Android et Web',
+          ar: 'متعدد المنصات: iOS وAndroid والويب',
+        },
+      ],
+      challenges: {
+        en: 'Building a seamless seat-map UI for movie reservations that works across all platforms while handling real-time seat availability updates through Firestore.',
+        fr: 'Créer une interface de carte de sièges fluide pour les réservations de cinéma qui fonctionne sur toutes les plateformes tout en gérant les mises à jour de disponibilité des sièges en temps réel via Firestore.',
+        ar: 'بناء واجهة سلسة لخريطة المقاعد لحجوزات السينما تعمل عبر جميع المنصات مع التعامل مع تحديثات توفر المقاعد في الوقت الفعلي عبر Firestore.',
+      },
+      architecture: {
+        en: 'Flutter frontend with Firebase Authentication, Firestore for real-time data synchronization, and Cloud Functions for business logic.',
+        fr: 'Frontend Flutter avec Firebase Authentication, Firestore pour la synchronisation des données en temps réel, et Cloud Functions pour la logique métier.',
+        ar: 'واجهة Flutter أمامية مع مصادقة Firebase، Firestore لمزامنة البيانات في الوقت الفعلي، وCloud Functions لمنطق الأعمال.',
+      },
+      images: [],
+    },
+    {
+      title: {
+        en: 'LammaPlay — Multiplayer Quiz Platform',
+        fr: 'LammaPlay — Plateforme de quiz multijoueur',
+        ar: 'LammaPlay — منصة اختبارات متعددة اللاعبين',
+      },
+      description: {
+        en: 'A real-time multiplayer quiz game platform supporting live gameplay, custom quiz creation with image support, dynamic scoring with streak bonuses, and live leaderboards. Built with Flutter and Firebase, targeting Android, iOS, and Web.',
+        fr: 'Une plateforme de jeu de quiz multijoueur en temps réel supportant le gameplay en direct, la création de quiz personnalisés avec support d\'images, le scoring dynamique avec bonus de série, et les classements en direct. Développée avec Flutter et Firebase, ciblant Android, iOS et Web.',
+        ar: 'منصة ألعاب اختبارات متعددة اللاعبين في الوقت الفعلي تدعم اللعب المباشر، إنشاء اختبارات مخصصة مع دعم الصور، التسجيل الديناميكي مع مكافآت السلسلة، ولوحات المتصدرين المباشرة. مبنية بـ Flutter وFirebase، تستهدف Android وiOS والويب.',
+      },
+      tech: ['Flutter', 'Dart', 'Firebase', 'Firestore', 'ImgBB API'],
+      link: 'https://github.com/YoussefAbbes/LammaPlay',
+      demo: '',
+      color: '#7c3aed',
+      features: [
+        {
+          en: 'Real-time multiplayer gameplay with session codes',
+          fr: 'Gameplay multijoueur en temps réel avec codes de session',
+          ar: 'لعب جماعي في الوقت الفعلي مع رموز الجلسات',
+        },
+        {
+          en: 'Custom quiz creation with image support',
+          fr: 'Création de quiz personnalisés avec support d\'images',
+          ar: 'إنشاء اختبارات مخصصة مع دعم الصور',
+        },
+        {
+          en: 'Dynamic scoring with streak bonuses',
+          fr: 'Scoring dynamique avec bonus de série',
+          ar: 'تسجيل نقاط ديناميكي مع مكافآت السلسلة',
+        },
+        {
+          en: 'Live leaderboards and results',
+          fr: 'Classements et résultats en direct',
+          ar: 'لوحات المتصدرين والنتائج المباشرة',
+        },
+        {
+          en: 'Cross-platform: Android, iOS, and Web',
+          fr: 'Multi-plateforme : Android, iOS et Web',
+          ar: 'متعدد المنصات: Android وiOS والويب',
+        },
+      ],
+      challenges: {
+        en: 'Implementing real-time synchronization across multiple players using Firestore listeners while handling edge cases like disconnections, late joins, and score disputes.',
+        fr: 'Implémentation de la synchronisation en temps réel entre plusieurs joueurs à l\'aide des listeners Firestore tout en gérant les cas limites comme les déconnexions, les connexions tardives et les litiges de score.',
+        ar: 'تنفيذ المزامنة في الوقت الفعلي عبر لاعبين متعددين باستخدام مستمعي Firestore مع التعامل مع الحالات الحدية مثل انقطاع الاتصال، الانضمام المتأخر، والنزاعات في النقاط.',
+      },
+      architecture: {
+        en: 'Flutter frontend with Provider state management, Firebase Authentication for user management, Firestore for real-time data sync, and Cloud Storage for quiz images via ImgBB API.',
+        fr: 'Frontend Flutter avec gestion d\'état Provider, Firebase Authentication pour la gestion des utilisateurs, Firestore pour la synchronisation des données en temps réel, et Cloud Storage pour les images de quiz via l\'API ImgBB.',
+        ar: 'واجهة Flutter أمامية مع إدارة الحالة بـ Provider، مصادقة Firebase لإدارة المستخدمين، Firestore لمزامنة البيانات في الوقت الفعلي، وCloud Storage لصور الاختبارات عبر واجهة ImgBB البرمجية.',
+      },
+      images: [],
+    },
+    {
+      title: {
+        en: 'Portfolio Website',
+        fr: 'Site web Portfolio',
+        ar: 'موقع المحفظة الشخصية',
+      },
+      description: {
+        en: 'This immersive 3D portfolio website built with React, Three.js, and Framer Motion. Features particle effects, parallax scrolling, glassmorphism design, and smooth scroll-triggered animations.',
+        fr: 'Ce site portfolio 3D immersif construit avec React, Three.js et Framer Motion. Comprend des effets de particules, du défilement parallaxe, un design glassmorphisme et des animations fluides déclenchées par le défilement.',
+        ar: 'موقع محفظة ثلاثي الأبعاد غامر مبني بـ React وThree.js وFramer Motion. يتضمن تأثيرات الجسيمات، التمرير المتوازي، تصميم glassmorphism، ورسوم متحركة سلسة تُفعّل بالتمرير.',
+      },
+      tech: ['React', 'Three.js', 'Framer Motion', 'Vite', 'CSS'],
+      link: 'https://github.com/YoussefAbbes/CV',
+      demo: 'https://youssefabbes.github.io/CV/',
+      color: '#ff006e',
+      features: [
+        {
+          en: '3D particle effects and parallax scrolling',
+          fr: 'Effets de particules 3D et défilement parallaxe',
+          ar: 'تأثيرات جسيمات ثلاثية الأبعاد وتمرير متوازي',
+        },
+        {
+          en: 'Glassmorphism design with blur effects',
+          fr: 'Design glassmorphisme avec effets de flou',
+          ar: 'تصميم glassmorphism مع تأثيرات الضبابية',
+        },
+        {
+          en: 'Scroll-triggered Framer Motion animations',
+          fr: 'Animations Framer Motion déclenchées par le défilement',
+          ar: 'رسوم متحركة Framer Motion تُفعّل بالتمرير',
+        },
+        {
+          en: 'Responsive design for all devices',
+          fr: 'Design responsive pour tous les appareils',
+          ar: 'تصميم متجاوب لجميع الأجهزة',
+        },
+        {
+          en: 'Accessibility: skip links, ARIA labels, reduced motion support',
+          fr: 'Accessibilité : liens de saut, labels ARIA, support du mouvement réduit',
+          ar: 'إمكانية الوصول: روابط التخطي، تسميات ARIA، دعم تقليل الحركة',
+        },
+      ],
+      challenges: {
+        en: 'Balancing visual richness (Three.js 3D scenes, particle systems) with performance across devices, especially mobile browsers with limited GPU resources.',
+        fr: 'Équilibrer la richesse visuelle (scènes 3D Three.js, systèmes de particules) avec les performances sur tous les appareils, en particulier les navigateurs mobiles avec des ressources GPU limitées.',
+        ar: 'الموازنة بين الثراء البصري (مشاهد Three.js ثلاثية الأبعاد، أنظمة الجسيمات) والأداء عبر الأجهزة، خاصة متصفحات الهاتف المحمول ذات موارد GPU المحدودة.',
+      },
+      architecture: {
+        en: 'React SPA with Vite bundler, Three.js scenes lazy-loaded via React.lazy() and wrapped in ErrorBoundary components, Framer Motion for declarative animations, and a single cv.js data source.',
+        fr: 'SPA React avec le bundler Vite, scènes Three.js chargées paresseusement via React.lazy() et encapsulées dans des composants ErrorBoundary, Framer Motion pour les animations déclaratives, et une source de données unique cv.js.',
+        ar: 'تطبيق React أحادي الصفحة مع حزمة Vite، مشاهد Three.js محملة بشكل كسول عبر React.lazy() ومغلفة في مكونات ErrorBoundary، Framer Motion للرسوم المتحركة التصريحية، ومصدر بيانات cv.js واحد.',
+      },
+      images: [],
+    },
+    {
+      title: {
+        en: 'Line-Following Robot',
+        fr: 'Robot suiveur de ligne',
+        ar: 'روبوت تتبع الخط',
+      },
+      description: {
+        en: 'An autonomous robot that follows a line drawn on the ground, using infrared sensors and an Arduino microcontroller programmed in C.',
+        fr: 'Un robot autonome capable de suivre une ligne tracée au sol, grâce à des capteurs infrarouges et un microcontrôleur Arduino programmé en C.',
+        ar: 'روبوت مستقل قادر على تتبع خط مرسوم على الأرض، باستخدام حساسات الأشعة تحت الحمراء ومتحكم Arduino مبرمج بلغة C.',
+      },
+      tech: ['Arduino', 'C', 'Embedded', 'IR Sensors'],
+      link: '',
+      demo: '',
+      color: '#64748b',
+      features: [],
       images: [],
     },
   ],
@@ -744,66 +1024,6 @@ Résultat : Scores Lighthouse supérieurs à 90 pour la performance et 100 pour 
       readTime: 4,
       tags: ['React', 'Three.js', 'Performance', 'A11y'],
       color: '#7c3aed',
-    },
-  ],
-
-  testimonials: [
-    {
-      name: 'Prof. Ahmed Ben Salah',
-      role: {
-        en: 'Professor at ESPRIT School of Engineering',
-        fr: 'Professeur à ESPRIT School of Engineering',
-        ar: 'أستاذ في مدرسة ESPRIT للهندسة',
-      },
-      quote: {
-        en: 'Youssef consistently demonstrated exceptional problem-solving skills and creativity in his engineering projects. His EL-Firma project stood out for its innovative AI integration and clean architecture. A highly motivated student with a strong technical foundation.',
-        fr: 'Youssef a systématiquement démontré des compétences exceptionnelles en résolution de problèmes et en créativité dans ses projets d\'ingénierie. Son projet EL-Firma s\'est distingué par son intégration innovante de l\'IA et son architecture propre. Un étudiant très motivé avec une solide base technique.',
-        ar: 'أظهر يوسف باستمرار مهارات استثنائية في حل المشكلات والإبداع في مشاريعه الهندسية. تميز مشروعه EL-Firma بدمج مبتكر للذكاء الاصطناعي وبنية نظيفة. طالب متحمس للغاية ذو أساس تقني قوي.',
-      },
-      avatar: '',
-      relationship: {
-        en: 'Academic Supervisor',
-        fr: 'Superviseur Académique',
-        ar: 'المشرف الأكاديمي',
-      },
-    },
-    {
-      name: 'Sana Mejri',
-      role: {
-        en: 'Fellow Engineering Student at ESPRIT',
-        fr: 'Étudiante en ingénierie à ESPRIT',
-        ar: 'زميلة طالبة هندسة في ESPRIT',
-      },
-      quote: {
-        en: 'Working with Youssef on group projects was an outstanding experience. He has a natural ability to break down complex problems and leads by example with clean, well-documented code. His full-stack skills and willingness to help teammates made him invaluable to our team.',
-        fr: 'Travailler avec Youssef sur des projets de groupe était une expérience remarquable. Il a une capacité naturelle à décomposer les problèmes complexes et montre l\'exemple avec un code propre et bien documenté. Ses compétences full-stack et sa volonté d\'aider ses coéquipiers l\'ont rendu indispensable.',
-        ar: 'كان العمل مع يوسف في المشاريع الجماعية تجربة رائعة. لديه قدرة طبيعية على تقسيم المشكلات المعقدة ويقود بالقدوة مع كود نظيف وموثق جيدًا. مهاراته في full-stack واستعداده لمساعدة زملائه جعلته لا يُقدر بثمن لفريقنا.',
-      },
-      avatar: '',
-      relationship: {
-        en: 'Project Teammate',
-        fr: 'Coéquipière de projet',
-        ar: 'زميلة في المشروع',
-      },
-    },
-    {
-      name: 'Mohamed Trabelsi',
-      role: {
-        en: 'Senior Developer & Mentor',
-        fr: 'Développeur Senior & Mentor',
-        ar: 'مطور أول ومرشد',
-      },
-      quote: {
-        en: 'I mentored Youssef during his exploration of mobile development with Flutter. His learning speed is remarkable — he went from basics to building a polished multiplayer quiz platform in weeks. He asks the right questions and isn\'t afraid to tackle challenging technical problems.',
-        fr: 'J\'ai encadré Youssef lors de son exploration du développement mobile avec Flutter. Sa vitesse d\'apprentissage est remarquable — il est passé des bases à la construction d\'une plateforme de quiz multijoueur sophistiquée en quelques semaines. Il pose les bonnes questions et n\'a pas peur de s\'attaquer à des problèmes techniques complexes.',
-        ar: 'قمت بتوجيه يوسف خلال استكشافه لتطوير تطبيقات الهاتف المحمول باستخدام Flutter. سرعة تعلمه مذهلة — انتقل من الأساسيات إلى بناء منصة اختبارات متعددة اللاعبين متقنة في أسابيع. يطرح الأسئلة الصحيحة ولا يخشى مواجهة المشكلات التقنية الصعبة.',
-      },
-      avatar: '',
-      relationship: {
-        en: 'Technical Mentor',
-        fr: 'Mentor Technique',
-        ar: 'مرشد تقني',
-      },
     },
   ],
 };

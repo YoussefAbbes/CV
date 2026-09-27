@@ -18,6 +18,7 @@ const typeConfig = {
   work:        { color: '#7c3aed', icon: '💼', labelKey: 'timeline.work' },
   education:   { color: '#00d4ff', icon: '🎓', labelKey: 'timeline.education' },
   achievement: { color: '#ffd700', icon: '🏆', labelKey: 'timeline.achievement' },
+  leadership:  { color: '#ec4899', icon: '🤝', labelKey: 'timeline.leadership' },
 };
 
 function parsePeriodEnd(period) {
@@ -43,6 +44,15 @@ function buildTimeline() {
     type: 'education',
     title: e.degree,
     subtitle: e.school,
+    period: e.period,
+    description: e.description,
+    sortKey: parsePeriodEnd(e.period),
+  }));
+
+  (cv.activities || []).forEach((e) => items.push({
+    type: 'leadership',
+    title: e.role,
+    subtitle: e.organization,
     period: e.period,
     description: e.description,
     sortKey: parsePeriodEnd(e.period),

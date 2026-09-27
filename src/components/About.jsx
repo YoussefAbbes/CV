@@ -130,6 +130,38 @@ export default function About() {
           ))}
         </div>
       </motion.div>
+
+      {/* Languages */}
+      <motion.div
+        className="about__learning"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+      >
+        <h3 className="about__subtitle">{t('about.languages')}</h3>
+        <div className="about__learning-cards">
+          {cv.languages.map((lang, i) => (
+            <motion.div
+              key={lang.name.en}
+              className="about__learning-card"
+              style={{ borderColor: lang.color }}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1, duration: 0.4 }}
+              whileHover={{ y: -4 }}
+            >
+              <span className="about__learning-icon">{lang.icon}</span>
+              <span className="about__learning-name">
+                {localize(lang.name)}
+                <span className="about__language-level">{localize(lang.level)}</span>
+              </span>
+              <div className="about__learning-glow" style={{ background: lang.color }} />
+            </motion.div>
+          ))}
+        </div>
+      </motion.div>
     </section>
   );
 }

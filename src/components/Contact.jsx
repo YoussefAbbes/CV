@@ -38,7 +38,7 @@ export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
   const formRef = useRef(null);
-  const { t } = useTranslation();
+  const { t, localize } = useTranslation();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -96,6 +96,19 @@ export default function Contact() {
             <LinkedInIcon />
           </a>
         </div>
+
+        <ul className="contact__details">
+          <li>
+            <span aria-hidden="true">📍</span> {localize(cv.location)}
+          </li>
+          <li>
+            <span aria-hidden="true">📞</span>{' '}
+            <a href={`tel:${cv.phone.replace(/\s/g, '')}`}>{cv.phone}</a>
+          </li>
+          <li>
+            <span aria-hidden="true">✉️</span> <a href={`mailto:${cv.email}`}>{cv.email}</a>
+          </li>
+        </ul>
 
         <form ref={formRef} className="contact__form" onSubmit={handleSubmit}>
           <label htmlFor="contact-name" className="sr-only">{t('contact.namePlaceholder')}</label>

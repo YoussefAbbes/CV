@@ -8,7 +8,6 @@ const ar = {
     skills: '\u0627\u0644\u0645\u0647\u0627\u0631\u0627\u062a',
     timeline: '\u0627\u0644\u0645\u0633\u064a\u0631\u0629',
     attestations: '\u0627\u0644\u0634\u0647\u0627\u062f\u0627\u062a',
-    testimonials: '\u0627\u0644\u062a\u0648\u0635\u064a\u0627\u062a',
     projects: '\u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639',
     blog: '\u0627\u0644\u0645\u062f\u0648\u0646\u0629',
     contact: '\u0627\u062a\u0635\u0644 \u0628\u064a',
@@ -23,6 +22,7 @@ const ar = {
     title: '\u0646\u0628\u0630\u0629 \u0639\u0646\u064a',
     github: '\u0646\u0634\u0627\u0637 GitHub',
     learning: '\u0645\u0627 \u0623\u062a\u0639\u0644\u0645\u0647',
+    languages: 'اللغات',
   },
 
   skills: {
@@ -34,6 +34,7 @@ const ar = {
     work: '\u0639\u0645\u0644',
     education: '\u062a\u0639\u0644\u064a\u0645',
     achievement: '\u0625\u0646\u062c\u0627\u0632',
+    leadership: 'القيادة',
   },
 
   attestations: {
@@ -41,9 +42,6 @@ const ar = {
     viewText: '\u0627\u0646\u0642\u0631 \u0644\u0644\u0639\u0631\u0636',
   },
 
-  testimonials: {
-    title: '\u0627\u0644\u062a\u0648\u0635\u064a\u0627\u062a',
-  },
 
   projects: {
     title: '\u0627\u0644\u0645\u0634\u0627\u0631\u064a\u0639',

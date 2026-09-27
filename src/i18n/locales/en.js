@@ -8,7 +8,6 @@ const en = {
     skills: 'Skills',
     timeline: 'Timeline',
     attestations: 'Attestations',
-    testimonials: 'Testimonials',
     projects: 'Projects',
     blog: 'Blog',
     contact: 'Contact',
@@ -23,6 +22,7 @@ const en = {
     title: 'About Me',
     github: 'GitHub Activity',
     learning: "What I'm Learning",
+    languages: 'Languages',
   },
 
   skills: {
@@ -34,6 +34,7 @@ const en = {
     work: 'Work',
     education: 'Education',
     achievement: 'Achievement',
+    leadership: 'Leadership',
   },
 
   attestations: {
@@ -41,9 +42,6 @@ const en = {
     viewText: 'Click to view',
   },
 
-  testimonials: {
-    title: 'Testimonials',
-  },
 
   projects: {
     title: 'Projects',
