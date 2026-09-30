@@ -428,7 +428,7 @@ const cv = {
         ar: 'نظام توصيات متكامل أنجزته خلال تربصي لدى موزع قطع غيار السيارات. نموذجان CatBoost مدربان على 1.9 مليون سطر من سجل المبيعات يحددان لكل مندوب مبيعات العملاء الذين يجب الاتصال بهم اليوم والقطع التي يجب عرضها، بما في ذلك العملاء الذين لم يشتروا مقالًا معينًا من قبل. يُقدَّم عبر واجهة FastAPI مُنمَّطة ويُستكشف من خلال لوحة تحكم React.',
       },
       tech: ['Python', 'CatBoost', 'pandas', 'scikit-learn', 'FastAPI', 'Pydantic', 'React', 'TypeScript', 'Vite', 'Recharts'],
-      link: '',
+      link: 'https://github.com/YoussefAbbes/sales-compass',
       demo: '',
       color: '#0f5c4a',
       features: [
