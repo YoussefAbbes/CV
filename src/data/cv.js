@@ -418,6 +418,64 @@ const cv = {
   projects: [
     {
       title: {
+        en: 'Sales Compass — ML Sales Recommendation System',
+        fr: 'Sales Compass — Système de recommandation commerciale par ML',
+        ar: 'Sales Compass — نظام توصيات مبيعات بالتعلم الآلي',
+      },
+      description: {
+        en: 'An end-to-end recommendation system built during my internship for an auto spare-parts distributor. Two CatBoost models trained on 1.9 M ledger lines tell each sales rep which clients to call today and which parts to offer, including clients who have never bought a given article. Served by a typed FastAPI service and explored through a React dashboard.',
+        fr: 'Un système de recommandation de bout en bout réalisé pendant mon stage pour un distributeur de pièces de rechange automobiles. Deux modèles CatBoost entraînés sur 1,9 M de lignes de ledger indiquent à chaque commercial quels clients appeler aujourd\'hui et quelles pièces proposer, y compris les clients n\'ayant jamais acheté un article donné. Exposé par une API FastAPI typée et exploré via un tableau de bord React.',
+        ar: 'نظام توصيات متكامل أنجزته خلال تربصي لدى موزع قطع غيار السيارات. نموذجان CatBoost مدربان على 1.9 مليون سطر من سجل المبيعات يحددان لكل مندوب مبيعات العملاء الذين يجب الاتصال بهم اليوم والقطع التي يجب عرضها، بما في ذلك العملاء الذين لم يشتروا مقالًا معينًا من قبل. يُقدَّم عبر واجهة FastAPI مُنمَّطة ويُستكشف من خلال لوحة تحكم React.',
+      },
+      tech: ['Python', 'CatBoost', 'pandas', 'scikit-learn', 'FastAPI', 'Pydantic', 'React', 'TypeScript', 'Vite', 'Recharts'],
+      link: '',
+      demo: '',
+      color: '#0f5c4a',
+      features: [
+        {
+          en: 'Repurchase model: 61.9% precision in the top 30 vs 31.9% for the revenue-sorted baseline (AUC 0.774)',
+          fr: 'Modèle de rachat : 61,9 % de précision dans le top 30 contre 31,9 % pour le tri par chiffre d\'affaires (AUC 0,774)',
+          ar: 'نموذج إعادة الشراء: دقة 61.9% في أفضل 30 مقابل 31.9% للترتيب حسب رقم المعاملات (AUC 0.774)',
+        },
+        {
+          en: 'Article-adoption model finding clients who would buy a part they have never bought (AUC 0.875)',
+          fr: 'Modèle d\'adoption d\'article repérant les clients susceptibles d\'acheter une pièce jamais achetée (AUC 0,875)',
+          ar: 'نموذج تبني المقالات لتحديد العملاء المحتمل شراؤهم قطعة لم يشتروها من قبل (AUC 0.875)',
+        },
+        {
+          en: 'Leak-free evaluation: rolling chronological snapshots with embargoes on split boundaries',
+          fr: 'Évaluation sans fuite : snapshots chronologiques glissants avec embargos aux frontières des découpes',
+          ar: 'تقييم بلا تسرب: لقطات زمنية متحركة مع فترات حظر عند حدود التقسيم',
+        },
+        {
+          en: 'Typed REST API with API-key access control that fails closed, plus an append-only vendor feedback loop',
+          fr: 'API REST typée avec contrôle d\'accès par clé qui échoue en mode fermé, et boucle de retours vendeurs en append-only',
+          ar: 'واجهة REST مُنمَّطة مع تحكم في الوصول بمفتاح API يفشل بشكل مغلق، وحلقة ملاحظات المندوبين بإضافة فقط',
+        },
+        {
+          en: '380+ automated tests, including a privacy guard that fails if any real client identity reaches committed data',
+          fr: 'Plus de 380 tests automatisés, dont un garde-fou de confidentialité qui échoue si une identité client réelle atteint les données versionnées',
+          ar: 'أكثر من 380 اختبارًا آليًا، بما في ذلك حارس خصوصية يفشل إذا وصلت أي هوية عميل حقيقية إلى البيانات المنشورة',
+        },
+      ],
+      challenges: {
+        en: 'The first extract only covered January–May each year, which made repurchase look like 19.8% when the true full-year rate was 31.0% — label noise no tuning could fix. I measured the blind spot, requested day-level ledger data, rebuilt the labels, and reported precision for the ranking actually served to reps rather than only the flattering raw score.',
+        fr: 'Le premier extrait ne couvrait que janvier–mai de chaque année, ce qui faisait apparaître le rachat à 19,8 % alors que le taux réel sur l\'année était de 31,0 % — un bruit d\'étiquettes qu\'aucun réglage ne pouvait corriger. J\'ai mesuré l\'angle mort, demandé les données au niveau journalier, reconstruit les étiquettes et rapporté la précision du classement réellement servi aux commerciaux, pas seulement du score brut flatteur.',
+        ar: 'كان الاستخراج الأول يغطي يناير–ماي فقط من كل سنة، مما جعل إعادة الشراء تبدو 19.8% بينما المعدل الحقيقي على السنة كاملة 31.0% — ضجيج في التسميات لا يصلحه أي ضبط. قمت بقياس النقطة العمياء، وطلبت بيانات على مستوى اليوم، وأعدت بناء التسميات، وأبلغت عن دقة الترتيب المقدَّم فعليًا للمندوبين وليس فقط الدرجة الخام المُحسَّنة.',
+      },
+      architecture: {
+        en: 'ERP ledger → pandas/Parquet pipeline → rolling-snapshot feature builder → two CatBoost models → scored contact queues → FastAPI (12 typed routes, OpenAPI) → React + TypeScript dashboard. A committed anonymised fixture set lets anyone run the whole stack without private data.',
+        fr: 'Ledger ERP → pipeline pandas/Parquet → constructeur de features par snapshots glissants → deux modèles CatBoost → files de contact scorées → FastAPI (12 routes typées, OpenAPI) → tableau de bord React + TypeScript. Un jeu de fixtures anonymisé versionné permet de lancer toute la pile sans données privées.',
+        ar: 'سجل ERP ← خط معالجة pandas/Parquet ← بناء الميزات بلقطات متحركة ← نموذجا CatBoost ← قوائم اتصال مُقيَّمة ← FastAPI (12 مسارًا مُنمَّطًا، OpenAPI) ← لوحة تحكم React + TypeScript. مجموعة بيانات تجريبية مجهولة الهوية تتيح تشغيل المنظومة كاملة دون بيانات خاصة.',
+      },
+      images: [
+        '/CV/projects/sales-compass-1.jpg',
+        '/CV/projects/sales-compass-2.jpg',
+        '/CV/projects/sales-compass-3.jpg',
+      ],
+    },
+    {
+      title: {
         en: 'LiftBuddy — AI Fitness Coach (Work in Progress)',
         fr: 'LiftBuddy — Coach fitness IA (En cours de développement)',
         ar: 'LiftBuddy — مدرب لياقة بالذكاء الاصطناعي (قيد التطوير)',
